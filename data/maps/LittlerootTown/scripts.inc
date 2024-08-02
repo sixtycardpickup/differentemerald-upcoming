@@ -86,7 +86,7 @@ LittlerootTown_EventScript_SetTwinPos::
 	return
 
 LittlerootTown_EventScript_SetTwinGuardingRoutePos::
-	setobjectxyperm LOCALID_TWIN, 7, 2
+	setobjectxyperm LOCALID_TWIN, 7, 1
 	setobjectmovementtype LOCALID_TWIN, MOVEMENT_TYPE_FACE_DOWN
 	return
 
@@ -286,7 +286,7 @@ LittlerootTown_EventScript_GoodLuck::
 	end
 
 LittlerootTown_EventScript_NeedPokemonTriggerLeft::
-	lockall
+	lockall 
 	applymovement LOCALID_TWIN, LittlerootTown_Movement_TwinApproachPlayerLeft
 	waitmovement 0
 	call LittlerootTown_EventScript_DangerousWithoutPokemon
@@ -312,9 +312,12 @@ LittlerootTown_Movement_TwinApproachPlayerLeft:
 	jump_in_place_right
 	delay_8
 	walk_fast_right
+	walk_fast_down
+	walk_fast_down
 	walk_fast_right
 	walk_fast_right
 	walk_fast_right
+	walk_fast_up
 	walk_fast_up
 	walk_fast_up
 	walk_fast_left
@@ -332,8 +335,10 @@ LittlerootTown_Movement_TwinReturnLeft:
 	walk_left
 	walk_left
 	walk_left
-	walk_left
 	walk_up
+	walk_up
+	walk_left
+	face_down
 	walk_in_place_faster_down
 	step_end
 
@@ -363,14 +368,12 @@ LittlerootTown_Movement_TwinApproachPlayerRight:
 	walk_fast_right
 	walk_fast_right
 	walk_fast_up
-	walk_fast_up
 	walk_fast_right
 	face_down
 	step_end
 
 LittlerootTown_Movement_TwinReturnRight:
 	walk_left
-	walk_down
 	walk_left
 	walk_left
 	walk_left
