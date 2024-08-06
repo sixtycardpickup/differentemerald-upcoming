@@ -66,6 +66,7 @@
 #define MAP_NEW_MAP1            (57 | (0 << 8))
 #define MAP_NEW_MAP2            (58 | (0 << 8))
 #define MAP_NEW_MAP3            (59 | (0 << 8))
+#define MAP_WEST_OF_LITTLEROOT  (60 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

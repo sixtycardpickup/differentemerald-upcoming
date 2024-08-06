@@ -1080,3 +1080,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/NewMap2/scripts.inc"
 
 	.include "data/maps/NewMap3/scripts.inc"
+
+	.include "data/maps/WestOfLittleroot/scripts.inc"
