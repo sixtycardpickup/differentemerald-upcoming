@@ -812,12 +812,12 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_1",
-      "name": "ROUTE 1",
-      "x": 0,
-      "y": 0,
+      "map_section": "MAPSEC_ROUTE_EAST_1",
+      "name": "ROUTE EAST-1",
+      "x": 5,
+      "y": 11,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "map_section": "MAPSEC_ROUTE_2",
