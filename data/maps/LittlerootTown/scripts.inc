@@ -86,7 +86,7 @@ LittlerootTown_EventScript_SetTwinPos::
 	return
 
 LittlerootTown_EventScript_SetTwinGuardingRoutePos::
-	setobjectxyperm LOCALID_TWIN, 7, 1
+	setobjectxyperm LOCALID_TWIN, 9, 1
 	setobjectmovementtype LOCALID_TWIN, MOVEMENT_TYPE_FACE_DOWN
 	return
 
