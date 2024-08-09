@@ -120,7 +120,6 @@ static void SpriteCB_UnusedBattleInit(struct Sprite *sprite);
 static void SpriteCB_UnusedBattleInit_Main(struct Sprite *sprite);
 static u32 Crc32B (const u8 *data, u32 size);
 static u32 GeneratePartyHash(const struct Trainer *trainer, u32 i);
-static s32 Factorial(s32);
 
 EWRAM_DATA u16 gBattle_BG0_X = 0;
 EWRAM_DATA u16 gBattle_BG0_Y = 0;
@@ -3808,8 +3807,6 @@ static void TryDoEventsBeforeFirstTurn(void)
         }
         #endif // TESTING
 
-        gBattleStruct->speedTieBreaks = RandomUniform(RNG_SPEED_TIE, 0, Factorial(MAX_BATTLERS_COUNT) - 1);
-
         for (i = 0; i < gBattlersCount; i++)
             gBattlerByTurnOrder[i] = i;
         for (i = 0; i < gBattlersCount - 1; i++)
@@ -3979,8 +3976,6 @@ static void HandleEndTurn_ContinueBattle(void)
 void BattleTurnPassed(void)
 {
     s32 i;
-
-    gBattleStruct->speedTieBreaks = RandomUniform(RNG_SPEED_TIE, 0, Factorial(MAX_BATTLERS_COUNT) - 1);
 
     TurnValuesCleanUp(TRUE);
     if (gBattleOutcome == 0)
@@ -4870,10 +4865,9 @@ s32 GetWhichBattlerFasterArgs(u32 battler1, u32 battler2, bool32 ignoreChosenMov
             strikesFirst = 1;
         else
         {
-            if (speedBattler1 == speedBattler2)
+            if (speedBattler1 == speedBattler2 && Random() & 1)
             {
-                // same speeds, same priorities
-                strikesFirst = 0;
+                strikesFirst = 0; // same speeds, same priorities
             }
             else if (speedBattler1 < speedBattler2)
             {
@@ -4904,7 +4898,7 @@ s32 GetWhichBattlerFasterArgs(u32 battler1, u32 battler2, bool32 ignoreChosenMov
     return strikesFirst;
 }
 
-s32 GetWhichBattlerFasterOrTies(u32 battler1, u32 battler2, bool32 ignoreChosenMoves)
+s32 GetWhichBattlerFaster(u32 battler1, u32 battler2, bool32 ignoreChosenMoves)
 {
     s32 priority1 = 0, priority2 = 0;
     u32 ability1 = GetBattlerAbility(battler1);
@@ -4922,60 +4916,8 @@ s32 GetWhichBattlerFasterOrTies(u32 battler1, u32 battler2, bool32 ignoreChosenM
             priority2 = GetChosenMovePriority(battler2);
     }
 
-    return GetWhichBattlerFasterArgs(
-        battler1, battler2,
-        ignoreChosenMoves,
-        ability1, ability2,
-        holdEffectBattler1, holdEffectBattler2,
-        speedBattler1, speedBattler2,
-        priority1, priority2
-    );
-}
-
-// 24 == MAX_BATTLERS_COUNT!.
-// These are the possible orders if all the battlers speed tie. An order
-// is chosen at the start of the turn.
-static const u8 sBattlerOrders[24][4] =
-{
-    { 0, 1, 2, 3 },
-    { 0, 1, 3, 2 },
-    { 0, 2, 1, 3 },
-    { 0, 2, 3, 1 },
-    { 0, 3, 1, 2 },
-    { 0, 3, 2, 1 },
-    { 1, 0, 2, 3 },
-    { 1, 0, 3, 2 },
-    { 1, 2, 0, 3 },
-    { 1, 2, 3, 0 },
-    { 1, 3, 0, 2 },
-    { 1, 3, 2, 0 },
-    { 2, 0, 1, 3 },
-    { 2, 0, 3, 1 },
-    { 2, 1, 0, 3 },
-    { 2, 1, 3, 0 },
-    { 2, 3, 0, 1 },
-    { 2, 3, 1, 0 },
-    { 3, 0, 1, 2 },
-    { 3, 0, 2, 1 },
-    { 3, 1, 0, 2 },
-    { 3, 1, 2, 0 },
-    { 3, 2, 0, 1 },
-    { 3, 2, 1, 0 },
-};
-
-s32 GetWhichBattlerFaster(u32 battler1, u32 battler2, bool32 ignoreChosenMoves)
-{
-    s32 strikesFirst = GetWhichBattlerFasterOrTies(battler1, battler2, ignoreChosenMoves);
-    if (strikesFirst == 0)
-    {
-        s32 order1 = sBattlerOrders[gBattleStruct->speedTieBreaks][battler1];
-        s32 order2 = sBattlerOrders[gBattleStruct->speedTieBreaks][battler2];
-        if (order1 < order2)
-            strikesFirst = 1;
-        else
-            strikesFirst = -1;
-    }
-    return strikesFirst;
+    return GetWhichBattlerFasterArgs(battler1, battler2, ignoreChosenMoves, ability1, ability2,
+                                     holdEffectBattler1, holdEffectBattler2, speedBattler1, speedBattler2, priority1, priority2);
 }
 
 static void SetActionsAndBattlersTurnOrder(void)
@@ -5947,12 +5889,4 @@ bool32 IsWildMonSmart(void)
 #else
     return FALSE;
 #endif
-}
-
-static s32 Factorial(s32 n)
-{
-    s32 f = 1, i;
-    for (i = 2; i <= n; i++)
-        f *= i;
-    return f;
 }
