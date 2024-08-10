@@ -22,6 +22,11 @@
       "map": "MAP_ROUTE101",
       "offset": 0,
       "direction": "up"
+    },
+    {
+      "map": "MAP_SOUTH_OF_LITTLEROOT",
+      "offset": 0,
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -234,15 +239,6 @@
       "var": "VAR_LITTLEROOT_TOWN_STATE",
       "var_value": "3",
       "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger1"
-    },
-    {
-      "type": "trigger",
-      "x": 20,
-      "y": 9,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
     }
   ],
   "bg_events": [

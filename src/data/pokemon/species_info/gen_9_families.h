@@ -913,6 +913,14 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_Pawmi,
         .iconPalIndex = 0,
         FOOTPRINT(Pawmi)
+        OVERWORLD(
+            sPicTable_Pawmi,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Pawmi,
+            gShinyOverworldPalette_Pawmi
+        )
         .levelUpLearnset = sPawmiLevelUpLearnset,
         .teachableLearnset = sPawmiTeachableLearnset,
         .eggMoveLearnset = sPawmiEggMoveLearnset,
@@ -967,6 +975,14 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_Pawmo,
         .iconPalIndex = 0,
         FOOTPRINT(Pawmo)
+        OVERWORLD(
+            sPicTable_Pawmo,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Pawmo,
+            gShinyOverworldPalette_Pawmo
+        )
         .levelUpLearnset = sPawmoLevelUpLearnset,
         .teachableLearnset = sPawmoTeachableLearnset,
         .evolutions = EVOLUTION({EVO_OVERWORLD_STEPS, 1000, SPECIES_PAWMOT}),
