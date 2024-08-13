@@ -25,8 +25,13 @@
     },
     {
       "map": "MAP_SOUTH_OF_LITTLEROOT",
-      "offset": 0,
+      "offset": -22,
       "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE_E1N",
+      "offset": -40,
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -239,6 +244,42 @@
       "var": "VAR_LITTLEROOT_TOWN_STATE",
       "var_value": "3",
       "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger1"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "0",
+      "script": "LittlerootTown_EventScript_DangerousWithoutPokemonEast"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "0",
+      "script": "LittlerootTown_EventScript_DangerousWithoutPokemonEast"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "0",
+      "script": "LittlerootTown_EventScript_DangerousWithoutPokemonSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "0",
+      "script": "LittlerootTown_EventScript_DangerousWithoutPokemonEast"
     }
   ],
   "bg_events": [

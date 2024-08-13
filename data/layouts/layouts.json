@@ -4464,12 +4464,32 @@
     {
       "id": "LAYOUT_SOUTH_OF_LITTLEROOT",
       "name": "SouthOfLittleroot_Layout",
-      "width": 22,
+      "width": 44,
       "height": 19,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/SouthOfLittleroot/border.bin",
       "blockdata_filepath": "data/layouts/SouthOfLittleroot/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_E1N",
+      "name": "RouteE1N_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/RouteE1N/border.bin",
+      "blockdata_filepath": "data/layouts/RouteE1N/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_E2",
+      "name": "RouteE2_Layout",
+      "width": 20,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/RouteE2/border.bin",
+      "blockdata_filepath": "data/layouts/RouteE2/map.bin"
     }
   ]
 }

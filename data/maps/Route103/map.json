@@ -15,13 +15,23 @@
   "connections": [
     {
       "map": "MAP_OLDALE_TOWN",
-      "offset": 0,
+      "offset": -2,
       "direction": "down"
     },
     {
       "map": "MAP_ROUTE110",
       "offset": -60,
       "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE_E1N",
+      "offset": 20,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE_E2",
+      "offset": 40,
+      "direction": "down"
     }
   ],
   "object_events": [

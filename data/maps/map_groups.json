@@ -98,7 +98,9 @@
     "NewMap3",
     "WestOfLittleroot",
     "NewMap4",
-    "SouthOfLittleroot"
+    "SouthOfLittleroot",
+    "RouteE1N",
+    "RouteE2"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

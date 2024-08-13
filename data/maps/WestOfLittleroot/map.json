@@ -22,6 +22,16 @@
       "map": "MAP_SOUTH_OF_LITTLEROOT",
       "offset": 22,
       "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE_E1N",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE101",
+      "offset": -20,
+      "direction": "left"
     }
   ],
   "object_events": [
