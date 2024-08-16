@@ -13966,17 +13966,17 @@
               },
               {
                 "min_level": 2,
-                "max_level": 15,
+                "max_level": 8,
                 "species": "SPECIES_SALANDIT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 2,
+                "max_level": 8,
                 "species": "SPECIES_SQUIRTLE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 2,
+                "max_level": 15,
                 "species": "SPECIES_TAUROS_PALDEAN_AQUA_BREED"
               }
             ]
