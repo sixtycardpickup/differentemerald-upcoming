@@ -1,0 +1,44 @@
+{
+  "id": "MAP_ROUTE102N",
+  "name": "Route102N",
+  "layout": "LAYOUT_ROUTE102N",
+  "music": "MUS_RG_ROUTE3",
+  "region_map_section": "MAPSEC_ROUTE_102",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE102",
+      "offset": -32,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE103",
+      "offset": 0,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_OLDALE_TOWN",
+      "offset": 22,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

@@ -2976,6 +2976,9 @@ $(POKEMONGFXDIR)/noivern/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/xerneas/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 8 -mheight 8
 
+$(POKEMONGFXDIR)/xerneas/active/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 8 -mheight 8
+
 $(POKEMONGFXDIR)/yveltal/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 8 -mheight 8
 
@@ -3547,6 +3550,12 @@ $(POKEMONGFXDIR)/calyrex/shadow_rider/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/calyrex/ice_rider/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(POKEMONGFXDIR)/pawmi/overworld.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(POKEMONGFXDIR)/pawmo/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/zapdos/galarian/overworld.4bpp: %.4bpp: %.png

@@ -4465,9 +4465,9 @@ static const struct SpriteFrameImage sPicTable_Noivern[] = {
 static const struct SpriteFrameImage sPicTable_XerneasNeutral[] = {
     overworld_ascending_frames(gObjectEventPic_XerneasNeutral, 4, 4),
 };
-/*static const struct SpriteFrameImage sPicTable_XerneasActive[] = {
+static const struct SpriteFrameImage sPicTable_XerneasActive[] = {
     overworld_ascending_frames(gObjectEventPic_XerneasActive, 4, 4),
-};*/
+};
 #endif //P_FAMILY_XERNEAS
 
 #if P_FAMILY_YVELTAL
@@ -5625,15 +5625,15 @@ static const struct SpriteFrameImage sPicTable_Lokix[] = {
 #endif //P_FAMILY_NYMBLE
 
 #if P_FAMILY_PAWMI
-/*static const struct SpriteFrameImage sPicTable_Pawmi[] = {
+static const struct SpriteFrameImage sPicTable_Pawmi[] = {
     overworld_ascending_frames(gObjectEventPic_Pawmi, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Pawmo[] = {
     overworld_ascending_frames(gObjectEventPic_Pawmo, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Pawmot[] = {
-    overworld_ascending_frames(gObjectEventPic_Pawmot, 4, 4),
-};*/
+//static const struct SpriteFrameImage sPicTable_Pawmot[] = {
+    //overworld_ascending_frames(gObjectEventPic_Pawmot, 4, 4),
+//};*/
 #endif //P_FAMILY_PAWMI
 
 #if P_FAMILY_TANDEMAUS

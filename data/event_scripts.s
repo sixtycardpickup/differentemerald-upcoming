@@ -1082,3 +1082,15 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/NewMap3/scripts.inc"
 
 	.include "data/maps/WestOfLittleroot/scripts.inc"
+
+	.include "data/maps/NewMap4/scripts.inc"
+
+	.include "data/maps/SouthOfLittleroot/scripts.inc"
+
+	.include "data/maps/RouteE1N/scripts.inc"
+
+	.include "data/maps/RouteE2/scripts.inc"
+
+	.include "data/maps/RouteW1/scripts.inc"
+
+	.include "data/maps/Route102N/scripts.inc"

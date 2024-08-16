@@ -9510,9 +9510,29 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Treecko
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Slowpoke
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe
+Nature: Quiet
+Ability: Oblivious
+
+Yanma
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Modest 
+Ability: Speed Boost
+
+Croagunk
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Dry Skin
+
+Orthworm
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Impish
+Ability: Earth Eater
 
 === TRAINER_BRENDAN_ROUTE_110_MUDKIP ===
 Name: BRENDAN
@@ -9531,9 +9551,9 @@ Wingull
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Grovyle
+Slowpoke
 Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe
 
 === TRAINER_BRENDAN_ROUTE_119_MUDKIP ===
 Name: BRENDAN
@@ -9552,9 +9572,9 @@ Pelipper
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Grovyle
+Slowking
 Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe
 
 === TRAINER_BRENDAN_ROUTE_103_TREECKO ===
 Name: BRENDAN
@@ -9565,9 +9585,29 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Setup First Turn
 
-Torchic
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Pawmi
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Iron Fist
+
+Dewpider
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Careful 
+Ability: Water Bubble
+
+Croagunk
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Adamant
+Ability: Dry Skin
+
+Bombirdier
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Rocky Payload
 
 === TRAINER_BRENDAN_ROUTE_110_TREECKO ===
 Name: BRENDAN
@@ -9620,9 +9660,28 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Mudkip
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sandile
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Adamant
+
+Bounsweet
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Adamant 
+Ability: Oblivious
+
+Croagunk
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Dry Skin
+
+Klawf
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Impish
+Ability: Anger Shell
 
 === TRAINER_BRENDAN_ROUTE_110_TORCHIC ===
 Name: BRENDAN
@@ -9675,9 +9734,29 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Treecko
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Slowpoke
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe
+Nature: Quiet
+Ability: Oblivious
+
+Yanma
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Modest 
+Ability: Speed Boost
+
+Croagunk
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Dry Skin
+
+Orthworm
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Impish
+Ability: Earth Eater
 
 === TRAINER_MAY_ROUTE_110_MUDKIP ===
 Name: MAY
@@ -9730,9 +9809,29 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Torchic
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Pawmi
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Iron Fist
+
+Dewpider
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Careful 
+Ability: Water Bubble
+
+Croagunk
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Adamant
+Ability: Dry Skin
+
+Bombirdier
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Rocky Payload
 
 === TRAINER_MAY_ROUTE_110_TREECKO ===
 Name: MAY
@@ -9785,9 +9884,28 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Mudkip
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sandile
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Adamant
+
+Bounsweet
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Adamant 
+Ability: Oblivious
+
+Croagunk
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Dry Skin
+
+Klawf
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Impish
+Ability: Anger Shell
 
 === TRAINER_MAY_ROUTE_110_TORCHIC ===
 Name: MAY

@@ -499,12 +499,12 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_GroudonReflection,     OBJ_EVENT_PAL_TAG_GROUDON_REFLECTION},
     {gObjectEventPal_SubmarineShadow,       OBJ_EVENT_PAL_TAG_SUBMARINE_SHADOW},
     {gObjectEventPal_Poochyena,             OBJ_EVENT_PAL_TAG_POOCHYENA},
-    {gObjectEventPal_RedLeaf,               OBJ_EVENT_PAL_TAG_RED_LEAF},
+    {gObjectEventPal_Npc5,                  OBJ_EVENT_PAL_TAG_NPC_5},
     {gObjectEventPal_Deoxys,                OBJ_EVENT_PAL_TAG_DEOXYS},
     {gObjectEventPal_BirthIslandStone,      OBJ_EVENT_PAL_TAG_BIRTH_ISLAND_STONE},
     {gObjectEventPal_HoOh,                  OBJ_EVENT_PAL_TAG_HO_OH},
     {gObjectEventPal_Lugia,                 OBJ_EVENT_PAL_TAG_LUGIA},
-    {gObjectEventPal_RubySapphireBrendan,   OBJ_EVENT_PAL_TAG_RS_BRENDAN},
+    {gObjectEventPal_Npc5Reflection,        OBJ_EVENT_PAL_TAG_NPC_5_REFLECTION},
     {gObjectEventPal_RubySapphireMay,       OBJ_EVENT_PAL_TAG_RS_MAY},
 #if OW_FOLLOWERS_POKEBALLS
     {gObjectEventPal_MasterBall,            OBJ_EVENT_PAL_TAG_BALL_MASTER},
@@ -646,11 +646,11 @@ static const u16 sReflectionPaletteTags_Npc3[] = { // Only used by the Route 120
     OBJ_EVENT_PAL_TAG_NPC_3_REFLECTION,
 };
 
-static const u16 sReflectionPaletteTags_RedLeaf[] = {
-    OBJ_EVENT_PAL_TAG_RED_LEAF,
-    OBJ_EVENT_PAL_TAG_RED_LEAF,
-    OBJ_EVENT_PAL_TAG_RED_LEAF,
-    OBJ_EVENT_PAL_TAG_RED_LEAF,
+static const u16 sReflectionPaletteTags_Npc5[] = {
+    OBJ_EVENT_PAL_TAG_NPC_5_REFLECTION,
+    OBJ_EVENT_PAL_TAG_NPC_5_REFLECTION,
+    OBJ_EVENT_PAL_TAG_NPC_5_REFLECTION,
+    OBJ_EVENT_PAL_TAG_NPC_5_REFLECTION,
 };
 
 static const struct PairedPalettes sSpecialObjectReflectionPaletteSets[] = {
@@ -666,7 +666,7 @@ static const struct PairedPalettes sSpecialObjectReflectionPaletteSets[] = {
     {OBJ_EVENT_PAL_TAG_GROUDON,          sReflectionPaletteTags_Groudon},
     {OBJ_EVENT_PAL_TAG_NPC_3,            sReflectionPaletteTags_Npc3},
     {OBJ_EVENT_PAL_TAG_SUBMARINE_SHADOW, sReflectionPaletteTags_SubmarineShadow},
-    {OBJ_EVENT_PAL_TAG_RED_LEAF,         sReflectionPaletteTags_RedLeaf},
+    {OBJ_EVENT_PAL_TAG_NPC_5_REFLECTION, sReflectionPaletteTags_Npc5},
     {OBJ_EVENT_PAL_TAG_NONE,             NULL},
 };
 
@@ -677,10 +677,12 @@ static const u16 sObjectPaletteTags0[] = {
     [PALSLOT_NPC_2]             = OBJ_EVENT_PAL_TAG_NPC_2,
     [PALSLOT_NPC_3]             = OBJ_EVENT_PAL_TAG_NPC_3,
     [PALSLOT_NPC_4]             = OBJ_EVENT_PAL_TAG_NPC_4,
+    [PALSLOT_NPC_5]             = OBJ_EVENT_PAL_TAG_NPC_5,
     [PALSLOT_NPC_1_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_1_REFLECTION,
     [PALSLOT_NPC_2_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_2_REFLECTION,
     [PALSLOT_NPC_3_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_3_REFLECTION,
     [PALSLOT_NPC_4_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_4_REFLECTION,
+    [PALSLOT_NPC_5_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_5_REFLECTION,
 };
 
 static const u16 sObjectPaletteTags1[] = {
@@ -690,10 +692,12 @@ static const u16 sObjectPaletteTags1[] = {
     [PALSLOT_NPC_2]             = OBJ_EVENT_PAL_TAG_NPC_2,
     [PALSLOT_NPC_3]             = OBJ_EVENT_PAL_TAG_NPC_3,
     [PALSLOT_NPC_4]             = OBJ_EVENT_PAL_TAG_NPC_4,
+    [PALSLOT_NPC_5]             = OBJ_EVENT_PAL_TAG_NPC_5,
     [PALSLOT_NPC_1_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_1_REFLECTION,
     [PALSLOT_NPC_2_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_2_REFLECTION,
     [PALSLOT_NPC_3_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_3_REFLECTION,
     [PALSLOT_NPC_4_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_4_REFLECTION,
+    [PALSLOT_NPC_5_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_5_REFLECTION,
 };
 
 static const u16 sObjectPaletteTags2[] = {
@@ -703,10 +707,12 @@ static const u16 sObjectPaletteTags2[] = {
     [PALSLOT_NPC_2]             = OBJ_EVENT_PAL_TAG_NPC_2,
     [PALSLOT_NPC_3]             = OBJ_EVENT_PAL_TAG_NPC_3,
     [PALSLOT_NPC_4]             = OBJ_EVENT_PAL_TAG_NPC_4,
+    [PALSLOT_NPC_5]             = OBJ_EVENT_PAL_TAG_NPC_5,
     [PALSLOT_NPC_1_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_1_REFLECTION,
     [PALSLOT_NPC_2_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_2_REFLECTION,
     [PALSLOT_NPC_3_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_3_REFLECTION,
     [PALSLOT_NPC_4_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_4_REFLECTION,
+    [PALSLOT_NPC_5_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_5_REFLECTION,
 };
 
 static const u16 sObjectPaletteTags3[] = {
@@ -716,10 +722,12 @@ static const u16 sObjectPaletteTags3[] = {
     [PALSLOT_NPC_2]             = OBJ_EVENT_PAL_TAG_NPC_2,
     [PALSLOT_NPC_3]             = OBJ_EVENT_PAL_TAG_NPC_3,
     [PALSLOT_NPC_4]             = OBJ_EVENT_PAL_TAG_NPC_4,
+    [PALSLOT_NPC_5]             = OBJ_EVENT_PAL_TAG_NPC_5,
     [PALSLOT_NPC_1_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_1_REFLECTION,
     [PALSLOT_NPC_2_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_2_REFLECTION,
     [PALSLOT_NPC_3_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_3_REFLECTION,
     [PALSLOT_NPC_4_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_4_REFLECTION,
+    [PALSLOT_NPC_5_REFLECTION]  = OBJ_EVENT_PAL_TAG_NPC_5_REFLECTION,
 };
 
 static const u16 *const sObjectPaletteTagSets[] = {

@@ -14,20 +14,35 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
+      "map": "MAP_WEST_OF_LITTLEROOT",
+      "offset": 0,
+      "direction": "right"
+    },
+    {
       "map": "MAP_ROUTE101",
       "offset": 0,
       "direction": "up"
     },
     {
-      "map": "MAP_WEST_OF_LITTLEROOT",
-      "offset": 0,
+      "map": "MAP_SOUTH_OF_LITTLEROOT",
+      "offset": -22,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE_E1N",
+      "offset": -40,
       "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE_W1",
+      "offset": -20,
+      "direction": "left"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_TWIN",
-      "x": 16,
+      "x": 18,
       "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -40,7 +55,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-      "x": 9,
+      "x": 11,
       "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -53,7 +68,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_2",
-      "x": 13,
+      "x": 15,
       "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
@@ -66,7 +81,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MOM",
-      "x": 5,
+      "x": 7,
       "y": 8,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -79,7 +94,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TRUCK",
-      "x": 2,
+      "x": 4,
       "y": 11,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -92,7 +107,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TRUCK",
-      "x": 10,
+      "x": 12,
       "y": 6,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -105,7 +120,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
-      "x": 13,
+      "x": 15,
       "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -118,7 +133,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
-      "x": 14,
+      "x": 16,
       "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -132,21 +147,21 @@
   ],
   "warp_events": [
     {
-      "x": 14,
+      "x": 16,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F",
       "dest_warp_id": "1"
     },
     {
-      "x": 5,
+      "x": 7,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F",
       "dest_warp_id": "1"
     },
     {
-      "x": 7,
+      "x": 9,
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB",
@@ -156,7 +171,7 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 10,
+      "x": 12,
       "y": 1,
       "elevation": 3,
       "var": "VAR_LITTLEROOT_TOWN_STATE",
@@ -165,7 +180,7 @@
     },
     {
       "type": "trigger",
-      "x": 11,
+      "x": 13,
       "y": 1,
       "elevation": 3,
       "var": "VAR_LITTLEROOT_TOWN_STATE",
@@ -174,7 +189,7 @@
     },
     {
       "type": "trigger",
-      "x": 11,
+      "x": 13,
       "y": 1,
       "elevation": 3,
       "var": "VAR_LITTLEROOT_TOWN_STATE",
@@ -183,7 +198,7 @@
     },
     {
       "type": "trigger",
-      "x": 8,
+      "x": 10,
       "y": 9,
       "elevation": 3,
       "var": "VAR_LITTLEROOT_TOWN_STATE",
@@ -192,7 +207,7 @@
     },
     {
       "type": "trigger",
-      "x": 9,
+      "x": 11,
       "y": 9,
       "elevation": 3,
       "var": "VAR_LITTLEROOT_TOWN_STATE",
@@ -201,7 +216,7 @@
     },
     {
       "type": "trigger",
-      "x": 10,
+      "x": 12,
       "y": 9,
       "elevation": 3,
       "var": "VAR_LITTLEROOT_TOWN_STATE",
@@ -210,7 +225,7 @@
     },
     {
       "type": "trigger",
-      "x": 11,
+      "x": 13,
       "y": 9,
       "elevation": 3,
       "var": "VAR_LITTLEROOT_TOWN_STATE",
@@ -219,7 +234,7 @@
     },
     {
       "type": "trigger",
-      "x": 10,
+      "x": 12,
       "y": 2,
       "elevation": 3,
       "var": "VAR_LITTLEROOT_TOWN_STATE",
@@ -228,18 +243,54 @@
     },
     {
       "type": "trigger",
-      "x": 11,
+      "x": 13,
       "y": 2,
       "elevation": 3,
       "var": "VAR_LITTLEROOT_TOWN_STATE",
       "var_value": "3",
       "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger1"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "0",
+      "script": "LittlerootTown_EventScript_DangerousWithoutPokemonEast"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "0",
+      "script": "LittlerootTown_EventScript_DangerousWithoutPokemonEast"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "0",
+      "script": "LittlerootTown_EventScript_DangerousWithoutPokemonSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "0",
+      "script": "LittlerootTown_EventScript_DangerousWithoutPokemonEast"
     }
   ],
   "bg_events": [
     {
       "type": "sign",
-      "x": 15,
+      "x": 17,
       "y": 13,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -247,7 +298,7 @@
     },
     {
       "type": "sign",
-      "x": 6,
+      "x": 8,
       "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -255,7 +306,7 @@
     },
     {
       "type": "sign",
-      "x": 7,
+      "x": 9,
       "y": 7,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -263,7 +314,7 @@
     },
     {
       "type": "sign",
-      "x": 12,
+      "x": 14,
       "y": 8,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

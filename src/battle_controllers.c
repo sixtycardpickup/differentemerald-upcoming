@@ -80,7 +80,7 @@ void SetUpBattleVarsAndBirchZigzagoon(void)
     if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE)
     {
         ZeroEnemyPartyMons();
-        CreateMon(&gEnemyParty[0], SPECIES_ZIGZAGOON, 2, USE_RANDOM_IVS, 0, 0, OT_ID_PLAYER_ID, 0);
+        CreateMon(&gEnemyParty[0], SPECIES_ZIGZAGOON_GALARIAN, 3, USE_RANDOM_IVS, 0, 0, OT_ID_PLAYER_ID, 0);
         i = 0;
         SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &i);
     }
@@ -610,9 +610,10 @@ static void InitLinkBtlControllers(void)
 bool32 IsValidForBattle(struct Pokemon *mon)
 {
     u32 species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG);
-    return (species != SPECIES_NONE && species != SPECIES_EGG
-             && GetMonData(mon, MON_DATA_HP) != 0
-             && GetMonData(mon, MON_DATA_IS_EGG) == FALSE);
+    return (species != SPECIES_NONE 
+	 && species != SPECIES_EGG
+         && GetMonData(mon, MON_DATA_HP) != 0
+         && GetMonData(mon, MON_DATA_IS_EGG) == FALSE);
 }
 
 static void SetBattlePartyIds(void)
