@@ -67,7 +67,7 @@ InsideOfTruck_EventScript_SetIntroFlagsMale::
 # 34 "data/maps/InsideOfTruck/scripts.pory"
 	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 1
 # 35 "data/maps/InsideOfTruck/scripts.pory"
-	setdynamicwarp MAP_LITTLEROOT_TOWN, 5, 10
+	setdynamicwarp MAP_LITTLEROOT_TOWN, 5, 11
 # 36 "data/maps/InsideOfTruck/scripts.pory"
 	releaseall
 # 37 "data/maps/InsideOfTruck/scripts.pory"
@@ -93,7 +93,7 @@ InsideOfTruck_EventScript_SetIntroFlagsFemale::
 # 47 "data/maps/InsideOfTruck/scripts.pory"
 	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 1
 # 48 "data/maps/InsideOfTruck/scripts.pory"
-	setdynamicwarp MAP_LITTLEROOT_TOWN, 13, 5
+	setdynamicwarp MAP_LITTLEROOT_TOWN, 13, 6
 # 49 "data/maps/InsideOfTruck/scripts.pory"
 	releaseall
 # 50 "data/maps/InsideOfTruck/scripts.pory"
