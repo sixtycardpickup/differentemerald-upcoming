@@ -9510,10 +9510,29 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-SLOWPOKE
-Level: 5
+Slowpoke
+Level: 10
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe
 Nature: Quiet
+Ability: Oblivious
+
+Yanma
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Modest 
+Ability: Speed Boost
+
+Croagunk
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Dry Skin
+
+Orthworm
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Impish
+Ability: Earth Eater
 
 === TRAINER_BRENDAN_ROUTE_110_MUDKIP ===
 Name: BRENDAN
@@ -9567,9 +9586,28 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Setup First Turn
 
 Pawmi
-Level: 5
+Level: 10
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
+Ability: Iron Fist
+
+Dewpider
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Careful 
+Ability: Water Bubble
+
+Croagunk
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Adamant
+Ability: Dry Skin
+
+Bombirdier
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Rocky Payload
 
 === TRAINER_BRENDAN_ROUTE_110_TREECKO ===
 Name: BRENDAN
@@ -9623,9 +9661,27 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Sandile
-Level: 5
+Level: 10
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Adamant
+
+Bounsweet
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Adamant 
+Ability: Oblivious
+
+Croagunk
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Dry Skin
+
+Klawf
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Impish
+Ability: Anger Shell
 
 === TRAINER_BRENDAN_ROUTE_110_TORCHIC ===
 Name: BRENDAN
@@ -9678,10 +9734,29 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-SLOWPOKE
-Level: 5
+Slowpoke
+Level: 10
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe
 Nature: Quiet
+Ability: Oblivious
+
+Yanma
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Modest 
+Ability: Speed Boost
+
+Croagunk
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Dry Skin
+
+Orthworm
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Impish
+Ability: Earth Eater
 
 === TRAINER_MAY_ROUTE_110_MUDKIP ===
 Name: MAY
@@ -9735,9 +9810,28 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pawmi
-Level: 5
+Level: 10
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
+Ability: Iron Fist
+
+Dewpider
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Careful 
+Ability: Water Bubble
+
+Croagunk
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Adamant
+Ability: Dry Skin
+
+Bombirdier
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Rocky Payload
 
 === TRAINER_MAY_ROUTE_110_TREECKO ===
 Name: MAY
@@ -9791,9 +9885,27 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Sandile
-Level: 5
+Level: 10
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Adamant
+
+Bounsweet
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Adamant 
+Ability: Oblivious
+
+Croagunk
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Dry Skin
+
+Klawf
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Impish
+Ability: Anger Shell
 
 === TRAINER_MAY_ROUTE_110_TORCHIC ===
 Name: MAY

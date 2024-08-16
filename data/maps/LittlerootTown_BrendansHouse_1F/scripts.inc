@@ -597,7 +597,7 @@ PlayersHouse_1F_Text_MoversPokemonGoSetClock:
 # 299 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	.string "This is so convenient!\p"
 # 300 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	.string "{PLAYER}, they even carried the.\n"
+	.string "{PLAYER}, they even carried the\n"
 # 301 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	.string "MOVING TRUCK up here, without being\l"
 # 302 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"

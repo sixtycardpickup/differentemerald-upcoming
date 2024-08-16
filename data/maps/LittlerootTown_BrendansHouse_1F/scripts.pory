@@ -297,7 +297,7 @@ PlayersHouse_1F_Text_MoversPokemonGoSetClock:
 	.string "MR. HALFLING's POKéMON do all the work\n"
 	.string "of moving us in and cleaning up after!\l"
 	.string "This is so convenient!\p"
-	.string "{PLAYER}, they even carried the.\n"
+	.string "{PLAYER}, they even carried the\n"
 	.string "MOVING TRUCK up here, without being\l"
 	.string "asked to, told to, or given permission.\p"
 	.string "STOUT bought you a new clock. It is,\n"

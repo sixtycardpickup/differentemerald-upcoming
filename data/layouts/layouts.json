@@ -175,7 +175,7 @@
       "id": "LAYOUT_ROUTE102",
       "name": "Route102_Layout",
       "width": 50,
-      "height": 20,
+      "height": 24,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route102/border.bin",
@@ -184,7 +184,7 @@
     {
       "id": "LAYOUT_ROUTE103",
       "name": "Route103_Layout",
-      "width": 80,
+      "width": 82,
       "height": 22,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
@@ -4490,6 +4490,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/RouteE2/border.bin",
       "blockdata_filepath": "data/layouts/RouteE2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_W1",
+      "name": "RouteW1_Layout",
+      "width": 22,
+      "height": 42,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/RouteW1/border.bin",
+      "blockdata_filepath": "data/layouts/RouteW1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE102N",
+      "name": "Route102N_Layout",
+      "width": 18,
+      "height": 18,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route102N/border.bin",
+      "blockdata_filepath": "data/layouts/Route102N/map.bin"
     }
   ]
 }

@@ -35,7 +35,12 @@
     },
     {
       "map": "MAP_ROUTE102",
-      "offset": -20,
+      "offset": -24,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE_W1",
+      "offset": 0,
       "direction": "left"
     }
   ],
