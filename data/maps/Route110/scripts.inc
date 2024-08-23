@@ -411,17 +411,17 @@ Route110_EventScript_MayBattle::
 	end
 
 Route110_EventScript_MayBattleTreecko::
-	trainerbattle_no_intro TRAINER_MAY_ROUTE_110_TREECKO, Route110_Text_MayDefeated
+	trainerbattle_no_intro TRAINER_MAY_ROUTE_110_SLOWPOKE, Route110_Text_MayDefeated
 	goto Route110_EventScript_MayDefeated
 	end
 
 Route110_EventScript_MayBattleTorchic::
-	trainerbattle_no_intro TRAINER_MAY_ROUTE_110_TORCHIC, Route110_Text_MayDefeated
+	trainerbattle_no_intro TRAINER_MAY_ROUTE_110_PAWMI, Route110_Text_MayDefeated
 	goto Route110_EventScript_MayDefeated
 	end
 
 Route110_EventScript_MayBattleMudkip::
-	trainerbattle_no_intro TRAINER_MAY_ROUTE_110_MUDKIP, Route110_Text_MayDefeated
+	trainerbattle_no_intro TRAINER_MAY_ROUTE_110_SANDILE, Route110_Text_MayDefeated
 	goto Route110_EventScript_MayDefeated
 	end
 
@@ -441,17 +441,17 @@ Route110_EventScript_BrendanBattle::
 	end
 
 Route110_EventScript_BrendanBattleTreecko::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_110_TREECKO, Route110_Text_BrendanDefeated
+	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_110_SLOWPOKE, Route110_Text_BrendanDefeated
 	goto Route110_EventScript_BrendanDefeated
 	end
 
 Route110_EventScript_BrendanBattleTorchic::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_110_TORCHIC, Route110_Text_BrendanDefeated
+	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_110_PAWMI, Route110_Text_BrendanDefeated
 	goto Route110_EventScript_BrendanDefeated
 	end
 
 Route110_EventScript_BrendanBattleMudkip::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_110_MUDKIP, Route110_Text_BrendanDefeated
+	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_110_SANDILE, Route110_Text_BrendanDefeated
 	goto Route110_EventScript_BrendanDefeated
 	end
 
@@ -965,7 +965,7 @@ Route110_Text_ThereIsNoRecord:
 	.string "challenge. There is no record…$"
 
 Route110_Text_ImagineSeeingYouHere:
-	.string "PROF. BIRCH: Oh, {PLAYER}{KUN}!\n"
+	.string "STOUT HALFLING: Oh, {PLAYER}{KUN}!\n"
 	.string "Imagine seeing you here!\p"
 	.string "And where might my {RIVAL} be?$"
 
@@ -982,13 +982,13 @@ Route110_Text_HeardYouInstallMatchCall:
 	.string "… … … … … …$"
 
 Route110_Text_RegisteredBirchInPokenav:
-	.string "Registered PROF. BIRCH\n"
+	.string "Registered STOUT HALFLING\n"
 	.string "in the POKéNAV.$"
 
 Route110_Text_KeepAnEyeOutForRival:
-	.string "PROF. BIRCH: {PLAYER}{KUN}…\p"
-	.string "Please keep an eye out for my {RIVAL}.\n"
-	.string "… … … … … …\p"
+	.string "STOUT HALFLING: {PLAYER}{KUN}…\p"
+	.string "Please keep an eye out for MY BOY.\n"
+	.string "{RIVAL}… … … … … …\p"
 	.string "Well, I had better get going.\n"
 	.string "See you again, {PLAYER}{KUN}!$"
 

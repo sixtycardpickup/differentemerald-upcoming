@@ -896,12 +896,12 @@ gText_SelectWithoutRegisteredItem::
 	.string "registered to SELECT for easy use.$"
 
 gText_PokemonTrainerSchoolEmail::
-	.string "There's an e-mail from POKéMON TRAINER\n"
+	.string "There's an e-mail from POKé-MON TRAINER\n"
 	.string "SCHOOL.\p"
 	.string "… … … … … …\p"
-	.string "A POKéMON may learn up to four moves.\p"
+	.string "A POKé-MON may learn up to four moves.\p"
 	.string "A TRAINER's expertise is tested on the\n"
-	.string "move sets chosen for POKéMON.\p"
+	.string "move sets chosen for POKé-MON.\p"
 	.string "… … … … … …$"
 
 gText_PlayerHouseBootPC::
@@ -916,24 +916,24 @@ gText_UnusedNicknameReceivedPokemon::
 
 gText_PlayerWhitedOut::
 	.string "{PLAYER} is out of usable\n"
-	.string "POKéMON!\p{PLAYER} whited out!$"
+	.string "POKé-MON!\p{PLAYER} whited out!$"
 
 gText_FirstShouldRestoreMonsHealth::
 	.string "First, you should restore your\n"
-	.string "POKéMON to full health.$"
+	.string "POKé-MON to full health.$"
 
 gText_MonsHealedShouldBuyPotions::
-	.string "Your POKéMON have been healed\n"
+	.string "Your POKé-MON have been healed\n"
 	.string "to perfect health.\p"
-	.string "If your POKéMON's energy, HP,\n"
+	.string "If your POKé-MON's energy, HP,\n"
 	.string "is down, please come see us.\p"
 	.string "If you're planning to go far in the\n"
 	.string "field, you should buy some POTIONS\l"
-	.string "at the POKéMON MART.\p"
+	.string "at the POKé-MON MART.\p"
 	.string "We hope you excel!$"
 
 gText_MonsHealed::
-	.string "Your POKéMON have been healed\n"
+	.string "Your POKé-MON have been healed\n"
 	.string "to perfect health.\p"
 	.string "We hope you excel!$"
 
@@ -948,15 +948,15 @@ gText_HadQuiteAnExperienceTakeRest::
 gText_MomExplainHPGetPotions::
 	.string "MOM: Oh, good! You and your\n"
 	.string "POKéMON are looking great.\p"
-	.string "I just heard from PROF. BIRCH.\p"
-	.string "He said that POKéMON's energy is\n"
+	.string "I just heard from MR. STOUT HALFLING-\p"
+	.string "He said that POKé-MON's energy is\n"
 	.string "measured in HP.\p"
-	.string "If your POKéMON lose their HP,\n"
+	.string "If your POKé-MON lose their HP,\n"
 	.string "you can restore them at any\l"
-	.string "POKéMON CENTER.\p"
+	.string "POKé-MON CENTER.\p"
 	.string "If you're going to travel far away,\n"
 	.string "the smart TRAINER stocks up on\l"
-	.string "POTIONS at the POKéMON MART.\p"
+	.string "POTIONS at the POKé-MON MART.\p"
 	.string "Make me proud, honey!\p"
 	.string "Take care!$"
 
@@ -974,11 +974,11 @@ gText_ComeBackWithSecretPower::
 	.string "you good stuff in secrecy.$"
 
 gText_PokerusExplanation::
-	.string "Your POKéMON may be infected with\n"
-	.string "POKéRUS.\p"
-	.string "Little is known about the POKéRUS\n"
+	.string "Your POKé-MON may be infected with\n"
+	.string "POKé-RUS.\p"
+	.string "Little is known about the POKé-RUS\n"
 	.string "except that they are microscopic life-\l"
-	.string "forms that attach to POKéMON.\p"
+	.string "forms that attach to POKé-MON.\p"
 	.string "While infected, POKéMON are said to\n"
 	.string "grow exceptionally well.$"
 
@@ -993,7 +993,7 @@ gText_BigHoleInTheWall::
 
 gText_SorryWirelessClubAdjustments::
 	.string "I'm terribly sorry.\n"
-	.string "The POKéMON WIRELESS CLUB is\l"
+	.string "The POKé-MON WIRELESS CLUB is\l"
 	.string "undergoing adjustments now.$"
 
 gText_UndergoingAdjustments::

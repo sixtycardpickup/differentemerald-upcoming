@@ -37,7 +37,7 @@ LittlerootTown_BrendansHouse_2F_EventScript_CheckShouldUpdateBrendanPos::
 # 19 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	goto_if_set FLAG_MET_RIVAL_LILYCOVE, LittlerootTown_BrendansHouse_2F_EventScript_TryUpdateBrendanPos
 # 20 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	goto_if_ge VAR_BIRCH_LAB_STATE, 2, LittlerootTown_BrendansHouse_2F_EventScript_Ret
+	goto_if_ge VAR_STOUT_LAB_STATE, 2, LittlerootTown_BrendansHouse_2F_EventScript_Ret
 # 21 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	goto LittlerootTown_BrendansHouse_2F_EventScript_TryUpdateBrendanPos
 # 22 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -583,11 +583,11 @@ PlayersHouse_2F_Text_Notebook:
 # 292 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "{PLAYER} flipped open the hymnbook.\p"
 # 293 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	.string "ADVENTURE RULE NO. 1\n"
+	.string "ADVENTIA' RULE NO. 1\n"
 # 294 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "Open the MENU with START.\p"
 # 295 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	.string "ADVENTURE RULE NO. 2\n"
+	.string "ADVENTIA' RULE NO. 2\n"
 # 296 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "Record your progress with SAVE.\p"
 # 297 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
@@ -599,7 +599,7 @@ Common_Text_LookCloserAtMap:
 # 300 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "{PLAYER} took a closer look at the\n"
 # 301 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	.string "HOENN region map.$"
+	.string "'Dis Region map.$"
 # 302 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 
 # 303 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"

@@ -46,7 +46,7 @@ Optional fields for Pokemon:
           (Order does not matter)
     - EVs (252 HP / 128 Spe / 48 Def, defaults to all 0, is not capped at 512 total)
           (Order does not matter)
-    - Ball (Poke Ball or ITEM_POKE_BALL, defaults to Poke Ball
+    - Ball (Poke Ball or ITEM_POKE_BALL, defaults to Poke Ball)
     - Happiness (Number between 1 and 255)
     - Nature (Rash or NATURE_RASH, defaults to Hardy)
     - Shiny (Yes/No, defaults to No)
@@ -9501,7 +9501,73 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Psychic
 - Future Sight
 
-=== TRAINER_BRENDAN_ROUTE_103_MUDKIP ===
+=== TRAINER_BRENDAN_ROUTE_103_SANDILE ===
+Name: BRENDAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
+
+Bounsweet
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Adamant
+Ability: Oblivious
+
+Marill
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Hardy
+Ability: Huge Power
+
+Bombirdier
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Rocky Payload
+
+Pawmi
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Timid
+Ability: Static
+
+=== TRAINER_BRENDAN_ROUTE_110_SANDILE ===
+Name: BRENDAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
+
+Tauros_Paldean_Aqua_Breed
+Level: 20
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Adamant
+Ability: Intimidate
+
+Bombirdier
+Level: 20
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Rocky Payload
+
+Pawmo
+Level: 20
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Iron Fist
+
+Dewpider
+Level: 20
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Careful
+Ability: Water Bubble
+
+=== TRAINER_BRENDAN_ROUTE_119_SANDILE ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -9509,6 +9575,176 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
+
+Pelipper
+Level: 29
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Lombre
+Level: 29
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Pawmot
+Level: 31
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+=== TRAINER_BRENDAN_ROUTE_103_SLOWPOKE ===
+Name: BRENDAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Setup First Turn / Check Viability / Smart Switching
+
+Croagunk
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Dry Skin
+
+Sandile
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Adamant
+
+Skiddo
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly 
+Ability: Sap Sipper
+
+Yanma
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Adamant
+Ability: Speed Boost
+
+=== TRAINER_BRENDAN_ROUTE_110_SLOWPOKE ===
+Name: BRENDAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Lombre
+Level: 18
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Slugma
+Level: 18
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Marshtomp
+Level: 20
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_BRENDAN_ROUTE_119_SLOWPOKE ===
+Name: BRENDAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Lombre
+Level: 29
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Slugma
+Level: 29
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Marshtomp
+Level: 31
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+=== TRAINER_BRENDAN_ROUTE_103_PAWMI ===
+Name: BRENDAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Setup First Turn
+
+Diglett_Alolan
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Adamant
+Ability: Tangling Hair
+
+Morpeko
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Hunger Switch
+
+Croagunk
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Dry Skin
+
+Slowpoke
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe
+Nature: Quiet
+Ability: Oblivious
+
+=== TRAINER_BRENDAN_ROUTE_110_PAWMI ===
+Name: BRENDAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Slugma
+Level: 18
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Wingull
+Level: 18
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Slowpoke
+Level: 20
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe
+
+=== TRAINER_BRENDAN_ROUTE_119_PAWMI ===
+Name: BRENDAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Slugma
+Level: 29
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Pelipper
+Level: 29
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Slowbro
+Level: 31
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe
+
+=== TRAINER_MAY_ROUTE_103_SANDILE ===
+Name: MAY
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Setup First Turn
 
 Slowpoke
 Level: 10
@@ -9534,33 +9770,33 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Impish
 Ability: Earth Eater
 
-=== TRAINER_BRENDAN_ROUTE_110_MUDKIP ===
-Name: BRENDAN
+=== TRAINER_MAY_ROUTE_110_SANDILE ===
+Name: MAY
 Class: Rival
-Pic: Brendan
-Gender: Male
-Music: Male
+Pic: May
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
-
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Wingull
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Slowpoke
-Level: 20
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe
+Slugma
+Level: 18
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-=== TRAINER_BRENDAN_ROUTE_119_MUDKIP ===
-Name: BRENDAN
+Grovyle
+Level: 20
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_MAY_ROUTE_119_SANDILE ===
+Name: MAY
 Class: Rival
-Pic: Brendan
-Gender: Male
-Music: Male
+Pic: May
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -9568,28 +9804,28 @@ Slugma
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Pelipper
+Lombre
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Slowking
+Grovyle
 Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_BRENDAN_ROUTE_103_TREECKO ===
-Name: BRENDAN
+=== TRAINER_MAY_ROUTE_103_SLOWPOKE ===
+Name: MAY
 Class: Rival
-Pic: Brendan
-Gender: Male
-Music: Male
+Pic: May
+Gender: Female
+Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Setup First Turn
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Pawmi
 Level: 10
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Jolly
-Ability: Iron Fist
+Nature: Timid
+Ability: Static
 
 Dewpider
 Level: 10
@@ -9609,12 +9845,12 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
 Ability: Rocky Payload
 
-=== TRAINER_BRENDAN_ROUTE_110_TREECKO ===
-Name: BRENDAN
+=== TRAINER_MAY_ROUTE_110_SLOWPOKE ===
+Name: MAY
 Class: Rival
-Pic: Brendan
-Gender: Male
-Music: Male
+Pic: May
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -9630,12 +9866,12 @@ Combusken
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_BRENDAN_ROUTE_119_TREECKO ===
-Name: BRENDAN
+=== TRAINER_MAY_ROUTE_119_SLOWPOKE ===
+Name: MAY
 Class: Rival
-Pic: Brendan
-Gender: Male
-Music: Male
+Pic: May
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -9651,14 +9887,14 @@ Combusken
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_BRENDAN_ROUTE_103_TORCHIC ===
-Name: BRENDAN
+=== TRAINER_MAY_ROUTE_103_PAWMI ===
+Name: MAY
 Class: Rival
-Pic: Brendan
-Gender: Male
-Music: Male
+Pic: May
+Gender: Female
+Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Setup First Turn / Check Viability / Smart Switching
 
 Sandile
 Level: 10
@@ -9683,231 +9919,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Impish
 Ability: Anger Shell
 
-=== TRAINER_BRENDAN_ROUTE_110_TORCHIC ===
-Name: BRENDAN
-Class: Rival
-Pic: Brendan
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Marshtomp
-Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-=== TRAINER_BRENDAN_ROUTE_119_TORCHIC ===
-Name: BRENDAN
-Class: Rival
-Pic: Brendan
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-
-Lombre
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Slugma
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Marshtomp
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
-=== TRAINER_MAY_ROUTE_103_MUDKIP ===
-Name: MAY
-Class: Rival
-Pic: May
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-
-Slowpoke
-Level: 10
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe
-Nature: Quiet
-Ability: Oblivious
-
-Yanma
-Level: 10
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Modest 
-Ability: Speed Boost
-
-Croagunk
-Level: 10
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Jolly
-Ability: Dry Skin
-
-Orthworm
-Level: 10
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Impish
-Ability: Earth Eater
-
-=== TRAINER_MAY_ROUTE_110_MUDKIP ===
-Name: MAY
-Class: Rival
-Pic: May
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Grovyle
-Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-=== TRAINER_MAY_ROUTE_119_MUDKIP ===
-Name: MAY
-Class: Rival
-Pic: May
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-
-Slugma
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Lombre
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Grovyle
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
-=== TRAINER_MAY_ROUTE_103_TREECKO ===
-Name: MAY
-Class: Rival
-Pic: May
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-
-Pawmi
-Level: 10
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Jolly
-Ability: Iron Fist
-
-Dewpider
-Level: 10
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Careful 
-Ability: Water Bubble
-
-Croagunk
-Level: 10
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Adamant
-Ability: Dry Skin
-
-Bombirdier
-Level: 10
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Jolly
-Ability: Rocky Payload
-
-=== TRAINER_MAY_ROUTE_110_TREECKO ===
-Name: MAY
-Class: Rival
-Pic: May
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Combusken
-Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-=== TRAINER_MAY_ROUTE_119_TREECKO ===
-Name: MAY
-Class: Rival
-Pic: May
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-
-Pelipper
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Lombre
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Combusken
-Level: 31
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
-=== TRAINER_MAY_ROUTE_103_TORCHIC ===
-Name: MAY
-Class: Rival
-Pic: May
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-
-Sandile
-Level: 10
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Adamant
-
-Bounsweet
-Level: 10
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Adamant 
-Ability: Oblivious
-
-Croagunk
-Level: 10
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Jolly
-Ability: Dry Skin
-
-Klawf
-Level: 10
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Impish
-Ability: Anger Shell
-
-=== TRAINER_MAY_ROUTE_110_TORCHIC ===
+=== TRAINER_MAY_ROUTE_110_PAWMI ===
 Name: MAY
 Class: Rival
 Pic: May
@@ -9928,7 +9940,7 @@ Marshtomp
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MAY_ROUTE_119_TORCHIC ===
+=== TRAINER_MAY_ROUTE_119_PAWMI ===
 Name: MAY
 Class: Rival
 Pic: May

@@ -80,17 +80,17 @@ Route119_EventScript_BattleMay::
 	end
 
 Route119_EventScript_BattleMayTreecko::
-	trainerbattle_no_intro TRAINER_MAY_ROUTE_119_TREECKO, Route119_Text_MayDefeat
+	trainerbattle_no_intro TRAINER_MAY_ROUTE_119_SLOWPOKE, Route119_Text_MayDefeat
 	goto Route119_EventScript_DefeatedMay
 	end
 
 Route119_EventScript_BattleMayTorchic::
-	trainerbattle_no_intro TRAINER_MAY_ROUTE_119_TORCHIC, Route119_Text_MayDefeat
+	trainerbattle_no_intro TRAINER_MAY_ROUTE_119_PAWMI, Route119_Text_MayDefeat
 	goto Route119_EventScript_DefeatedMay
 	end
 
 Route119_EventScript_BattleMayMudkip::
-	trainerbattle_no_intro TRAINER_MAY_ROUTE_119_MUDKIP, Route119_Text_MayDefeat
+	trainerbattle_no_intro TRAINER_MAY_ROUTE_119_SANDILE, Route119_Text_MayDefeat
 	goto Route119_EventScript_DefeatedMay
 	end
 
@@ -110,17 +110,17 @@ Route119_EventScript_BattleBrendan::
 	end
 
 Route119_EventScript_BattleBrendanTreecko::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_119_TREECKO, Route119_Text_BrendanDefeat
+	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_119_SLOWPOKE, Route119_Text_BrendanDefeat
 	goto Route119_EventScript_DefeatedBrendan
 	end
 
 Route119_EventScript_BattleBrendanTorchic::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_119_TORCHIC, Route119_Text_BrendanDefeat
+	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_119_PAWMI, Route119_Text_BrendanDefeat
 	goto Route119_EventScript_DefeatedBrendan
 	end
 
 Route119_EventScript_BattleBrendanMudkip::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_119_MUDKIP, Route119_Text_BrendanDefeat
+	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_119_SANDILE, Route119_Text_BrendanDefeat
 	goto Route119_EventScript_DefeatedBrendan
 	end
 

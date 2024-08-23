@@ -237,7 +237,7 @@ Route101_EventScript_BirchsBag::
 	setflag FLAG_HIDE_ROUTE_101_BIRCH_ZIGZAGOON_BATTLE
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH
 	setflag FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG
-	setvar VAR_BIRCH_LAB_STATE, 2
+	setvar VAR_STOUT_LAB_STATE, 2
 	setvar VAR_ROUTE101_STATE, 3
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	checkplayergender
@@ -266,17 +266,21 @@ Route101_Text_HelpMe:
 Route101_Text_PleaseHelp:
 	.string "Hello! You over there!\n"
 	.string "Please! Help!\p"
+	.string "I'd save myself from 'Dis Guy,\n"
+	.string "But I ran outta' SMOKE-BOMBS!!\p"
 	.string "In my BAG!\n"
-	.string "There's a POKé BALL!$"
+	.string "'Dere's At Least ONE POKé-BALL!$"
 
 Route101_Text_DontLeaveMe:
 	.string "Wh-Where are you going?!\n"
-	.string "Don't leave me like this!$"
+	.string "Don't leave me like this!\p"
+	.string "I'd save myself from 'Dis guy,\n"
+	.string "But I ran outta' SMOKE-BOMBS!$"
 
 Route101_Text_YouSavedMe:
-	.string "PROF. BIRCH: Whew…\p"
+	.string "STOUT HALFLING: Whew…\p"
 	.string "I was in the tall grass studying wild\n"
-	.string "POKéMON when I was jumped.\p"
+	.string "POKé-MON when I was jumped.\p"
 	.string "You saved me.\n"
 	.string "Thanks a lot!\p"
 	.string "Oh?\p"
@@ -285,15 +289,15 @@ Route101_Text_YouSavedMe:
 	.string "by my POKéMON LAB later, okay?$"
 
 Route101_Text_TakeTiredPokemonToPokeCenter:
-	.string "If POKéMON get tired, take them to\n"
-	.string "a POKéMON CENTER.\p"
-	.string "There's a POKéMON CENTER in OLDALE\n"
+	.string "If POKé-MON get tired, take them to\n"
+	.string "a POKé-MON CENTER.\p"
+	.string "There's a POKé-MON CENTER in OLDALE\n"
 	.string "TOWN right close by.$"
 
 Route101_Text_WildPokemonInTallGrass:
-	.string "Wild POKéMON will jump out at you in\n"
+	.string "Wild POKé-MON will jump out at you in\n"
 	.string "tall grass.\p"
-	.string "If you want to catch POKéMON, you have\n"
+	.string "If you want to catch POKé-MON, you have\n"
 	.string "to go into the tall grass and search.$"
 
 Route101_Text_RouteSign:

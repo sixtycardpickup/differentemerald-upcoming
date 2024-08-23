@@ -12193,7 +12193,7 @@ const struct Item gItemsInfo[] =
     [ITEM_OLD_ROD] =
     {
         .name = _("Old Rod"),
-        .price = 0,
+        .price = 3000,
         .description = COMPOUND_STRING(
             "Use by any body of\n"
             "water to fish for\n"

@@ -381,7 +381,11 @@ PlayersHouse_1F_Text_Vigoroth2:
 
 PlayersHouse_1F_Text_ReportFromPetalburgGym:
 	.string "INTERVIEWER: …We brought you this\n"
-	.string "report from in front of PETALBURG GYM.$"
+	.string "STOUT FOOTAGE from THE AIR-WAVES.$"
+
+PlayersHouse_1F_Text_AdorablePokemon:
+	.string "Oh! What an adorable POKé-MON! I'll bet\n"
+	.string "You got it from Mr. HALFLING? Lovely!$"
 
 PlayersHouse_1F_Text_TheresAMovieOnTV:
 	.string "There is a movie on TV.\p"

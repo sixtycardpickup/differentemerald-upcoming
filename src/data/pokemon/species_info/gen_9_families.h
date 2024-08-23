@@ -2714,6 +2714,14 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_Klawf,
         .iconPalIndex = 0,
         FOOTPRINT(Klawf)
+        OVERWORLD(
+            sPicTable_Klawf,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_BUG,
+            gOverworldPalette_Klawf,
+            gShinyOverworldPalette_Klawf
+        )
         .levelUpLearnset = sKlawfLevelUpLearnset,
         .teachableLearnset = sKlawfTeachableLearnset,
         .eggMoveLearnset = sKlawfEggMoveLearnset,
@@ -2985,6 +2993,14 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_Flittle,
         .iconPalIndex = 1,
         FOOTPRINT(Flittle)
+        OVERWORLD(
+            sPicTable_Flittle,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            gOverworldPalette_Flittle,
+            gShinyOverworldPalette_Flittle
+        )
         .levelUpLearnset = sFlittleLevelUpLearnset,
         .teachableLearnset = sFlittleTeachableLearnset,
         .eggMoveLearnset = sFlittleEggMoveLearnset,
@@ -3093,6 +3109,14 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_Tinkatink,
         .iconPalIndex = 1,
         FOOTPRINT(Tinkatink)
+        OVERWORLD(
+            sPicTable_Tinkatink,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Tinkatink,
+            gShinyOverworldPalette_Tinkatink
+        )
         .levelUpLearnset = sTinkatinkLevelUpLearnset,
         .teachableLearnset = sTinkatinkTeachableLearnset,
         .eggMoveLearnset = sTinkatinkEggMoveLearnset,
@@ -3338,10 +3362,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 15,
         .weight = 429,
         .description = COMPOUND_STRING(
-            "Bombirdier uses the apron on its\n"
-            "chest to bundle up food, which it\n"
-            "carries back to its nest. It enjoys\n"
-            "dropping things that make loud noises."),
+            "It enjoys dropping things that scream\n"
+            "on the way down. We study gravity AND\n"
+            "sound by suspending Bombirdier in a\n"
+            "vacuum and watching stuff fall."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -3361,6 +3385,14 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_Bombirdier,
         .iconPalIndex = 0,
         FOOTPRINT(Bombirdier)
+        OVERWORLD(
+            sPicTable_Bombirdier,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            gOverworldPalette_Bombirdier,
+            gShinyOverworldPalette_Bombirdier
+        )
         .levelUpLearnset = sBombirdierLevelUpLearnset,
         .teachableLearnset = sBombirdierTeachableLearnset,
         .eggMoveLearnset = sBombirdierEggMoveLearnset,
@@ -3742,6 +3774,14 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_Orthworm,
         .iconPalIndex = 0,
         FOOTPRINT(Orthworm)
+        OVERWORLD(
+            sPicTable_Orthworm,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SLITHER,
+            gOverworldPalette_Orthworm,
+            gShinyOverworldPalette_Orthworm
+        )
         .levelUpLearnset = sOrthwormLevelUpLearnset,
         .teachableLearnset = sOrthwormTeachableLearnset,
         .eggMoveLearnset = sOrthwormEggMoveLearnset,
@@ -4290,6 +4330,14 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_TatsugiriCurly,
         .iconPalIndex = 0,
         FOOTPRINT(Tatsugiri)
+        OVERWORLD(
+            sPicTable_TatsugiriCurly,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SPOT,
+            gOverworldPalette_TatsugiriCurly,
+            gShinyOverworldPalette_TatsugiriCurly
+        )
         .levelUpLearnset = sTatsugiriLevelUpLearnset,
         .teachableLearnset = sTatsugiriTeachableLearnset,
         .eggMoveLearnset = sTatsugiriEggMoveLearnset,
@@ -4343,6 +4391,14 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_TatsugiriDroopy,
         .iconPalIndex = 0,
         FOOTPRINT(Tatsugiri)
+        OVERWORLD(
+            sPicTable_TatsugiriDroopy,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SPOT,
+            gOverworldPalette_TatsugiriDroopy,
+            gShinyOverworldPalette_TatsugiriDroopy
+        )
         .levelUpLearnset = sTatsugiriLevelUpLearnset,
         .teachableLearnset = sTatsugiriTeachableLearnset,
         .eggMoveLearnset = sTatsugiriEggMoveLearnset,
@@ -4396,6 +4452,14 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconSprite = gMonIcon_TatsugiriStretchy,
         .iconPalIndex = 0,
         FOOTPRINT(Tatsugiri)
+        OVERWORLD(
+            sPicTable_TatsugiriStretchy,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_SPOT,
+            gOverworldPalette_TatsugiriStretchy,
+            gShinyOverworldPalette_TatsugiriStretchy
+        )
         .levelUpLearnset = sTatsugiriLevelUpLearnset,
         .teachableLearnset = sTatsugiriTeachableLearnset,
         .eggMoveLearnset = sTatsugiriEggMoveLearnset,

@@ -32,7 +32,7 @@ InsideOfTruck_EventScript_SetIntroFlagsMale::
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL
 	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 1
-	setdynamicwarp MAP_LITTLEROOT_TOWN, 5, 11
+	setdynamicwarp MAP_LITTLEROOT_TOWN, 5, 10
 	releaseall
 	end
 
@@ -45,7 +45,7 @@ InsideOfTruck_EventScript_SetIntroFlagsFemale::
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL
 	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 1
-	setdynamicwarp MAP_LITTLEROOT_TOWN, 13, 6
+	setdynamicwarp MAP_LITTLEROOT_TOWN, 13, 5
 	releaseall
 	end
 
@@ -53,8 +53,38 @@ InsideOfTruck_EventScript_MovingBox::
 	msgbox InsideOfTruck_Text_BoxPrintedWithMonLogo, MSGBOX_SIGN
 	end
 
-InsideOfTruck_Text_BoxPrintedWithMonLogo:
-	.string "The box is printed with a picture\n"
+InsideOfTruck_EventScript_MovingBox2::
+	msgbox InsideOfTruck_Text_BoxPrintedWithMonLogo2, MSGBOX_SIGN
+	end
+
+InsideOfTruck_EventScript_MovingBox3::
+	msgbox InsideOfTruck_Text_BoxPrintedWithMonLogo3, MSGBOX_SIGN
+	end
+
+InsideOfTruck_EventScript_CardboardCutout::
+	msgbox InsideOfTruck_Text_CutoutPrintedOfStout, MSGBOX_SIGN
+	end
+
+InsideOfTruck_Text_BoxPrintedWithMonLogo::
+	.string "The Box is printed with a Picture\n"
+	.string "of STOUT HALFLING Smiling.\p"
+	.string "His Smile is wide and sparkling;\n"
+	.string "He is giving you a Thumbs-Up!$"
+
+InsideOfTruck_Text_BoxPrintedWithMonLogo2::
+	.string "The Box is printed with a Picture\n"
+	.string "of STOUT HALFLING Smiling.\p"
+	.string "His Smile is wide and conspirational;\n"
+	.string "He is giving you a Wave!$"
+
+InsideOfTruck_Text_BoxPrintedWithMonLogo3::
+	.string "The Box is plastered with a Printout\n"
+	.string "of STOUT HALFLING Smiling.\p"
+	.string "His Smile is wide and sparkling;\n"
+	.string "He is giving you a Thumbs-Up!$"
+
+InsideOfTruck_Text_CutoutPrintedOfStout::
+	.string "It appears to be a Cardboard Cutout\n"
 	.string "of STOUT HALFLING smiling.\p"
 	.string "His smile is wide and sparkling;\n"
 	.string "he is giving you a thumbs-up!$"

@@ -67,7 +67,7 @@ InsideOfTruck_EventScript_SetIntroFlagsMale::
 # 34 "data/maps/InsideOfTruck/scripts.pory"
 	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 1
 # 35 "data/maps/InsideOfTruck/scripts.pory"
-	setdynamicwarp MAP_LITTLEROOT_TOWN, 5, 11
+	setdynamicwarp MAP_LITTLEROOT_TOWN, 5, 10
 # 36 "data/maps/InsideOfTruck/scripts.pory"
 	releaseall
 # 37 "data/maps/InsideOfTruck/scripts.pory"
@@ -93,7 +93,7 @@ InsideOfTruck_EventScript_SetIntroFlagsFemale::
 # 47 "data/maps/InsideOfTruck/scripts.pory"
 	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 1
 # 48 "data/maps/InsideOfTruck/scripts.pory"
-	setdynamicwarp MAP_LITTLEROOT_TOWN, 13, 6
+	setdynamicwarp MAP_LITTLEROOT_TOWN, 13, 5
 # 49 "data/maps/InsideOfTruck/scripts.pory"
 	releaseall
 # 50 "data/maps/InsideOfTruck/scripts.pory"
@@ -109,12 +109,72 @@ InsideOfTruck_EventScript_MovingBox::
 # 55 "data/maps/InsideOfTruck/scripts.pory"
 
 # 56 "data/maps/InsideOfTruck/scripts.pory"
-InsideOfTruck_Text_BoxPrintedWithMonLogo:
+InsideOfTruck_EventScript_MovingBox2::
 # 57 "data/maps/InsideOfTruck/scripts.pory"
-	.string "The box is printed with a picture\n"
+	msgbox InsideOfTruck_Text_BoxPrintedWithMonLogo2, MSGBOX_SIGN
 # 58 "data/maps/InsideOfTruck/scripts.pory"
-	.string "of STOUT HALFLING smiling.\p"
+	end
 # 59 "data/maps/InsideOfTruck/scripts.pory"
-	.string "His smile is wide and sparkling;\n"
+
 # 60 "data/maps/InsideOfTruck/scripts.pory"
+InsideOfTruck_EventScript_MovingBox3::
+# 61 "data/maps/InsideOfTruck/scripts.pory"
+	msgbox InsideOfTruck_Text_BoxPrintedWithMonLogo3, MSGBOX_SIGN
+# 62 "data/maps/InsideOfTruck/scripts.pory"
+	end
+# 63 "data/maps/InsideOfTruck/scripts.pory"
+
+# 64 "data/maps/InsideOfTruck/scripts.pory"
+InsideOfTruck_EventScript_CardboardCutout::
+# 65 "data/maps/InsideOfTruck/scripts.pory"
+	msgbox InsideOfTruck_Text_CutoutPrintedOfStout, MSGBOX_SIGN
+# 66 "data/maps/InsideOfTruck/scripts.pory"
+	end
+# 67 "data/maps/InsideOfTruck/scripts.pory"
+
+# 68 "data/maps/InsideOfTruck/scripts.pory"
+InsideOfTruck_Text_BoxPrintedWithMonLogo::
+# 69 "data/maps/InsideOfTruck/scripts.pory"
+	.string "The Box is printed with a Picture\n"
+# 70 "data/maps/InsideOfTruck/scripts.pory"
+	.string "of STOUT HALFLING Smiling.\p"
+# 71 "data/maps/InsideOfTruck/scripts.pory"
+	.string "His Smile is wide and sparkling;\n"
+# 72 "data/maps/InsideOfTruck/scripts.pory"
+	.string "He is giving you a Thumbs-Up!$"
+# 73 "data/maps/InsideOfTruck/scripts.pory"
+
+# 74 "data/maps/InsideOfTruck/scripts.pory"
+InsideOfTruck_Text_BoxPrintedWithMonLogo2::
+# 75 "data/maps/InsideOfTruck/scripts.pory"
+	.string "The Box is printed with a Picture\n"
+# 76 "data/maps/InsideOfTruck/scripts.pory"
+	.string "of STOUT HALFLING Smiling.\p"
+# 77 "data/maps/InsideOfTruck/scripts.pory"
+	.string "His Smile is wide and conspirational;\n"
+# 78 "data/maps/InsideOfTruck/scripts.pory"
+	.string "He is giving you a Wave!$"
+# 79 "data/maps/InsideOfTruck/scripts.pory"
+
+# 80 "data/maps/InsideOfTruck/scripts.pory"
+InsideOfTruck_Text_BoxPrintedWithMonLogo3::
+# 81 "data/maps/InsideOfTruck/scripts.pory"
+	.string "The Box is plastered with a Printout\n"
+# 82 "data/maps/InsideOfTruck/scripts.pory"
+	.string "of STOUT HALFLING Smiling.\p"
+# 83 "data/maps/InsideOfTruck/scripts.pory"
+	.string "His Smile is wide and sparkling;\n"
+# 84 "data/maps/InsideOfTruck/scripts.pory"
+	.string "He is giving you a Thumbs-Up!$"
+# 85 "data/maps/InsideOfTruck/scripts.pory"
+
+# 86 "data/maps/InsideOfTruck/scripts.pory"
+InsideOfTruck_Text_CutoutPrintedOfStout::
+# 87 "data/maps/InsideOfTruck/scripts.pory"
+	.string "It appears to be a Cardboard Cutout\n"
+# 88 "data/maps/InsideOfTruck/scripts.pory"
+	.string "of STOUT HALFLING smiling.\p"
+# 89 "data/maps/InsideOfTruck/scripts.pory"
+	.string "His smile is wide and sparkling;\n"
+# 90 "data/maps/InsideOfTruck/scripts.pory"
 	.string "he is giving you a thumbs-up!$"

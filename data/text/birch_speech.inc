@@ -5,9 +5,9 @@ gText_Birch_Welcome::
 	.string "AND everyone calls me STOUT\l"
 	.string "HALFLING.\p"
 	.string "'De WOILD's PREMIER FOUR-POSTER\n"
-	.string "BED TRANSPORTER-EXTRAORDINAIRE\l"
-	.string "and NUMBA'-ONE ADVERTISING AGENT.\p"
-	.string "And- I, just so Happen to be THE\n"
+	.string "BED TRANSPORTER-EXTRAORDINAIRE!\l"
+	.string "AND- NUMBA'-ONE ADVUHTISING AGENT.\p"
+	.string "AND!!- I-, just so Happen, to be THE\n"
 	.string "SHORT-HAND of the R.H.I.A.B.! AND-\p"
 	.string "$"
 
@@ -25,8 +25,8 @@ gText_Birch_MainSpeech::
 	.string "mostly, as friendly weapons.\p"
 	.string "And Tsometimes, we band together\n"
 	.string "and blast music that does damage.\p"
-	.string "BUT. Despite ower closeness, we\n"
-	.string "don't know ANYTHING about POKé-MON.\p"
+	.string "BUT. Despite ower closeness, WE\n"
+	.string "don't know ANYT'ING about “POKé-MON.”\p"
 	.string "In fact, there are many, MANY\n"
 	.string "secrets surrounding POKé-MON,\p"
 	.string "that people have long avoided\n"
@@ -38,8 +38,9 @@ gText_Birch_AndYouAre::
 	.string "And you ahre?$"
 
 gText_Birch_BoyOrGirl::
-	.string "Do you look like 'Dis?\n"
-	.string "Or like... 'Dis?$"
+	.string "Do You look like 'Dis?\n"
+	.string "Or like...\l"
+	.string "'Dis?$"
 
 gText_Birch_WhatsYourName::
 	.string "Alll reight.\n"

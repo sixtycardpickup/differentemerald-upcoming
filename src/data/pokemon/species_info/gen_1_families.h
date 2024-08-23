@@ -14993,6 +14993,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_TaurosPaldeanAquaBreed,
         .iconPalIndex = 0,
         FOOTPRINT(Tauros)
+        OVERWORLD(
+            sPicTable_TaurosPaldeanAquaBreed,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_TaurosPaldeanAquaBreed,
+            gShinyOverworldPalette_TaurosPaldeanAquaBreed
+        )
         .isPaldeanForm = TRUE,
         .levelUpLearnset = sTaurosPaldeanAquaBreedLevelUpLearnset,
         .teachableLearnset = sTaurosPaldeanAquaBreedTeachableLearnset,

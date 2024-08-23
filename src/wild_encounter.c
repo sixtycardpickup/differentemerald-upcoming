@@ -214,8 +214,20 @@ static u8 ChooseWildMonIndex_Land(void)
         wildMonIndex = 9;
     else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_9 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_10)
         wildMonIndex = 10;
-    else
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_4 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_5)
         wildMonIndex = 11;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_5 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_6)
+        wildMonIndex = 12;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_6 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_7)
+        wildMonIndex = 13;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_7 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_8)
+        wildMonIndex = 14;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_8 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_9)
+        wildMonIndex = 15;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_9 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_10)
+        wildMonIndex = 16;
+    else
+        wildMonIndex = 17;
 
     if (LURE_STEP_COUNT != 0 && (Random() % 10 < 2))
         swap = TRUE;
@@ -312,21 +324,43 @@ static u8 ChooseWildMonLevel(const struct WildPokemon *wildPokemon, u8 wildMonIn
     u8 range;
     u8 rand;
 
+    u8 count = gPlayerPartyCount;
+    u8 fixedLVL = 0;
+
+    while (count-- > 0)
+    {
+        if (GetMonData(&gPlayerParty[count], MON_DATA_SPECIES) != SPECIES_NONE){
+            fixedLVL += (GetMonData(&gPlayerParty[count], MON_DATA_LEVEL));
+        }
+    }
+    fixedLVL = fixedLVL / gPlayerPartyCount;
+    
+
+    // Make sure minimum level is less than maximum level
+    {
+        min = fixedLVL-3;
+        max = fixedLVL+3;
+    }
+	if (min <= 0)
+		min = 1;
+    range = max - min + 1; // note that range will always be equal to 7 in this case: fixedLVL+3 - (fixedLVL-3) + 1 = fixedLVL - fixedLVL + 3 +3 +1 = 7
+    rand = Random() % range;
+    //{
     if (LURE_STEP_COUNT == 0)
     {
         // Make sure minimum level is less than maximum level
-        if (wildPokemon[wildMonIndex].maxLevel >= wildPokemon[wildMonIndex].minLevel)
-        {
-            min = wildPokemon[wildMonIndex].minLevel;
-            max = wildPokemon[wildMonIndex].maxLevel;
-        }
-        else
-        {
-            min = wildPokemon[wildMonIndex].maxLevel;
-            max = wildPokemon[wildMonIndex].minLevel;
-        }
-        range = max - min + 1;
-        rand = Random() % range;
+        //if (wildPokemon[wildMonIndex].maxLevel >= wildPokemon[wildMonIndex].minLevel)
+        //{
+            //min = wildPokemon[wildMonIndex].minLevel;
+            //max = wildPokemon[wildMonIndex].maxLevel;
+        //}
+        //else
+        //{
+            //min = wildPokemon[wildMonIndex].maxLevel;
+            //max = wildPokemon[wildMonIndex].minLevel;
+        //}
+        //range = max - min + 1;
+        //rand = Random() % range;
 
         // check ability for max level mon
         if (!GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG))

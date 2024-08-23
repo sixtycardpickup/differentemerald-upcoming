@@ -2832,7 +2832,7 @@ MatchCall_Text_Steven7::
 	.string "somewhere!$"
 
 MatchCall_Text_BirchRegisterCall:
-	.string "PROF. BIRCH: Oh, {PLAYER}{KUN}!\n"
+	.string "STOUT HALFLING: Oh, {PLAYER}{KUN}!\n"
 	.string "I've already heard about you!\p"
 	.string "It seems your POKéNAV's been\n"
 	.string "upgraded with MATCH CALL.\p"
@@ -2843,13 +2843,13 @@ MatchCall_Text_BirchRegisterCall:
 	.string "… … … … … …$"
 
 MatchCall_Text_RegisteredBirch:
-	.string "Registered PROF. BIRCH\n"
+	.string "Registered STOUT HALFLING\n"
 	.string "in the POKéNAV.$"
 
 MatchCall_Text_UnusedProfBirch:
-	.string "PROF. BIRCH: When one has both\n"
-	.string "the POKéDEX and POKéNAV, studying\l"
-	.string "POKéMON becomes more fun, eh?$"
+	.string "STOUT HALFLING: When one has both\n"
+	.string "the POKé-DEX and POKé-NAV, studying\l"
+	.string "POKé-MON becomes more fun, eh?$"
 
 MatchCall_Text_MrStone1::
 	.string "MR. STONE: Oh? {PLAYER}{KUN}!\p"

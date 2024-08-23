@@ -193,62 +193,26 @@
       "y": 1,
       "elevation": 3,
       "var": "VAR_LITTLEROOT_TOWN_STATE",
-      "var_value": "1",
+      "var_value": "2",
       "script": "LittlerootTown_EventScript_GoSaveBirchTrigger"
     },
     {
       "type": "trigger",
-      "x": 10,
+      "x": 15,
       "y": 9,
       "elevation": 3,
       "var": "VAR_LITTLEROOT_TOWN_STATE",
-      "var_value": "3",
-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger4"
-    },
-    {
-      "type": "trigger",
-      "x": 11,
-      "y": 9,
-      "elevation": 3,
-      "var": "VAR_LITTLEROOT_TOWN_STATE",
-      "var_value": "3",
-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger5"
-    },
-    {
-      "type": "trigger",
-      "x": 12,
-      "y": 9,
-      "elevation": 3,
-      "var": "VAR_LITTLEROOT_TOWN_STATE",
-      "var_value": "3",
-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger2"
-    },
-    {
-      "type": "trigger",
-      "x": 13,
-      "y": 9,
-      "elevation": 3,
-      "var": "VAR_LITTLEROOT_TOWN_STATE",
-      "var_value": "3",
-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger3"
-    },
-    {
-      "type": "trigger",
-      "x": 12,
-      "y": 2,
-      "elevation": 3,
-      "var": "VAR_LITTLEROOT_TOWN_STATE",
-      "var_value": "3",
+      "var_value": "1",
       "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger0"
     },
     {
       "type": "trigger",
-      "x": 13,
-      "y": 2,
+      "x": 7,
+      "y": 9,
       "elevation": 3,
       "var": "VAR_LITTLEROOT_TOWN_STATE",
-      "var_value": "3",
-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger1"
+      "var_value": "1",
+      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger3"
     },
     {
       "type": "trigger",
@@ -285,6 +249,132 @@
       "var": "VAR_LITTLEROOT_TOWN_STATE",
       "var_value": "0",
       "script": "LittlerootTown_EventScript_DangerousWithoutPokemonEast"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "1",
+      "script": "LittlerootTown_EventScript_DangerousWithoutPokemonSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "2",
+      "script": "LittlerootTown_EventScript_DangerousWithoutPokemonEast"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "1",
+      "script": "LittlerootTown_EventScript_DangerousWithoutPokemonEast"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "2",
+      "script": "LittlerootTown_EventScript_DangerousWithoutPokemonEast"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "1",
+      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger1"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "2",
+      "script": "LittlerootTown_EventScript_DangerousWithoutPokemonEast"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "2",
+      "script": "LittlerootTown_EventScript_DangerousWithoutPokemonSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "1",
+      "script": "LittlerootTown_EventScript_DangerousWithoutPokemonEast"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "1",
+      "script": "LittlerootTown_EventScript_DangerousWithoutPokemonEast"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 10,
+      "elevation": 3,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "1",
+      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger0"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 10,
+      "elevation": 3,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "1",
+      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger4"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 10,
+      "elevation": 3,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "1",
+      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger5"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 8,
+      "elevation": 3,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "1",
+      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger6"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_LITTLEROOT_TOWN_STATE",
+      "var_value": "1",
+      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger2"
     }
   ],
   "bg_events": [
