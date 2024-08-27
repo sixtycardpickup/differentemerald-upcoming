@@ -3,7 +3,7 @@
   "name": "Route102N",
   "layout": "LAYOUT_ROUTE102N",
   "music": "MUS_RG_ROUTE3",
-  "region_map_section": "MAPSEC_ROUTE_102",
+  "region_map_section": "MAPSEC_ROUTE_N_1_W_1",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_ROUTE",

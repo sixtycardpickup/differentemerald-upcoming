@@ -129,24 +129,24 @@
       "height": 2
     },
     {
-      "map_section": "MAPSEC_ROUTE_101",
-      "name": "ROUTE 101",
+      "map_section": "MAPSEC_ROUTE_N_1",
+      "name": "ROUTE NORTH-1",
       "x": 4,
       "y": 10,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_102",
-      "name": "ROUTE 102",
+      "map_section": "MAPSEC_ROUTE_N_1_W_1",
+      "name": "ROUTE N-1;W-1",
       "x": 2,
       "y": 9,
       "width": 2,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_103",
-      "name": "ROUTE 103",
+      "map_section": "MAPSEC_ROUTE_N_2",
+      "name": "ROUTE NORTH-2",
       "x": 4,
       "y": 8,
       "width": 4,
@@ -820,34 +820,34 @@
       "height": 2
     },
     {
-      "map_section": "MAPSEC_ROUTE_2",
-      "name": "ROUTE 2",
-      "x": 0,
-      "y": 0,
+      "map_section": "MAPSEC_ROUTE_WEST_1",
+      "name": "ROUTE WEST-1",
+      "x": 3,
+      "y": 10,
       "width": 1,
+      "height": 2
+    },
+    {
+      "map_section": "MAPSEC_ROUTE_SOUTH_1",
+      "name": "ROUTE SOUTH-1",
+      "x": 3,
+      "y": 12,
+      "width": 2,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_3",
-      "name": "ROUTE 3",
-      "x": 0,
-      "y": 0,
+      "map_section": "MAPSEC_ROUTE_N_1_E_1",
+      "name": "ROUTE N-1;E-1",
+      "x": 5,
+      "y": 9,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
-      "map_section": "MAPSEC_ROUTE_4",
-      "name": "ROUTE 4",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_ROUTE_5",
-      "name": "ROUTE 5",
-      "x": 0,
-      "y": 0,
+      "map_section": "MAPSEC_ROUTE_N_1_E_2",
+      "name": "ROUTE N-1;E-2",
+      "x": 6,
+      "y": 9,
       "width": 1,
       "height": 1
     },

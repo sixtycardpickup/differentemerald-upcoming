@@ -9510,11 +9510,11 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Bounsweet
+Skiddo
 Level: 10
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Adamant
-Ability: Oblivious
+Ability: Sap Sipper
 
 Marill
 Level: 10
@@ -9755,7 +9755,7 @@ Ability: Oblivious
 Yanma
 Level: 10
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Modest 
+Nature: Adamant 
 Ability: Speed Boost
 
 Croagunk

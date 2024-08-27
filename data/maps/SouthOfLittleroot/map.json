@@ -3,7 +3,7 @@
   "name": "SouthOfLittleroot",
   "layout": "LAYOUT_SOUTH_OF_LITTLEROOT",
   "music": "MUS_ROUTE119",
-  "region_map_section": "MAPSEC_ROUTE_101",
+  "region_map_section": "MAPSEC_ROUTE_SOUTH_1",
   "requires_flash": false,
   "weather": "WEATHER_ROUTE119_CYCLE",
   "map_type": "MAP_TYPE_ROUTE",

@@ -3,7 +3,7 @@
   "name": "RouteE2",
   "layout": "LAYOUT_ROUTE_E2",
   "music": "MUS_GSC_PEWTER",
-  "region_map_section": "MAPSEC_ROUTE_102",
+  "region_map_section": "MAPSEC_ROUTE_N_1_E_2",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY_CLOUDS",
   "map_type": "MAP_TYPE_ROUTE",

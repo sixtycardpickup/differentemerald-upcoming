@@ -23746,12 +23746,12 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9513
-            .species = SPECIES_BOUNSWEET,
+            .species = SPECIES_SKIDDO,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9515
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
 #line 9517
-            .ability = ABILITY_OBLIVIOUS,
+            .ability = ABILITY_SAP_SIPPER,
 #line 9514
             .lvl = 10,
 #line 9516
@@ -24347,7 +24347,7 @@ F_TRAINER_FEMALE |
 #line 9756
             .lvl = 10,
 #line 9758
-            .nature = NATURE_MODEST,
+            .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {

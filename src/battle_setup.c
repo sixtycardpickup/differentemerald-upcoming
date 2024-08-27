@@ -761,6 +761,8 @@ u8 BattleSetup_GetTerrainId(void)
         return BATTLE_TERRAIN_SAND;
     if (MetatileBehavior_IsPuddle(tileBehavior))
         return BATTLE_TERRAIN_POND;
+    if (MetatileBehavior_IsMudOrMudPuddle(tileBehavior))
+        return BATTLE_TERRAIN_MUD;
 
     switch (gMapHeader.mapType)
     {

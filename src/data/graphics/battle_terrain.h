@@ -22,6 +22,10 @@ const u32 gBattleTerrainTiles_PondWater[] = INCBIN_U32("graphics/battle_terrain/
 const u32 gBattleTerrainPalette_PondWater[] = INCBIN_U32("graphics/battle_terrain/pond_water/palette.gbapal.lz");
 const u32 gBattleTerrainTilemap_PondWater[] = INCBIN_U32("graphics/battle_terrain/pond_water/map.bin.lz");
 
+const u32 gBattleTerrainTiles_Mud[] = INCBIN_U32("graphics/battle_terrain/mud/tiles.4bpp.lz");
+const u32 gBattleTerrainPalette_Mud[] = INCBIN_U32("graphics/battle_terrain/mud/palette.gbapal.lz");
+const u32 gBattleTerrainTilemap_Mud[] = INCBIN_U32("graphics/battle_terrain/mud/map.bin.lz");
+
 const u32 gBattleTerrainTiles_Rock[] = INCBIN_U32("graphics/battle_terrain/rock/tiles.4bpp.lz");
 const u32 gBattleTerrainPalette_Rock[] = INCBIN_U32("graphics/battle_terrain/rock/palette.gbapal.lz");
 const u32 gBattleTerrainTilemap_Rock[] = INCBIN_U32("graphics/battle_terrain/rock/map.bin.lz");
@@ -74,6 +78,9 @@ const u32 gBattleTerrainAnimTilemap_Water[] = INCBIN_U32("graphics/battle_terrai
 
 const u32 gBattleTerrainAnimTiles_PondWater[] = INCBIN_U32("graphics/battle_terrain/pond_water/anim_tiles.4bpp.lz");
 const u32 gBattleTerrainAnimTilemap_PondWater[] = INCBIN_U32("graphics/battle_terrain/pond_water/anim_map.bin.lz");
+
+const u32 gBattleTerrainAnimTiles_Mud[] = INCBIN_U32("graphics/battle_terrain/mud/anim_tiles.4bpp.lz");
+const u32 gBattleTerrainAnimTilemap_Mud[] = INCBIN_U32("graphics/battle_terrain/mud/anim_map.bin.lz");
 
 const u32 gBattleTerrainAnimTiles_Rock[] = INCBIN_U32("graphics/battle_terrain/rock/anim_tiles.4bpp.lz");
 const u32 gBattleTerrainAnimTilemap_Rock[] = INCBIN_U32("graphics/battle_terrain/rock/anim_map.bin.lz");

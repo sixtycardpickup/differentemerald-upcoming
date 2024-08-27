@@ -790,7 +790,7 @@ bool8 FldEff_SecretBasePCTurnOn(void)
     s16 x, y;
     u8 taskId;
 
-    (&x, &y);
+    GetXYCoordsOneStepInFrontOfPlayer(&x, &y);
 
     taskId = CreateTask(Task_SecretBasePCTurnOn, 0);
     gTasks[taskId].tX = x;

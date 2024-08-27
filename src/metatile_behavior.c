@@ -182,11 +182,7 @@ bool8 MetatileBehavior_IsJumpSouth(u8 metatileBehavior)
 
 bool8 MetatileBehavior_IsPokeGrass(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_TALL_GRASS
-     || metatileBehavior == MB_LONG_GRASS
-     || metatileBehavior == MB_PUDDLE
-     || metatileBehavior == MB_MUD
-     || metatileBehavior == MB_MUD_PUDDLE)
+    if (metatileBehavior == MB_TALL_GRASS || metatileBehavior == MB_LONG_GRASS)
         return TRUE;
     else
         return FALSE;
@@ -194,10 +190,7 @@ bool8 MetatileBehavior_IsPokeGrass(u8 metatileBehavior)
 
 bool8 MetatileBehavior_IsSandOrDeepSand(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_SAND 
-     || metatileBehavior == MB_DEEP_SAND
-     || metatileBehavior == MB_MUD
-     || metatileBehavior == MB_MUD_PUDDLE)
+    if (metatileBehavior == MB_SAND || metatileBehavior == MB_DEEP_SAND)
         return TRUE;
     else
         return FALSE;
@@ -206,6 +199,23 @@ bool8 MetatileBehavior_IsSandOrDeepSand(u8 metatileBehavior)
 bool8 MetatileBehavior_IsDeepSand(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_DEEP_SAND)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsMudOrMudPuddle(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_MUD
+     || metatileBehavior == MB_MUD_PUDDLE)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsMudPuddle(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_MUD_PUDDLE)
         return TRUE;
     else
         return FALSE;
@@ -836,6 +846,8 @@ bool8 MetatileBehavior_IsBridgeOverWaterNoEdge(u8 metatileBehavior)
 bool8 MetatileBehavior_IsLandWildEncounter(u8 metatileBehavior)
 {
     if (MetatileBehavior_IsSurfableWaterOrUnderwater(metatileBehavior) == FALSE
+     && MetatileBehavior_IsMudOrMudPuddle(metatileBehavior) == FALSE
+     && MetatileBehavior_IsPuddle(metatileBehavior) == FALSE
      && MetatileBehavior_IsEncounterTile(metatileBehavior) == TRUE)
         return TRUE;
     else
@@ -845,6 +857,27 @@ bool8 MetatileBehavior_IsLandWildEncounter(u8 metatileBehavior)
 bool8 MetatileBehavior_IsWaterWildEncounter(u8 metatileBehavior)
 {
     if (MetatileBehavior_IsSurfableWaterOrUnderwater(metatileBehavior) == TRUE
+     && MetatileBehavior_IsEncounterTile(metatileBehavior) == TRUE)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsMudWildEncounter(u8 metatileBehavior)
+{
+    if (MetatileBehavior_IsSurfableWaterOrUnderwater(metatileBehavior) == FALSE
+     && MetatileBehavior_IsMudOrMudPuddle(metatileBehavior) == TRUE
+     && MetatileBehavior_IsEncounterTile(metatileBehavior) == TRUE)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsPuddleWildEncounter(u8 metatileBehavior)
+{
+    if (MetatileBehavior_IsSurfableWaterOrUnderwater(metatileBehavior) == FALSE
+     && MetatileBehavior_IsPuddle(metatileBehavior) == TRUE
+     && MetatileBehavior_IsMudOrMudPuddle(metatileBehavior) == FALSE
      && MetatileBehavior_IsEncounterTile(metatileBehavior) == TRUE)
         return TRUE;
     else

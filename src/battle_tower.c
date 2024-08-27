@@ -1943,7 +1943,6 @@ static void HandleSpecialTrainerBattleEnd(void)
     switch (gBattleScripting.specialTrainerBattleType)
     {
     case SPECIAL_BATTLE_TOWER:
-    case SPECIAL_BATTLE_ROUTE_E1:
     case SPECIAL_BATTLE_DOME:
     case SPECIAL_BATTLE_PALACE:
     case SPECIAL_BATTLE_ARENA:
