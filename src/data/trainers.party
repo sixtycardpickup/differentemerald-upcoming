@@ -9528,6 +9528,12 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
 Ability: Rocky Payload
 
+Dewpider
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Careful
+Ability: Water Bubble
+
 Pawmi
 Level: 10
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
@@ -9597,11 +9603,11 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Setup First Turn / Check Viability / Smart Switching
 
-Croagunk
+Yanma
 Level: 10
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Jolly
-Ability: Dry Skin
+Nature: Adamant
+Ability: Speed Boost
 
 Sandile
 Level: 10
@@ -9614,11 +9620,17 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly 
 Ability: Sap Sipper
 
-Yanma
+Croagunk
 Level: 10
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Adamant
-Ability: Speed Boost
+Nature: Jolly
+Ability: Dry Skin
+
+Stunfisk
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Relaxed
+Ability: Static
 
 === TRAINER_BRENDAN_ROUTE_110_SLOWPOKE ===
 Name: BRENDAN
@@ -9694,6 +9706,12 @@ Level: 10
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe
 Nature: Quiet
 Ability: Oblivious
+
+Litwick
+Level: 10
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe
+Nature: Quiet
+Ability: Flame Body
 
 === TRAINER_BRENDAN_ROUTE_110_PAWMI ===
 Name: BRENDAN
