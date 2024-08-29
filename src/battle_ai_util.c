@@ -483,7 +483,7 @@ bool32 IsDamageMoveUnusable(u32 move, u32 battlerAtk, u32 battlerDef)
             return TRUE;
         break;
     case EFFECT_POLTERGEIST:
-        if (AI_DATA->items[battlerDef] == ITEM_NONE)
+        if (AI_DATA->items[battlerDef] == ITEM_NONE || gFieldStatuses & STATUS_FIELD_MAGIC_ROOM || battlerDefAbility == ABILITY_KLUTZ)
             return TRUE;
         break;
     case EFFECT_FIRST_TURN_ONLY:
@@ -2197,7 +2197,7 @@ bool32 IsAttackBoostMoveEffect(u32 effect)
     switch (effect)
     {
     case EFFECT_ATTACK_UP:
-	case EFFECT_ATTACK_UP_2:
+    case EFFECT_ATTACK_UP_2:
     case EFFECT_ATTACK_ACCURACY_UP:
     case EFFECT_ATTACK_SPATK_UP:
     case EFFECT_DRAGON_DANCE:
@@ -2217,34 +2217,34 @@ bool32 IsStatRaisingEffect(u32 effect)
     switch (effect)
     {
     case EFFECT_ATTACK_UP:
-	case EFFECT_ATTACK_UP_2:
-	case EFFECT_DEFENSE_UP:
-	case EFFECT_DEFENSE_UP_2:
+    case EFFECT_ATTACK_UP_2:
+    case EFFECT_DEFENSE_UP:
+    case EFFECT_DEFENSE_UP_2:
     case EFFECT_DEFENSE_UP_3:
-	case EFFECT_SPEED_UP:
-	case EFFECT_SPEED_UP_2:
-	case EFFECT_SPECIAL_ATTACK_UP:
-	case EFFECT_SPECIAL_ATTACK_UP_2:
+    case EFFECT_SPEED_UP:
+    case EFFECT_SPEED_UP_2:
+    case EFFECT_SPECIAL_ATTACK_UP:
+    case EFFECT_SPECIAL_ATTACK_UP_2:
     case EFFECT_SPECIAL_ATTACK_UP_3:
-	case EFFECT_SPECIAL_DEFENSE_UP:
-	case EFFECT_SPECIAL_DEFENSE_UP_2:
+    case EFFECT_SPECIAL_DEFENSE_UP:
+    case EFFECT_SPECIAL_DEFENSE_UP_2:
     case EFFECT_ACCURACY_UP:
     case EFFECT_ACCURACY_UP_2:
     case EFFECT_EVASION_UP:
     case EFFECT_EVASION_UP_2:
     case EFFECT_MINIMIZE:
     case EFFECT_DEFENSE_CURL:
-	case EFFECT_CALM_MIND:
+    case EFFECT_CALM_MIND:
     case EFFECT_COSMIC_POWER:
-	case EFFECT_DRAGON_DANCE:
-	case EFFECT_ACUPRESSURE:
-	case EFFECT_SHELL_SMASH:
-	case EFFECT_SHIFT_GEAR:
-	case EFFECT_ATTACK_ACCURACY_UP:
-	case EFFECT_ATTACK_SPATK_UP:
-	case EFFECT_GROWTH:
-	case EFFECT_COIL:
-	case EFFECT_QUIVER_DANCE:
+    case EFFECT_DRAGON_DANCE:
+    case EFFECT_ACUPRESSURE:
+    case EFFECT_SHELL_SMASH:
+    case EFFECT_SHIFT_GEAR:
+    case EFFECT_ATTACK_ACCURACY_UP:
+    case EFFECT_ATTACK_SPATK_UP:
+    case EFFECT_GROWTH:
+    case EFFECT_COIL:
+    case EFFECT_QUIVER_DANCE:
     case EFFECT_BULK_UP:
     case EFFECT_GEOMANCY:
     case EFFECT_STOCKPILE:
@@ -2514,7 +2514,7 @@ u32 GetBattlerSecondaryDamage(u32 battlerId)
 bool32 BattlerWillFaintFromWeather(u32 battler, u32 ability)
 {
     if ((BattlerAffectedBySandstorm(battler, ability) || BattlerAffectedByHail(battler, ability))
-      && gBattleMons[battler].hp <= gBattleMons[battler].maxHP / 16)
+      && gBattleMons[battler].hp <= max(1, gBattleMons[battler].maxHP / 16))
         return TRUE;
 
     return FALSE;
@@ -2523,7 +2523,7 @@ bool32 BattlerWillFaintFromWeather(u32 battler, u32 ability)
 bool32 BattlerWillFaintFromSecondaryDamage(u32 battler, u32 ability)
 {
     if (GetBattlerSecondaryDamage(battler) != 0
-      && gBattleMons[battler].hp <= gBattleMons[battler].maxHP / 16)
+      && gBattleMons[battler].hp <= max(1, gBattleMons[battler].maxHP / 16))
         return TRUE;
     return FALSE;
 }

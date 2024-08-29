@@ -1431,7 +1431,7 @@ static const struct SpriteFrameImage sPicTable_WooperPaldean[] = {
 };/*
 static const struct SpriteFrameImage sPicTable_Clodsire[] = {
     overworld_ascending_frames(gObjectEventPic_Clodsire, 4, 4),
-};*/
+};
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_WOOPER
 
