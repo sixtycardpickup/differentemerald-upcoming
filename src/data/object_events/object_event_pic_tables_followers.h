@@ -1428,7 +1428,7 @@ static const struct SpriteFrameImage sPicTable_Quagsire[] = {
 #if P_PALDEAN_FORMS
 static const struct SpriteFrameImage sPicTable_WooperPaldean[] = {
     overworld_ascending_frames(gObjectEventPic_WooperPaldean, 4, 4),
-};/*
+};
 static const struct SpriteFrameImage sPicTable_Clodsire[] = {
     overworld_ascending_frames(gObjectEventPic_Clodsire, 4, 4),
 };
@@ -1559,11 +1559,11 @@ static const struct SpriteFrameImage sPicTable_Wobbuffet[] = {
 static const struct SpriteFrameImage sPicTable_Girafarig[] = {
     overworld_ascending_frames(gObjectEventPic_Girafarig, 4, 4),
 };
-#if P_GEN_9_CROSS_EVOS
-/*static const struct SpriteFrameImage sPicTable_Farigiraf[] = {
-    overworld_ascending_frames(gObjectEventPic_Farigiraf, 4, 4),
-};*/
-#endif //P_GEN_9_CROSS_EVOS
+//#if P_GEN_9_CROSS_EVOS
+//static const struct SpriteFrameImage sPicTable_Farigiraf[] = {
+    //overworld_ascending_frames(gObjectEventPic_Farigiraf, 4, 4),
+//};
+//#endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_GIRAFARIG
 
 #if P_FAMILY_PINECO
@@ -1579,13 +1579,11 @@ static const struct SpriteFrameImage sPicTable_Forretress[] = {
 static const struct SpriteFrameImage sPicTable_Dunsparce[] = {
     overworld_ascending_frames(gObjectEventPic_Dunsparce, 4, 4),
 };
-#if P_GEN_9_CROSS_EVOS
-/*static const struct SpriteFrameImage sPicTable_Dudunsparce[] = {
-    overworld_ascending_frames(gObjectEventPic_Dudunsparce, 4, 4),
-};*/
-
-
-#endif //P_GEN_9_CROSS_EVOS
+//#if P_GEN_9_CROSS_EVOS
+//static const struct SpriteFrameImage sPicTable_Dudunsparce[] = {
+    //overworld_ascending_frames(gObjectEventPic_Dudunsparce, 4, 4),
+//};
+//#endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_DUNSPARCE
 
 #if P_FAMILY_GLIGAR
