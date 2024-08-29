@@ -241,14 +241,30 @@ static u8 ChooseWildMonIndex_Land(void)
         wildMonIndex = 21;
     else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_21 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_22)
         wildMonIndex = 22;
-    else
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_22 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_23)
         wildMonIndex = 23;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_23 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_24)
+        wildMonIndex = 24;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_24 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_25)
+        wildMonIndex = 25;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_25 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_26)
+        wildMonIndex = 26;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_26 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_27)
+        wildMonIndex = 27;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_27 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_28)
+        wildMonIndex = 28;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_28 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_29)
+        wildMonIndex = 29;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_29 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_30)
+        wildMonIndex = 30;
+    else
+        wildMonIndex = 31;
 
     if (LURE_STEP_COUNT != 0 && (Random() % 10 < 2))
         swap = TRUE;
 
     if (swap)
-        wildMonIndex = 23 - wildMonIndex;
+        wildMonIndex = 31 - wildMonIndex;
 
     return wildMonIndex;
 }
@@ -426,6 +442,10 @@ static u16 GetCurrentMapWildMonHeaderId(void)
         if (gWildMonHeaders[i].mapGroup == gSaveBlock1Ptr->location.mapGroup &&
             gWildMonHeaders[i].mapNum == gSaveBlock1Ptr->location.mapNum)
         {
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(WEST_OF_LITTLEROOT) &&
+                gSaveBlock1Ptr->location.mapNum == MAP_NUM(WEST_OF_LITTLEROOT))
+                i += VarGet(VAR_DAYNIGHT);
+
             if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ALTERING_CAVE) &&
                 gSaveBlock1Ptr->location.mapNum == MAP_NUM(ALTERING_CAVE))
             {
