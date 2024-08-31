@@ -9510,32 +9510,32 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Skiddo
-Level: 10
+Bounsweet
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Adamant
-Ability: Sap Sipper
+Nature: Adamant 
+Ability: Oblivious
 
 Marill
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Hardy
 Ability: Huge Power
 
 Bombirdier
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
 Ability: Rocky Payload
 
 Dewpider
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Careful
 Ability: Water Bubble
 
 Pawmi
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Timid
 Ability: Static
@@ -9604,30 +9604,30 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Setup First Turn / Check Viability / Smart Switching
 
 Yanma
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Adamant
 Ability: Speed Boost
 
 Sandile
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Adamant
 
 Skiddo
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Jolly 
+Nature: Adamant 
 Ability: Sap Sipper
 
 Croagunk
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
 Ability: Dry Skin
 
 Stunfisk
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Relaxed
 Ability: Static
@@ -9684,31 +9684,31 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Setup First Turn
 
 Diglett_Alolan
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Adamant
 Ability: Tangling Hair
 
 Morpeko
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
 Ability: Hunger Switch
 
 Croagunk
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
 Ability: Dry Skin
 
 Slowpoke
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe
 Nature: Quiet
 Ability: Oblivious
 
 Litwick
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe
 Nature: Quiet
 Ability: Flame Body
@@ -9765,28 +9765,40 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Setup First Turn
 
 Slowpoke
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe
 Nature: Quiet
 Ability: Oblivious
 
 Yanma
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Adamant 
 Ability: Speed Boost
 
 Croagunk
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
 Ability: Dry Skin
 
 Orthworm
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Impish
 Ability: Earth Eater
+
+Skiddo
+Level: 12
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Sap Sipper
+
+Tauros_Paldean_Aqua_Breed
+Level: 12
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Intimidate
 
 === TRAINER_MAY_ROUTE_110_SANDILE ===
 Name: MAY
@@ -9840,28 +9852,40 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Pawmi
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Timid
 Ability: Static
 
 Dewpider
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Careful 
 Ability: Water Bubble
 
 Croagunk
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Adamant
 Ability: Dry Skin
 
 Bombirdier
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
 Ability: Rocky Payload
+
+Skiddo
+Level: 12
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Adamant
+Ability: Sap Sipper
+
+Tinkatink
+Level: 12
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Careful
+Ability: Own Tempo
 
 === TRAINER_MAY_ROUTE_110_SLOWPOKE ===
 Name: MAY
@@ -9915,27 +9939,39 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Setup First Turn / Check Viability / Smart Switching
 
 Sandile
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Adamant
 
 Bounsweet
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Adamant 
 Ability: Oblivious
 
 Croagunk
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
 Ability: Dry Skin
 
 Klawf
-Level: 10
+Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Impish
 Ability: Anger Shell
+
+Skarmory
+Level: 12
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Jolly
+Ability: Keen Eye
+
+Wynaut
+Level: 12
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Calm
+Ability: Shadow Tag
 
 === TRAINER_MAY_ROUTE_110_PAWMI ===
 Name: MAY
