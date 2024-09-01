@@ -257,14 +257,34 @@ static u8 ChooseWildMonIndex_Land(void)
         wildMonIndex = 29;
     else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_29 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_30)
         wildMonIndex = 30;
-    else
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_30 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_31)
         wildMonIndex = 31;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_31 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_32)
+        wildMonIndex = 32;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_32 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_33)
+        wildMonIndex = 33;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_33 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_34)
+        wildMonIndex = 34;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_34 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_35)
+        wildMonIndex = 35;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_35 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_36)
+        wildMonIndex = 36;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_36 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_37)
+        wildMonIndex = 37;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_37 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_38)
+        wildMonIndex = 38;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_38 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_39)
+        wildMonIndex = 39;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_39 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_40)
+        wildMonIndex = 40;
+    else
+        wildMonIndex = 41;
 
     if (LURE_STEP_COUNT != 0 && (Random() % 10 < 2))
         swap = TRUE;
 
     if (swap)
-        wildMonIndex = 31 - wildMonIndex;
+        wildMonIndex = 41 - wildMonIndex;
 
     return wildMonIndex;
 }

@@ -9761,40 +9761,41 @@ Class: Rival
 Pic: May
 Gender: Female
 Music: Female
+Items: ITEM_POTION / ITEM_POTION
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Setup First Turn
 
-Slowpoke
+SLWTHNGLSS (Slowpoke) @ Oran Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe
 Nature: Quiet
 Ability: Oblivious
 
-Yanma
+Yanma @ Cheri Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Adamant 
 Ability: Speed Boost
 
-Croagunk
+Croagunk @ Cheri Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
 Ability: Dry Skin
 
-Orthworm
+Orthworm @ Rawst Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Impish
 Ability: Earth Eater
 
-Skiddo
+Skiddo @ Oran Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
 Ability: Sap Sipper
 
-Tauros_Paldean_Aqua_Breed
+Tauros_Paldean_Aqua_Breed @ Rawst Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
@@ -9848,40 +9849,41 @@ Class: Rival
 Pic: May
 Gender: Female
 Music: Female
+Items: ITEM_POTION / ITEM_POTION
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Pawmi
+Pawmi @ Pecha Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Timid
 Ability: Static
 
-Dewpider
+Dewpider @ Oran Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Careful 
 Ability: Water Bubble
 
-Croagunk
+Croagunk @ Cheri Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Adamant
 Ability: Dry Skin
 
-Bombirdier
+Bombirdier @ Cheri Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
 Ability: Rocky Payload
 
-Skiddo
+Skiddo @ Oran Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Adamant
 Ability: Sap Sipper
 
-Tinkatink
+Tinkatink @ Rawst Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Careful
@@ -9935,39 +9937,40 @@ Class: Rival
 Pic: May
 Gender: Female
 Music: Female
+Items: ITEM_POTION / ITEM_POTION
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Setup First Turn / Check Viability / Smart Switching
 
-Sandile
+TonyHoney (Sandile) (M) @ Rawst Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Adamant
 
-Bounsweet
+Bounsweet @ Oran Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Adamant 
 Ability: Oblivious
 
-Croagunk
+Croagunk @ Cheri Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
 Ability: Dry Skin
 
-Klawf
+Klawf @ Cheri Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Impish
 Ability: Anger Shell
 
-Skarmory
+Skarmory @ Oran Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
 Ability: Keen Eye
 
-Wynaut
+Wynaut @ Chesto Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Calm
