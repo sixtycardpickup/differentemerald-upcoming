@@ -123,6 +123,9 @@ struct Trainer
 
     struct String starting_status;
     int starting_status_line;
+
+    struct String party_size;
+    int party_size_line;
 };
 
 static bool is_empty_string(struct String s)
@@ -1183,6 +1186,13 @@ static bool parse_trainer(struct Parser *p, const struct Parsed *parsed, struct 
         else if (is_literal_token(&key, "Starting Status"))
         {
             if (trainer->starting_status_line)
+                any_error = !set_show_parse_error(p, key.location, "duplicate 'Starting Status'");
+            trainer->starting_status_line = value.location.line;
+            trainer->starting_status = token_string(&value);
+        }
+        else if (is_literal_token(&key, "Party Size"))
+        {
+            if (trainer->party_size_line)
                 any_error = !set_show_parse_error(p, key.location, "duplicate 'Starting Status'");
             trainer->starting_status_line = value.location.line;
             trainer->starting_status = token_string(&value);
