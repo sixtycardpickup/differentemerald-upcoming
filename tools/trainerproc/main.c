@@ -1194,8 +1194,8 @@ static bool parse_trainer(struct Parser *p, const struct Parsed *parsed, struct 
         {
             if (trainer->party_size_line)
                 any_error = !set_show_parse_error(p, key.location, "duplicate 'Party Size'");
-            trainer->starting_status_line = value.location.line;
-            trainer->starting_status = token_string(&value);
+            trainer->party_size_line = value.location.line;
+            trainer->party_size = token_string(&value);
         }
         else
         {
@@ -1524,6 +1524,23 @@ static void fprint_constant(FILE *f, const char *prefix, struct String s)
     }
 }
 
+static void fprint_number(FILE *f, struct String s)
+{
+    if (s.string_n > 0)
+    {
+        for (int i = 0; i < s.string_n; i++)
+        {
+            unsigned char c = s.string[i];
+            if ('0' <= c && c <= '9')
+                fputc(c, f);
+        }
+    }
+    else
+    {
+        fprintf(f, "0");
+    }
+}
+
 // This is a really stupid helper for 'fprint_species'.
 static bool is_utf8_character(struct String s, int *i, const unsigned char *utf8)
 {
@@ -1724,12 +1741,18 @@ static void fprint_trainers(const char *output_path, FILE *f, struct Parsed *par
         {
             fprintf(f, "#line %d\n", trainer->party_size_line);
             fprintf(f, "        .partySize = ");
-            fprint_constant(f, "PARTY_SIZE", trainer->party_size);
+            fprint_number(f, trainer->party_size);
+            fprintf(f, ",\n");
+        }
+        else
+        {
+            fprintf(f, "        .partySize = ");
+            fprint_number(f, trainer->party_size);
             fprintf(f, ",\n");
         }
 
-        fprintf(f, "        .partySize = %d,\n", trainer->pokemon_n);
-        fprintf(f, "        .party = (const struct TrainerMon[])\n");
+        fprintf(f, "        .poolSize = %d,\n", trainer->pokemon_n);
+        fprintf(f, "        .pool = (const struct TrainerMon[])\n");
         fprintf(f, "        {\n");
         for (int j = 0; j < trainer->pokemon_n; j++)
         {
