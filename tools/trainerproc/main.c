@@ -1193,7 +1193,7 @@ static bool parse_trainer(struct Parser *p, const struct Parsed *parsed, struct 
         else if (is_literal_token(&key, "Party Size"))
         {
             if (trainer->party_size_line)
-                any_error = !set_show_parse_error(p, key.location, "duplicate 'Starting Status'");
+                any_error = !set_show_parse_error(p, key.location, "duplicate 'Party Size'");
             trainer->starting_status_line = value.location.line;
             trainer->starting_status = token_string(&value);
         }
@@ -1717,6 +1717,14 @@ static void fprint_trainers(const char *output_path, FILE *f, struct Parsed *par
             fprintf(f, "#line %d\n", trainer->starting_status_line);
             fprintf(f, "        .startingStatus = ");
             fprint_constant(f, "STARTING_STATUS", trainer->starting_status);
+            fprintf(f, ",\n");
+        }
+
+        if (!is_empty_string(trainer->party_size))
+        {
+            fprintf(f, "#line %d\n", trainer->party_size_line);
+            fprintf(f, "        .partySize = ");
+            fprint_constant(f, "PARTY_SIZE", trainer->party_size);
             fprintf(f, ",\n");
         }
 
