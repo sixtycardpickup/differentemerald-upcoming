@@ -1355,7 +1355,8 @@ void BattleSetup_StartTrainerBattle(void)
         gBattleTypeFlags = (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_TRAINER);
     else
         gBattleTypeFlags = (BATTLE_TYPE_TRAINER);
-
+    if (FlagGet(FLAG_DYNAMIC_TRAINER_LEVELS))
+        gBattleTypeFlags = (BATTLE_TYPE_DYNAMIC_LEVELS);
     if (InBattlePyramid())
     {
         VarSet(VAR_TEMP_PLAYING_PYRAMID_MUSIC, 0);

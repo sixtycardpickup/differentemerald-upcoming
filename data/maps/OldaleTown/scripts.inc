@@ -214,6 +214,18 @@ OldaleTown_EventScript_BlockedPath::
 	releaseall
 	end
 
+OldaleTown_EventScript_SetDynamicTrainerLevels::
+	lockall
+	setflag FLAG_DYNAMIC_TRAINER_LEVELS
+	releaseall
+	end
+
+OldaleTown_EventScript_ClearDynamicTrainerLevels::
+	lockall
+	clearflag FLAG_DYNAMIC_TRAINER_LEVELS
+	releaseall
+	end
+
 OldaleTown_EventScript_NotBlockingPath::
 	msgbox OldaleTown_Text_FinishedSketchingFootprints, MSGBOX_DEFAULT
 	release
