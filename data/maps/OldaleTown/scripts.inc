@@ -217,12 +217,14 @@ OldaleTown_EventScript_BlockedPath::
 OldaleTown_EventScript_SetDynamicTrainerLevels::
 	lockall
 	setflag FLAG_DYNAMIC_TRAINER_LEVELS
+	msgbox OldaleTown_Text_DynamicTrainerLevelsOn, MSGBOX_DEFAULT
 	releaseall
 	end
 
 OldaleTown_EventScript_ClearDynamicTrainerLevels::
 	lockall
 	clearflag FLAG_DYNAMIC_TRAINER_LEVELS
+	msgbox OldaleTown_Text_DynamicTrainerLevelsOff, MSGBOX_DEFAULT
 	releaseall
 	end
 
@@ -410,4 +412,21 @@ OldaleTown_Text_BrendanLetsGoBack:
 OldaleTown_Text_TownSign:
 	.string "OLDALE TOWN\n"
 	.string "“Where things start off scarce.”$"
+
+OldaleTown_Text_DynamicTrainerLevelsOn:
+	.string "Opposing trainer POKé-MON levels will\n"
+	.string "be set to the levels that have been\l"
+	.string "predefined for each opposing party!\p"
+	.string "Read the sign next to me in order to\n"
+	.string "set opposing team levels dynamically\l"
+	.string "instead.$"
+
+OldaleTown_Text_DynamicTrainerLevelsOff:
+	.string "Opposing trainer POKé-MON levels will\n"
+	.string "be set dynamically based on the average\l"
+	.string "level of your party POKé-MON!\p"
+	.string "Read the sign next to me in order to\n"
+	.string "set opposing team levels to the levels\l"
+	.string "that have been predefined for each\l"
+	.string "opposing party instead.$"
 
