@@ -222,6 +222,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "OldaleTown_EventScript_ClearDynamicTrainerLevels"
+    },
+    {
+      "type": "sign",
+      "x": 17,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "OldaleTown_EventScript_SetMatchPlayerLevel"
     }
   ]
 }
