@@ -2381,7 +2381,8 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
     else if (battleTypeFlags & BATTLE_TYPE_TRAINER && !(battleTypeFlags & (BATTLE_TYPE_FRONTIER
                                                                         | BATTLE_TYPE_EREADER_TRAINER
                                                                         | BATTLE_TYPE_TRAINER_HILL
-                                                                        | BATTLE_TYPE_DYNAMIC_LEVELS)))
+                                                                        | BATTLE_TYPE_DYNAMIC_LEVELS
+                                                                        | BATTLE_TYPE_MATCH_PLAYER_LEVEL)))
         {
             if (firstTrainer == TRUE)
                 ZeroEnemyPartyMons();
