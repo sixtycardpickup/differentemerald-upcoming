@@ -160,17 +160,27 @@ LittlerootTown_EventScript_GoInsideWithMom::
 	closedoor VAR_0x8004, VAR_0x8005
 	waitdooranim
 	delay 10
-	applymovement LOCALID_MOM, LittlerootTown_Movement_MomApproachPlayerAtTruck
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_GoInsideWithMom2Male
+	goto_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_GoInsideWithMom2Female
+	end
+
+LittlerootTown_Movement_MomExitHouse:
+	walk_down
+	step_end
+
+LittlerootTown_EventScript_GoInsideWithMom2Male::
+	applymovement LOCALID_MOM, LittlerootTown_Movement_MomApproachMalePlayerAtTruck
 	waitmovement 0
 	msgbox LittlerootTown_Text_OurNewHomeLetsGoInside, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_MOM, LittlerootTown_Movement_MomApproachDoor
-	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_Movement_PlayerApproachDoor
+	applymovement LOCALID_MOM, LittlerootTown_Movement_MomApproachDoorMale
+	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_Movement_MalePlayerApproachDoor
 	waitmovement 0
 	opendoor VAR_0x8004, VAR_0x8005
 	waitdooranim
-	applymovement LOCALID_MOM, LittlerootTown_Movement_MomEnterHouse
-	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_Movement_PlayerEnterHouse
+	applymovement LOCALID_MOM, LittlerootTown_Movement_MomEnterHouseMale
+	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_Movement_MalePlayerEnterHouse
 	waitmovement 0
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE
 	setvar VAR_LITTLEROOT_INTRO_STATE, 3
@@ -180,37 +190,88 @@ LittlerootTown_EventScript_GoInsideWithMom::
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	return
 
-LittlerootTown_Movement_MomExitHouse:
-	walk_down
-	step_end
-
-LittlerootTown_Movement_MomApproachPlayerAtTruck:
+LittlerootTown_Movement_MomApproachMalePlayerAtTruck:
 	walk_down
 	walk_in_place_faster_left
 	step_end
 
-LittlerootTown_Movement_MomApproachDoor:
+LittlerootTown_Movement_MomApproachDoorMale:
 	delay_16
 	delay_8
 	walk_up
 	walk_up
 	step_end
 
-LittlerootTown_Movement_MomEnterHouse:
+LittlerootTown_Movement_MomEnterHouseMale:
 	walk_up
 	set_invisible
 	step_end
 
-LittlerootTown_Movement_PlayerApproachDoor:
+LittlerootTown_Movement_MalePlayerApproachDoor:
 	delay_16
 	delay_8
 	walk_right
 	walk_in_place_faster_up
 	step_end
 
-LittlerootTown_Movement_PlayerEnterHouse:
+LittlerootTown_Movement_MalePlayerEnterHouse:
 	walk_up
 	walk_up
+	walk_up
+	step_end
+
+LittlerootTown_EventScript_GoInsideWithMom2Female::
+	applymovement LOCALID_MOM, LittlerootTown_Movement_MomApproachFemalePlayerAtTruck
+	waitmovement 0
+	msgbox LittlerootTown_Text_OurNewHomeLetsGoInside, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_MOM, LittlerootTown_Movement_MomApproachDoorFemale
+	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_Movement_FemalePlayerApproachDoor
+	waitmovement 0
+	opendoor VAR_0x8004, VAR_0x8005
+	waitdooranim
+	applymovement LOCALID_MOM, LittlerootTown_Movement_MomEnterHouseFemale
+	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_Movement_FemalePlayerEnterHouse
+	waitmovement 0
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE
+	setvar VAR_LITTLEROOT_INTRO_STATE, 3
+	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	closedoor VAR_0x8004, VAR_0x8005
+	waitdooranim
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
+	return
+
+LittlerootTown_Movement_MomApproachFemalePlayerAtTruck:
+	walk_left
+	walk_left
+	walk_in_place_faster_up
+	step_end
+
+LittlerootTown_Movement_MomApproachDoorFemale:
+	delay_16
+	delay_8
+	walk_right
+	walk_right
+	walk_in_place_faster_up
+	step_end
+
+LittlerootTown_Movement_MomEnterHouseFemale:
+	walk_up
+	set_invisible
+	step_end
+
+LittlerootTown_Movement_FemalePlayerApproachDoor:
+	delay_16
+	delay_8
+	walk_down
+	walk_down
+	jump_2_down
+	walk_right
+	walk_right
+	walk_in_place_faster_up
+	step_end
+
+LittlerootTown_Movement_FemalePlayerEnterHouse:
 	walk_up
 	step_end
 
