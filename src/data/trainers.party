@@ -9601,7 +9601,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Setup First Turn / Check Viability / Smart Switching
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Yanma
 Level: 12
@@ -9680,10 +9680,11 @@ Class: Rival
 Pic: Brendan
 Gender: Male
 Music: Male
+Items: ITEM_POTION / ITEM_POTION
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Setup First Turn
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Diglett_Alolan
+Diglett_Alolan @ Oran Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Adamant
@@ -9695,7 +9696,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
 Ability: Hunger Switch
 
-Croagunk
+Croagunk @ Cheri Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
@@ -9712,6 +9713,12 @@ Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 0 Spe
 Nature: Quiet
 Ability: Flame Body
+
+Klawf @ Cheri Berry
+Level: 12
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Nature: Impish
+Ability: Anger Shell
 
 === TRAINER_BRENDAN_ROUTE_110_PAWMI ===
 Name: BRENDAN
@@ -9763,7 +9770,7 @@ Gender: Female
 Music: Female
 Items: ITEM_POTION / ITEM_POTION
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Setup First Turn
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 SLWTHNGLSS (Slowpoke) @ Oran Berry
 Level: 12
@@ -9939,7 +9946,7 @@ Gender: Female
 Music: Female
 Items: ITEM_POTION / ITEM_POTION
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Setup First Turn / Check Viability / Smart Switching
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 TonyHoney (Sandile) (M) @ Rawst Berry
 Level: 12
