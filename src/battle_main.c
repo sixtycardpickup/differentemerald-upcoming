@@ -2110,6 +2110,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                 u32 otIdType = OT_ID_RANDOM_NO_SHINY;
                 u32 fixedOtId = 0;
                 u32 ability = 0;
+                u32 abilityNum;
 
                 chosenSpecies[i] = poolData[poolIndex].species;
 
@@ -2415,15 +2416,16 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                     if (ability >= maxAbilities)
                         ability = 0;
                 }
-                else if (B_TRAINER_MON_RANDOM_ABILITY)
-                {
-                    const struct SpeciesInfo *speciesInfo = &gSpeciesInfo[poolData[poolIndex].species];
-                    ability = personalityHash % 3;
-                    while (speciesInfo->abilities[ability] == ABILITY_NONE)
+                else if (poolData[poolIndex].ability == ABILITY_NONE)
                     {
-                        ability--;
+                        const struct SpeciesInfo *speciesInfo = &gSpeciesInfo[poolData[poolIndex].species];
+                        abilityNum = Random() % 3;
+                        ability = abilityNum;
+                        while (speciesInfo->abilities[ability] == ABILITY_NONE)
+                        {
+                            ability--;
+                        }
                     }
-                }
                 SetMonData(&party[i], MON_DATA_ABILITY_NUM, &ability);
                 SetMonData(&party[i], MON_DATA_FRIENDSHIP, &(poolData[poolIndex].friendship));
                 if (poolData[poolIndex].ball != ITEM_NONE)
