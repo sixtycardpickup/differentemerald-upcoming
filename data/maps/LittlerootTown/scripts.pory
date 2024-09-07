@@ -7,8 +7,10 @@ raw `
 
 LittlerootTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, LittlerootTown_OnResume
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, LittlerootTown_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, LittlerootTown_OnWarp
+	map_script MAP_SCRIPT_ON_LOAD, LittlerootTown_OnLoad
 	.byte 0
 
 	@ State descriptions for VAR_LITTLEROOT_TOWN_STATE
@@ -40,6 +42,89 @@ LittlerootTown_MapScripts::
 	@ 3: Met Rival
 	@ 4: Received Pokedex
 
+LittlerootTown_OnTransitionWeather::
+	special GetDayOrNight
+	call_if_eq VAR_RESULT, 3, LittlerootTown_OnTransition_Night
+	call_if_eq VAR_RESULT, 2, LittlerootTown_OnTransition_Evening
+	call_if_eq VAR_RESULT, 1, LittlerootTown_OnTransition_Day
+	call_if_eq VAR_RESULT, 0, LittlerootTown_OnTransition_Morning
+	return
+
+LittlerootTown_OnTransition_Morning::
+	setweather WEATHER_SUNNY
+	doweather
+	end
+
+LittlerootTown_OnTransition_Day::
+	setweather WEATHER_SUNNY
+	doweather
+	end
+
+LittlerootTown_OnTransition_Evening::
+	setweather WEATHER_SHADE
+	doweather
+	end
+
+LittlerootTown_OnTransition_Night::
+	setweather WEATHER_SHADE
+	doweather
+	end
+
+LittlerootTown_OnResume::
+	special GetDayOrNight
+	call_if_eq VAR_RESULT, 3, Littleroot_OnResume_Night
+	call_if_eq VAR_RESULT, 2, Littleroot_OnResume_Evening
+	call_if_eq VAR_RESULT, 1, Littleroot_OnResume_Day
+	call_if_eq VAR_RESULT, 0, Littleroot_OnResume_Morning
+	end
+
+Littleroot_OnResume_Morning::
+	setvar VAR_DAYNIGHT, 0
+	random 3
+	switch VAR_RESULT
+	case 0, Littleroot_MorningClouds
+	case 1, Littleroot_MorningClouds
+	case 2, Littleroot_MorningSunny
+	end
+
+Littleroot_MorningClouds::
+	setweather WEATHER_SUNNY_CLOUDS
+	end
+
+Littleroot_MorningSunny::
+	setweather WEATHER_SUNNY
+	end
+
+Littleroot_OnResume_Day::
+	setvar VAR_DAYNIGHT, 1
+	random 3
+	switch VAR_RESULT
+	case 0, Littleroot_DayClouds
+	case 1, Littleroot_DaySunny
+	case 2, Littleroot_DaySunny
+	end
+
+Littleroot_DayClouds::
+	setweather WEATHER_SUNNY_CLOUDS
+	end
+
+Littleroot_DaySunny::
+	setweather WEATHER_SUNNY
+	end
+
+Littleroot_OnResume_Evening::
+	setvar VAR_DAYNIGHT, 2
+	setweather WEATHER_SHADE
+	end
+
+Littleroot_OnResume_Night::
+	setvar VAR_DAYNIGHT, 3
+	setweather WEATHER_SHADE
+	end
+
+LittlerootTown_OnLoad::
+	doweather
+	end
 
 LittlerootTown_OnTransition:
 	setflag FLAG_VISITED_LITTLEROOT_TOWN
@@ -56,6 +141,7 @@ LittlerootTown_OnTransition:
 	call_if_eq VAR_LITTLEROOT_RIVAL_STATE, 3, LittlerootTown_EventScript_SetRivalLeftForRoute103
 	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_EventScript_HideMapNamePopup
 	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_EventScript_LeftLabAfterDexUpgrade
+	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 7, LittlerootTown_OnTransitionWeather
 	end
 
 LittlerootTown_EventScript_HideScienceMan:
@@ -160,17 +246,27 @@ LittlerootTown_EventScript_GoInsideWithMom::
 	closedoor VAR_0x8004, VAR_0x8005
 	waitdooranim
 	delay 10
-	applymovement LOCALID_MOM, LittlerootTown_Movement_MomApproachPlayerAtTruck
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_GoInsideWithMom2Male
+	goto_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_GoInsideWithMom2Female
+	end
+
+LittlerootTown_Movement_MomExitHouse:
+	walk_down
+	step_end
+
+LittlerootTown_EventScript_GoInsideWithMom2Male::
+	applymovement LOCALID_MOM, LittlerootTown_Movement_MomApproachMalePlayerAtTruck
 	waitmovement 0
 	msgbox LittlerootTown_Text_OurNewHomeLetsGoInside, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_MOM, LittlerootTown_Movement_MomApproachDoor
-	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_Movement_PlayerApproachDoor
+	applymovement LOCALID_MOM, LittlerootTown_Movement_MomApproachDoorMale
+	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_Movement_MalePlayerApproachDoor
 	waitmovement 0
 	opendoor VAR_0x8004, VAR_0x8005
 	waitdooranim
-	applymovement LOCALID_MOM, LittlerootTown_Movement_MomEnterHouse
-	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_Movement_PlayerEnterHouse
+	applymovement LOCALID_MOM, LittlerootTown_Movement_MomEnterHouseMale
+	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_Movement_MalePlayerEnterHouse
 	waitmovement 0
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE
 	setvar VAR_LITTLEROOT_INTRO_STATE, 3
@@ -180,37 +276,88 @@ LittlerootTown_EventScript_GoInsideWithMom::
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	return
 
-LittlerootTown_Movement_MomExitHouse:
-	walk_down
-	step_end
-
-LittlerootTown_Movement_MomApproachPlayerAtTruck:
+LittlerootTown_Movement_MomApproachMalePlayerAtTruck:
 	walk_down
 	walk_in_place_faster_left
 	step_end
 
-LittlerootTown_Movement_MomApproachDoor:
+LittlerootTown_Movement_MomApproachDoorMale:
 	delay_16
 	delay_8
 	walk_up
 	walk_up
 	step_end
 
-LittlerootTown_Movement_MomEnterHouse:
+LittlerootTown_Movement_MomEnterHouseMale:
 	walk_up
 	set_invisible
 	step_end
 
-LittlerootTown_Movement_PlayerApproachDoor:
+LittlerootTown_Movement_MalePlayerApproachDoor:
 	delay_16
 	delay_8
 	walk_right
 	walk_in_place_faster_up
 	step_end
 
-LittlerootTown_Movement_PlayerEnterHouse:
+LittlerootTown_Movement_MalePlayerEnterHouse:
 	walk_up
 	walk_up
+	walk_up
+	step_end
+
+LittlerootTown_EventScript_GoInsideWithMom2Female::
+	applymovement LOCALID_MOM, LittlerootTown_Movement_MomApproachFemalePlayerAtTruck
+	waitmovement 0
+	msgbox LittlerootTown_Text_OurNewHomeLetsGoInside, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_MOM, LittlerootTown_Movement_MomApproachDoorFemale
+	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_Movement_FemalePlayerApproachDoor
+	waitmovement 0
+	opendoor VAR_0x8004, VAR_0x8005
+	waitdooranim
+	applymovement LOCALID_MOM, LittlerootTown_Movement_MomEnterHouseFemale
+	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_Movement_FemalePlayerEnterHouse
+	waitmovement 0
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE
+	setvar VAR_LITTLEROOT_INTRO_STATE, 3
+	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	closedoor VAR_0x8004, VAR_0x8005
+	waitdooranim
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
+	return
+
+LittlerootTown_Movement_MomApproachFemalePlayerAtTruck:
+	walk_left
+	walk_left
+	walk_in_place_faster_up
+	step_end
+
+LittlerootTown_Movement_MomApproachDoorFemale:
+	delay_16
+	delay_8
+	walk_right
+	walk_right
+	walk_in_place_faster_up
+	step_end
+
+LittlerootTown_Movement_MomEnterHouseFemale:
+	walk_up
+	set_invisible
+	step_end
+
+LittlerootTown_Movement_FemalePlayerApproachDoor:
+	delay_16
+	delay_8
+	walk_down
+	walk_down
+	jump_2_down
+	walk_right
+	walk_right
+	walk_in_place_faster_up
+	step_end
+
+LittlerootTown_Movement_FemalePlayerEnterHouse:
 	walk_up
 	step_end
 

@@ -38,9 +38,9 @@ Route103_EventScript_RivalMay::
 	waitmovement 0
 	msgbox Route103_Text_MayLetsBattle, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
-	case 0, Route103_EventScript_StartMayBattleTreecko
-	case 1, Route103_EventScript_StartMayBattleTorchic
-	case 2, Route103_EventScript_StartMayBattleMudkip
+	case 0, Route103_EventScript_StartMayBattleSlowpoke
+	case 1, Route103_EventScript_StartMayBattlePawmi
+	case 2, Route103_EventScript_StartMayBattleSandile
 	end
 
 Route103_EventScript_RivalBrendan::
@@ -55,37 +55,37 @@ Route103_EventScript_RivalBrendan::
 	waitmovement 0
 	msgbox Route103_Text_BrendanLetsBattle, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
-	case 0, Route103_EventScript_StartBrendanBattleTreecko
-	case 1, Route103_EventScript_StartBrendanBattleTorchic
-	case 2, Route103_EventScript_StartBrendanBattleMudkip
+	case 0, Route103_EventScript_StartBrendanBattleSlowpoke
+	case 1, Route103_EventScript_StartBrendanBattlePawmi
+	case 2, Route103_EventScript_StartBrendanBattleSandile
 	end
 
-Route103_EventScript_StartMayBattleTreecko::
+Route103_EventScript_StartMayBattleSlowpoke::
 	trainerbattle_no_intro TRAINER_MAY_ROUTE_103_SLOWPOKE, Route103_Text_MayDefeated
 	goto Route103_EventScript_AfterMayBattle
 	end
 
-Route103_EventScript_StartMayBattleTorchic::
+Route103_EventScript_StartMayBattlePawmi::
 	trainerbattle_no_intro TRAINER_MAY_ROUTE_103_PAWMI, Route103_Text_MayDefeated
 	goto Route103_EventScript_AfterMayBattle
 	end
 
-Route103_EventScript_StartMayBattleMudkip::
+Route103_EventScript_StartMayBattleSandile::
 	trainerbattle_no_intro TRAINER_MAY_ROUTE_103_SANDILE, Route103_Text_MayDefeated
 	goto Route103_EventScript_AfterMayBattle
 	end
 
-Route103_EventScript_StartBrendanBattleTreecko::
+Route103_EventScript_StartBrendanBattleSlowpoke::
 	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_SLOWPOKE, Route103_Text_BrendanDefeated
 	goto Route103_EventScript_AfterBrendanBattle
 	end
 
-Route103_EventScript_StartBrendanBattleTorchic::
+Route103_EventScript_StartBrendanBattlePawmi::
 	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_PAWMI, Route103_Text_BrendanDefeated
 	goto Route103_EventScript_AfterBrendanBattle
 	end
 
-Route103_EventScript_StartBrendanBattleMudkip::
+Route103_EventScript_StartBrendanBattleSandile::
 	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_SANDILE, Route103_Text_BrendanDefeated
 	goto Route103_EventScript_AfterBrendanBattle
 	end

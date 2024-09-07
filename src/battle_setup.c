@@ -1353,9 +1353,18 @@ void BattleSetup_StartTrainerBattle(void)
 {
     if (gNoOfApproachingTrainers == 2)
         gBattleTypeFlags = (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_TRAINER);
+    else if (FlagGet(FLAG_DYNAMIC_TRAINER_LEVELS))
+        gBattleTypeFlags = (BATTLE_TYPE_DYNAMIC_LEVELS | BATTLE_TYPE_TRAINER);
+    else if (FlagGet(FLAG_DYNAMIC_TRAINER_LEVELS) && gNoOfApproachingTrainers == 2)
+        gBattleTypeFlags = (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_DYNAMIC_LEVELS | BATTLE_TYPE_TRAINER);
+    else if (FlagGet(FLAG_MATCH_PLAYER_LEVEL))
+        gBattleTypeFlags = (BATTLE_TYPE_MATCH_PLAYER_LEVEL | BATTLE_TYPE_TRAINER);
+    else if (FlagGet(FLAG_MATCH_PLAYER_LEVEL) && gNoOfApproachingTrainers == 2)
+        gBattleTypeFlags = (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_MATCH_PLAYER_LEVEL | BATTLE_TYPE_TRAINER);
     else
         gBattleTypeFlags = (BATTLE_TYPE_TRAINER);
-
+    //if (FlagGet(FLAG_DYNAMIC_ABILITIES))
+        //gBattleTypeFlags = (BATTLE_TYPE_DYNAMIC_ABILITIES);
     if (InBattlePyramid())
     {
         VarSet(VAR_TEMP_PLAYING_PYRAMID_MUSIC, 0);
