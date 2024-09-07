@@ -5,10 +5,10 @@ WestOfLittleroot_MapScripts::
 
 RouteEast1_OnTransition:
 	special GetDayOrNight
-	goto_if_eq VAR_RESULT, 3, RouteEast1_OnResume_Night
-	goto_if_eq VAR_RESULT, 2, RouteEast1_OnResume_Evening
-	goto_if_eq VAR_RESULT, 1, RouteEast1_OnResume_Day
-	goto_if_eq VAR_RESULT, 0, RouteEast1_OnResume_Morning
+	goto_if_eq VAR_RESULT, 3, RouteEast1_OnTransition_Night
+	goto_if_eq VAR_RESULT, 2, RouteEast1_OnTransition_Evening
+	goto_if_eq VAR_RESULT, 1, RouteEast1_OnTransition_Day
+	goto_if_eq VAR_RESULT, 0, RouteEast1_OnTransition_Morning
 	end
 	
 RouteEast1_OnTransition_Morning:
