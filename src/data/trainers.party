@@ -9682,8 +9682,9 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Items: ITEM_POTION / ITEM_POTION
-Double Battle: No
+Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
+Party Size: 2
 
 Diglett_Alolan @ Oran Berry
 Level: 12
