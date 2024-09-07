@@ -465,6 +465,10 @@ static u16 GetCurrentMapWildMonHeaderId(void)
             if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(WEST_OF_LITTLEROOT) &&
                 gSaveBlock1Ptr->location.mapNum == MAP_NUM(WEST_OF_LITTLEROOT))
                 i += VarGet(VAR_DAYNIGHT);
+            
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SOUTH_OF_LITTLEROOT) &&
+                gSaveBlock1Ptr->location.mapNum == MAP_NUM(SOUTH_OF_LITTLEROOT))
+                i += VarGet(VAR_DAYNIGHT);
 
             if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ALTERING_CAVE) &&
                 gSaveBlock1Ptr->location.mapNum == MAP_NUM(ALTERING_CAVE))
