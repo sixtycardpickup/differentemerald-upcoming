@@ -7,8 +7,10 @@ raw `
 
 LittlerootTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, LittlerootTown_OnResume
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, LittlerootTown_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, LittlerootTown_OnWarp
+	map_script MAP_SCRIPT_ON_LOAD, LittlerootTown_OnLoad
 	.byte 0
 
 	@ State descriptions for VAR_LITTLEROOT_TOWN_STATE
@@ -40,6 +42,89 @@ LittlerootTown_MapScripts::
 	@ 3: Met Rival
 	@ 4: Received Pokedex
 
+LittlerootTown_OnTransitionWeather::
+	special GetDayOrNight
+	call_if_eq VAR_RESULT, 3, LittlerootTown_OnTransition_Night
+	call_if_eq VAR_RESULT, 2, LittlerootTown_OnTransition_Evening
+	call_if_eq VAR_RESULT, 1, LittlerootTown_OnTransition_Day
+	call_if_eq VAR_RESULT, 0, LittlerootTown_OnTransition_Morning
+	return
+
+LittlerootTown_OnTransition_Morning::
+	setweather WEATHER_SUNNY
+	doweather
+	end
+
+LittlerootTown_OnTransition_Day::
+	setweather WEATHER_SUNNY
+	doweather
+	end
+
+LittlerootTown_OnTransition_Evening::
+	setweather WEATHER_SHADE
+	doweather
+	end
+
+LittlerootTown_OnTransition_Night::
+	setweather WEATHER_SHADE
+	doweather
+	end
+
+LittlerootTown_OnResume::
+	special GetDayOrNight
+	call_if_eq VAR_RESULT, 3, Littleroot_OnResume_Night
+	call_if_eq VAR_RESULT, 2, Littleroot_OnResume_Evening
+	call_if_eq VAR_RESULT, 1, Littleroot_OnResume_Day
+	call_if_eq VAR_RESULT, 0, Littleroot_OnResume_Morning
+	end
+
+Littleroot_OnResume_Morning::
+	setvar VAR_DAYNIGHT, 0
+	random 3
+	switch VAR_RESULT
+	case 0, Littleroot_MorningClouds
+	case 1, Littleroot_MorningClouds
+	case 2, Littleroot_MorningSunny
+	end
+
+Littleroot_MorningClouds::
+	setweather WEATHER_SUNNY_CLOUDS
+	end
+
+Littleroot_MorningSunny::
+	setweather WEATHER_SUNNY
+	end
+
+Littleroot_OnResume_Day::
+	setvar VAR_DAYNIGHT, 1
+	random 3
+	switch VAR_RESULT
+	case 0, Littleroot_DayClouds
+	case 1, Littleroot_DaySunny
+	case 2, Littleroot_DaySunny
+	end
+
+Littleroot_DayClouds::
+	setweather WEATHER_SUNNY_CLOUDS
+	end
+
+Littleroot_DaySunny::
+	setweather WEATHER_SUNNY
+	end
+
+Littleroot_OnResume_Evening::
+	setvar VAR_DAYNIGHT, 2
+	setweather WEATHER_SHADE
+	end
+
+Littleroot_OnResume_Night::
+	setvar VAR_DAYNIGHT, 3
+	setweather WEATHER_SHADE
+	end
+
+LittlerootTown_OnLoad::
+	doweather
+	end
 
 LittlerootTown_OnTransition:
 	setflag FLAG_VISITED_LITTLEROOT_TOWN
@@ -56,6 +141,7 @@ LittlerootTown_OnTransition:
 	call_if_eq VAR_LITTLEROOT_RIVAL_STATE, 3, LittlerootTown_EventScript_SetRivalLeftForRoute103
 	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_EventScript_HideMapNamePopup
 	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_EventScript_LeftLabAfterDexUpgrade
+	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 7, LittlerootTown_OnTransitionWeather
 	end
 
 LittlerootTown_EventScript_HideScienceMan:
