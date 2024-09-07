@@ -17,6 +17,7 @@
 #define MAX_TRAINER_AI_FLAGS 32
 #define MAX_TRAINER_ITEMS 4
 #define PARTY_SIZE 6
+#define POOL_SIZE 64
 #define MAX_MON_MOVES 4
 
 struct String
@@ -115,7 +116,7 @@ struct Trainer
     bool double_battle;
     int double_battle_line;
 
-    struct Pokemon pokemon[PARTY_SIZE];
+    struct Pokemon pokemon[POOL_SIZE];
     int pokemon_n;
 
     struct String mugshot;
@@ -123,6 +124,9 @@ struct Trainer
 
     struct String starting_status;
     int starting_status_line;
+
+    struct String party_size;
+    int party_size_line;
 };
 
 static bool is_empty_string(struct String s)
@@ -165,6 +169,24 @@ static bool ends_with(struct String s, const char *suffix)
         }
         return true;
     }
+}
+
+int get_number_from_string(struct String s)
+{
+    int number = 0;
+    if (s.string_n > 0)
+    {
+        for (int i = 0; i < s.string_n; i++)
+        {
+            unsigned char c = s.string[i];
+            if ('0' <= c && c <= '9')
+            {
+                number *= 10;
+                number += c-48;
+            }
+        }
+    }
+    return number;
 }
 
 static struct String literal_string(const char *s)
@@ -1187,6 +1209,13 @@ static bool parse_trainer(struct Parser *p, const struct Parsed *parsed, struct 
             trainer->starting_status_line = value.location.line;
             trainer->starting_status = token_string(&value);
         }
+        else if (is_literal_token(&key, "Party Size"))
+        {
+            if (trainer->party_size_line)
+                any_error = !set_show_parse_error(p, key.location, "duplicate 'Party Size'");
+            trainer->party_size_line = value.location.line;
+            trainer->party_size = token_string(&value);
+        }
         else
         {
             any_error = !set_show_parse_error(p, key.location, "expected one of 'Name', 'Class', 'Pic', 'Gender', 'Music', 'Items', 'Double Battle', or 'AI'");
@@ -1206,7 +1235,7 @@ static bool parse_trainer(struct Parser *p, const struct Parsed *parsed, struct 
             return false;
     }
 
-    for (int i = 0; i < PARTY_SIZE; i++)
+    for (int i = 0; i < POOL_SIZE; i++)
     {
         struct Pokemon *pokemon = &trainer->pokemon[i];
 
@@ -1514,6 +1543,23 @@ static void fprint_constant(FILE *f, const char *prefix, struct String s)
     }
 }
 
+static void fprint_number(FILE *f, struct String s)
+{
+    if (s.string_n > 0)
+    {
+        for (int i = 0; i < s.string_n; i++)
+        {
+            unsigned char c = s.string[i];
+            if ('0' <= c && c <= '9')
+                fputc(c, f);
+        }
+    }
+    else
+    {
+        fprintf(f, "0");
+    }
+}
+
 // This is a really stupid helper for 'fprint_species'.
 static bool is_utf8_character(struct String s, int *i, const unsigned char *utf8)
 {
@@ -1710,8 +1756,184 @@ static void fprint_trainers(const char *output_path, FILE *f, struct Parsed *par
             fprintf(f, ",\n");
         }
 
-        fprintf(f, "        .partySize = %d,\n", trainer->pokemon_n);
+        if (!is_empty_string(trainer->party_size))
+        {
+            fprintf(f, "#line %d\n", trainer->party_size_line);
+            fprintf(f, "        .partySize = ");
+            fprint_number(f, trainer->party_size);
+            fprintf(f, ",\n");
+        }
+        else
+        {
+            fprintf(f, "        .partySize = ");
+            fprintf(f, "%d", trainer->pokemon_n);
+            fprintf(f, ",\n");
+        }
+
+        fprintf(f, "        .poolSize = %d,\n", trainer->pokemon_n);
         fprintf(f, "        .party = (const struct TrainerMon[])\n");
+        fprintf(f, "        {\n");
+        int num_in_party = get_number_from_string(trainer->party_size);
+        if (num_in_party == 0)
+        {
+            if (trainer->pokemon_n > 6)
+                num_in_party = 0;
+            else
+                num_in_party = trainer->pokemon_n;
+        }
+        for (int j = 0; j < num_in_party; j++)
+        {
+            struct Pokemon *pokemon = &trainer->pokemon[j];
+            fprintf(f, "            {\n");
+
+            if (!is_empty_string(pokemon->nickname))
+            {
+                fprintf(f, "#line %d\n", pokemon->header_line);
+                fprintf(f, "            .nickname = COMPOUND_STRING(\"");
+                fprint_string(f, pokemon->nickname);
+                fprintf(f, "\"),\n");
+            }
+
+            fprintf(f, "#line %d\n", pokemon->header_line);
+            fprintf(f, "            .species = ");
+            fprint_species(f, "SPECIES", pokemon->species);
+            fprintf(f, ",\n");
+
+            switch (pokemon->gender)
+            {
+            case GENDER_ANY:
+                fprintf(f, "            .gender = TRAINER_MON_RANDOM_GENDER,\n");
+                break;
+            case GENDER_MALE:
+                fprintf(f, "#line %d\n", pokemon->header_line);
+                fprintf(f, "            .gender = TRAINER_MON_MALE,\n");
+                break;
+            case GENDER_FEMALE:
+                fprintf(f, "#line %d\n", pokemon->header_line);
+                fprintf(f, "            .gender = TRAINER_MON_FEMALE,\n");
+                break;
+            }
+
+            if (!is_empty_string(pokemon->item))
+            {
+                fprintf(f, "#line %d\n", pokemon->header_line);
+                fprintf(f, "            .heldItem = ");
+                fprint_constant(f, "ITEM", pokemon->item);
+                fprintf(f, ",\n");
+            }
+
+            if (pokemon->evs_line)
+            {
+                fprintf(f, "#line %d\n", pokemon->evs_line);
+                fprintf(f, "            .ev = ");
+                fprint_stats(f, "TRAINER_PARTY_EVS", pokemon->evs);
+                fprintf(f, ",\n");
+            }
+
+            if (pokemon->ivs_line)
+            {
+                fprintf(f, "#line %d\n", pokemon->ivs_line);
+                fprintf(f, "            .iv = ");
+                fprint_stats(f, "TRAINER_PARTY_IVS", pokemon->ivs);
+                fprintf(f, ",\n");
+            }
+
+            if (pokemon->ability_line)
+            {
+                fprintf(f, "#line %d\n", pokemon->ability_line);
+                fprintf(f, "            .ability = ");
+                fprint_constant(f, "ABILITY", pokemon->ability);
+                fprintf(f, ",\n");
+            }
+
+            if (pokemon->level_line)
+            {
+                fprintf(f, "#line %d\n", pokemon->level_line);
+                fprintf(f, "            .lvl = %d,\n", pokemon->level);
+            }
+
+            if (pokemon->ball_line)
+            {
+                fprintf(f, "#line %d\n", pokemon->ball_line);
+                fprintf(f, "            .ball = ");
+                fprint_constant(f, "ITEM", pokemon->ball);
+                fprintf(f, ",\n");
+            }
+
+            if (pokemon->friendship_line)
+            {
+                fprintf(f, "#line %d\n", pokemon->friendship_line);
+                fprintf(f, "            .friendship = %d,\n", pokemon->friendship);
+            }
+
+            if (pokemon->nature_line)
+            {
+                fprintf(f, "#line %d\n", pokemon->nature_line);
+                fprintf(f, "            .nature = ");
+                fprint_constant(f, "NATURE", pokemon->nature);
+                fprintf(f, ",\n");
+            }
+            else
+            {
+                fprintf(f, "            .nature = NATURE_HARDY,\n");
+            }
+
+            if (pokemon->shiny_line)
+            {
+                fprintf(f, "#line %d\n", pokemon->shiny_line);
+                fprintf(f, "            .isShiny = ");
+                fprint_bool(f, pokemon->shiny);
+                fprintf(f, ",\n");
+            }
+
+            if (pokemon->dynamax_level_line)
+            {
+                fprintf(f, "#line %d\n", pokemon->dynamax_level_line);
+                fprintf(f, "            .dynamaxLevel = %d,\n", pokemon->dynamax_level);
+            }
+            else
+            {
+                fprintf(f, "            .dynamaxLevel = MAX_DYNAMAX_LEVEL,\n");
+            }
+
+            if (pokemon->gigantamax_factor_line)
+            {
+                fprintf(f, "#line %d\n", pokemon->gigantamax_factor_line);
+                fprintf(f, "            .gigantamaxFactor = ");
+                fprint_bool(f, pokemon->gigantamax_factor);
+                fprintf(f, ",\n");
+            }
+
+            if (pokemon->dynamax_level_line || pokemon->gigantamax_factor_line)
+            {
+                fprintf(f, "            .shouldUseDynamax = TRUE,\n");
+            }
+            else if (pokemon->tera_type_line)
+            {
+                fprintf(f, "#line %d\n", pokemon->tera_type_line);
+                fprintf(f, "            .teraType = ");
+                fprint_constant(f, "TYPE", pokemon->tera_type);
+                fprintf(f, ",\n");
+            }
+
+            if (pokemon->moves_n > 0)
+            {
+                fprintf(f, "            .moves = {\n");
+                fprintf(f, "#line %d\n", pokemon->move1_line);
+                for (int k = 0; k < pokemon->moves_n; k++)
+                {
+                    fprintf(f, "                ");
+                    fprint_constant(f, "MOVE", pokemon->moves[k]);
+                    fprintf(f, ",\n");
+                }
+                fprintf(f, "            },\n");
+            }
+
+            fprintf(f, "            },\n");
+        }
+        fprintf(f, "        },\n");
+
+        fprintf(f, "        .pool = (const struct TrainerMon[])\n");
         fprintf(f, "        {\n");
         for (int j = 0; j < trainer->pokemon_n; j++)
         {
