@@ -355,7 +355,7 @@
 #define TRAINER_ELLIOT_5                    349
 #define TRAINER_RONALD                      350
 #define TRAINER_JACOB                       351
-#define TRAINER_ANTHONY                     352
+#define TRAINER_TEARNEST                     352
 #define TRAINER_BENJAMIN_1                  353
 #define TRAINER_BENJAMIN_2                  354
 #define TRAINER_BENJAMIN_3                  355

@@ -5,6 +5,7 @@
 #include "field_weather.h"
 #include "overworld.h"
 #include "random.h"
+#include "rtc.h"
 #include "script.h"
 #include "constants/weather.h"
 #include "constants/songs.h"
@@ -94,12 +95,22 @@ static const struct SpriteTemplate sCloudSpriteTemplate =
 
 void Clouds_InitVars(void)
 {
-    gWeatherPtr->targetColorMapIndex = 0;
-    gWeatherPtr->colorMapStepDelay = 20;
-    gWeatherPtr->weatherGfxLoaded = FALSE;
-    gWeatherPtr->initStep = 0;
-    if (gWeatherPtr->cloudSpritesCreated == FALSE)
-        Weather_SetBlendCoeffs(0, 16);
+    if (gLocalTime.hours >= 6 && gLocalTime.hours <= 17)
+    {
+        gWeatherPtr->targetColorMapIndex = 0;
+        gWeatherPtr->colorMapStepDelay = 20;
+        gWeatherPtr->weatherGfxLoaded = FALSE;
+        gWeatherPtr->initStep = 0;
+        if (gWeatherPtr->cloudSpritesCreated == FALSE)
+            Weather_SetBlendCoeffs(0, 16);
+    }
+    else
+    {
+        gWeatherPtr->initStep = 0;
+        gWeatherPtr->targetColorMapIndex = 3;
+        gWeatherPtr->colorMapStepDelay = 20;
+        gWeatherPtr->weatherGfxLoaded = FALSE;
+    }
 }
 
 void Clouds_InitAll(void)
@@ -111,7 +122,9 @@ void Clouds_InitAll(void)
 
 void Clouds_Main(void)
 {
-    switch (gWeatherPtr->initStep)
+    if (gLocalTime.hours >= 6 && gLocalTime.hours <= 17)
+    {
+        switch (gWeatherPtr->initStep)
     {
     case 0:
         CreateCloudSprites();
@@ -129,11 +142,33 @@ void Clouds_Main(void)
         }
         break;
     }
+    }
+    else
+    {
+        switch (gWeatherPtr->initStep)
+    {
+    case 0:
+        CreateCloudSprites();
+        gWeatherPtr->targetColorMapIndex = 3;
+        gWeatherPtr->colorMapStepDelay = 20;
+        gWeatherPtr->initStep++;
+        break;
+    case 1:
+        {
+            gWeatherPtr->weatherGfxLoaded = TRUE;
+            gWeatherPtr->initStep++;
+        }
+        break;
+    }
+    }
 }
 
 bool8 Clouds_Finish(void)
 {
-    switch (gWeatherPtr->finishStep)
+    RtcCalcLocalTime();
+    if (gLocalTime.hours >= 6 && gLocalTime.hours <= 17)
+    {
+        switch (gWeatherPtr->finishStep)
     {
     case 0:
         Weather_SetTargetBlendCoeffs(0, 16, 1);
@@ -148,6 +183,23 @@ bool8 Clouds_Finish(void)
         return TRUE;
     }
     return FALSE;
+    }
+    else
+    {
+        switch (gWeatherPtr->finishStep)
+    {
+    case 0:
+        gWeatherPtr->finishStep++;
+        return TRUE;
+    case 1:
+        {
+            DestroyCloudSprites();
+            gWeatherPtr->finishStep++;
+        }
+        return TRUE;
+    }
+    return FALSE;
+    }
 }
 
 void Sunny_InitVars(void)
@@ -159,7 +211,18 @@ void Sunny_InitVars(void)
 
 void Sunny_InitAll(void)
 {
-    Sunny_InitVars();
+    if (gWeatherPtr->currWeather == WEATHER_SUNNY_CLOUDS)
+    {
+    RtcCalcLocalTime();
+    if (gLocalTime.hours >= 6 && gLocalTime.hours <= 17)
+    {
+        Sunny_InitVars();
+    }
+    else
+    {
+        Shade_InitVars();
+    }
+    }
 }
 
 void Sunny_Main(void)

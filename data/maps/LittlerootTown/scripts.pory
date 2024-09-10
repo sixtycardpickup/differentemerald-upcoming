@@ -126,6 +126,26 @@ LittlerootTown_OnLoad::
 	doweather
 	end
 
+LittlerootTown_SetFlag_SmartWild::
+	setflag FLAG_SMART_WILD
+	end
+
+LittlerootTown_SetFlag_ExpShare::
+	setflag FLAG_GEN_6_EXP_SHARE
+	end
+
+LittlerootTown_UnsetFlag_SmartWild::
+	clearflag FLAG_SMART_WILD
+	end
+
+LittlerootTown_UnsetFlag_ExpShare::
+	clearflag FLAG_GEN_6_EXP_SHARE
+	end
+
+LittlerootTown_ClearTrainerFlag_Tearnest::
+	cleartrainerflag (TRAINER_TEARNEST)
+	end
+
 LittlerootTown_OnTransition:
 	setflag FLAG_VISITED_LITTLEROOT_TOWN
 	call Common_EventScript_SetupRivalGfxId

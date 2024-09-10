@@ -324,7 +324,7 @@
     {
       "id": "LAYOUT_ROUTE117",
       "name": "Route117_Layout",
-      "width": 60,
+      "width": 62,
       "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",

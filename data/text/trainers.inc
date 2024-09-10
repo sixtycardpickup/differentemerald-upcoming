@@ -1016,16 +1016,27 @@ Route110_Text_JacobPostBattle:
 	.string "cause serious injury!\l"
 	.string "Inspect your BIKE for problems!$"
 
-Route110_Text_AnthonyIntro:
+RouteEast1_Text_TearnestIntro:
 	.string "Yo, you!\n"
 	.string "Can you keep up with my speed?$"
 
-Route110_Text_AnthonyDefeated:
+RouteEast1_Text_TearnestDefeated:
 	.string "Crash and burn!$"
 
-Route110_Text_AnthonyPostBattle:
+RouteEast1_Text_TearnestPostBattle:
 	.string "Speed alone won't let me win at POKéMON.\n"
 	.string "I need to reconsider this…$"
+
+RouteEast1_Text_CredricIntro:
+	.string "There's no need to go worryin'.\n"
+	.string "I already know all about you!$"
+
+RouteEast1_Text_CredricDefeat:
+	.string "I guess I learned nothing from T.V.!$"
+
+RouteEast1_Text_CredricPostBattle:
+	.string "When I know more all about you…\n"
+	.string "I will try it again…$"
 
 Route110_Text_BenjaminIntro:
 	.string "Don't panic if your BIKE's going fast!$"

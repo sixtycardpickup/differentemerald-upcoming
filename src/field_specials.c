@@ -183,6 +183,225 @@ void GetDayOrNight(void)
 	gSpecialVar_Result = nightorday;
 }
 
+void GetDayOrNightAndWeather(void)
+{
+	u8 nightordayandweather;
+	RtcCalcLocalTime();
+	if (gLocalTime.hours >= 6 && gLocalTime.hours <= 8 && GetCurrentWeather() == WEATHER_NONE)
+	{
+		nightordayandweather = 0; //Morning
+	}
+    else if (gLocalTime.hours >= 6 && gLocalTime.hours <= 8 && GetCurrentWeather() == WEATHER_SUNNY)
+	{
+		nightordayandweather = 0; //Morning
+	}
+    else if (gLocalTime.hours >= 6 && gLocalTime.hours <= 8 && GetCurrentWeather() == WEATHER_SHADE)
+	{
+		nightordayandweather = 0; //Morning
+	}
+    else if (gLocalTime.hours >= 6 && gLocalTime.hours <= 8 && GetCurrentWeather() == WEATHER_SUNNY_CLOUDS)
+	{
+		nightordayandweather = 0; //Morning
+	}
+    else if (gLocalTime.hours >= 6 && gLocalTime.hours <= 8 && GetCurrentWeather() == WEATHER_RAIN)
+	{
+		nightordayandweather = 1; //Morning, Raining
+	}
+    else if (gLocalTime.hours >= 6 && gLocalTime.hours <= 8 && GetCurrentWeather() == WEATHER_DOWNPOUR)
+	{
+		nightordayandweather = 1; //Morning, Raining
+	}
+	else if (gLocalTime.hours >= 6 && gLocalTime.hours <= 8 && GetCurrentWeather() == WEATHER_RAIN_THUNDERSTORM)
+	{
+		nightordayandweather = 2; //Morning, Raining, Thunderstorm
+	}
+    else if (gLocalTime.hours >= 6 && gLocalTime.hours <= 8 && GetCurrentWeather() == WEATHER_FOG_DIAGONAL)
+	{
+		nightordayandweather = 3; //Morning, Fog
+	}
+    else if (gLocalTime.hours >= 6 && gLocalTime.hours <= 8 && GetCurrentWeather() == WEATHER_FOG_HORIZONTAL)
+	{
+		nightordayandweather = 3; //Morning, Fog
+	}
+	else if (gLocalTime.hours >= 6 && gLocalTime.hours <= 8 && GetCurrentWeather() == WEATHER_DROUGHT)
+	{
+		nightordayandweather = 4; //Morning, Drought
+    }
+    else if (gLocalTime.hours >= 6 && gLocalTime.hours <= 8 && GetCurrentWeather() == WEATHER_VOLCANIC_ASH)
+	{
+		nightordayandweather = 5; //Morning, Ash
+    }
+    else if (gLocalTime.hours >= 6 && gLocalTime.hours <= 8 && GetCurrentWeather() == WEATHER_SNOW)
+	{
+		nightordayandweather = 6; //Morning, Snow
+    }
+    else if (gLocalTime.hours >= 6 && gLocalTime.hours <= 8 && GetCurrentWeather() == WEATHER_SANDSTORM)
+	{
+		nightordayandweather = 7; //Morning, Sandstorm
+    }
+    else if (gLocalTime.hours >= 9 && gLocalTime.hours <= 17 && GetCurrentWeather() == WEATHER_NONE)
+	{
+		nightordayandweather = 8; //Day
+	}
+    else if (gLocalTime.hours >= 9 && gLocalTime.hours <= 17 && GetCurrentWeather() == WEATHER_SUNNY)
+	{
+		nightordayandweather = 8; //Day
+	}
+    else if (gLocalTime.hours >= 9 && gLocalTime.hours <= 17 && GetCurrentWeather() == WEATHER_SHADE)
+	{
+		nightordayandweather = 8; //Day
+	}
+    else if (gLocalTime.hours >= 9 && gLocalTime.hours <= 17 && GetCurrentWeather() == WEATHER_SUNNY_CLOUDS)
+	{
+		nightordayandweather = 8; //Day
+	}
+    else if (gLocalTime.hours >= 9 && gLocalTime.hours <= 17 && GetCurrentWeather() == WEATHER_RAIN)
+	{
+		nightordayandweather = 9; //Day, Raining
+	}
+    else if (gLocalTime.hours >= 9 && gLocalTime.hours <= 17 && GetCurrentWeather() == WEATHER_DOWNPOUR)
+	{
+		nightordayandweather = 9; //Day, Raining
+	}
+	else if (gLocalTime.hours >= 9 && gLocalTime.hours <= 17 && GetCurrentWeather() == WEATHER_RAIN_THUNDERSTORM)
+	{
+		nightordayandweather = 10; //Day, Raining, Thunderstorm
+	}
+    else if (gLocalTime.hours >= 9 && gLocalTime.hours <= 17 && GetCurrentWeather() == WEATHER_FOG_DIAGONAL)
+	{
+		nightordayandweather = 11; //Day, Fog
+	}
+    else if (gLocalTime.hours >= 9 && gLocalTime.hours <= 17 && GetCurrentWeather() == WEATHER_FOG_HORIZONTAL)
+	{
+		nightordayandweather = 11; //Day, Fog
+	}
+	else if (gLocalTime.hours >= 9 && gLocalTime.hours <= 17 && GetCurrentWeather() == WEATHER_DROUGHT)
+	{
+		nightordayandweather = 12; //Day, Drought
+    }
+    else if (gLocalTime.hours >= 9 && gLocalTime.hours <= 17 && GetCurrentWeather() == WEATHER_VOLCANIC_ASH)
+	{
+		nightordayandweather = 13; //Day, Ash
+    }
+    else if (gLocalTime.hours >= 9 && gLocalTime.hours <= 17 && GetCurrentWeather() == WEATHER_SNOW)
+	{
+		nightordayandweather = 14; //Day, Snow
+    }
+    else if (gLocalTime.hours >= 9 && gLocalTime.hours <= 17 && GetCurrentWeather() == WEATHER_SANDSTORM)
+	{
+		nightordayandweather = 15; //Day, Sandstorm
+    }
+    else if (gLocalTime.hours >= 18 && gLocalTime.hours <= 20 && GetCurrentWeather() == WEATHER_NONE)
+	{
+		nightordayandweather = 16; //Evening
+	}
+    else if (gLocalTime.hours >= 18 && gLocalTime.hours <= 20 && GetCurrentWeather() == WEATHER_SUNNY)
+	{
+		nightordayandweather = 16; //Evening
+	}
+    else if (gLocalTime.hours >= 18 && gLocalTime.hours <= 20 && GetCurrentWeather() == WEATHER_SHADE)
+	{
+		nightordayandweather = 16; //Evening
+	}
+    else if (gLocalTime.hours >= 18 && gLocalTime.hours <= 20 && GetCurrentWeather() == WEATHER_SUNNY_CLOUDS)
+	{
+		nightordayandweather = 16; //Evening
+	}
+    else if (gLocalTime.hours >= 18 && gLocalTime.hours <= 20 && GetCurrentWeather() == WEATHER_RAIN)
+	{
+		nightordayandweather = 17; //Evening, Raining
+	}
+    else if (gLocalTime.hours >= 18 && gLocalTime.hours <= 20 && GetCurrentWeather() == WEATHER_DOWNPOUR)
+	{
+		nightordayandweather = 17; //Evening, Raining
+	}
+	else if (gLocalTime.hours >= 18 && gLocalTime.hours <= 20 && GetCurrentWeather() == WEATHER_RAIN_THUNDERSTORM)
+	{
+		nightordayandweather = 18; //Evening, Raining, Thunderstorm
+	}
+    else if (gLocalTime.hours >= 18 && gLocalTime.hours <= 20 && GetCurrentWeather() == WEATHER_FOG_DIAGONAL)
+	{
+		nightordayandweather = 19; //Evening, Fog
+	}
+    else if (gLocalTime.hours >= 18 && gLocalTime.hours <= 20 && GetCurrentWeather() == WEATHER_FOG_HORIZONTAL)
+	{
+		nightordayandweather = 19; //Evening, Fog
+	}
+	else if (gLocalTime.hours >= 18 && gLocalTime.hours <= 20 && GetCurrentWeather() == WEATHER_DROUGHT)
+	{
+		nightordayandweather = 20; //Evening, Drought
+    }
+    else if (gLocalTime.hours >= 18 && gLocalTime.hours <= 20 && GetCurrentWeather() == WEATHER_VOLCANIC_ASH)
+	{
+		nightordayandweather = 21; //Evening, Ash
+    }
+    else if (gLocalTime.hours >= 18 && gLocalTime.hours <= 20 && GetCurrentWeather() == WEATHER_SNOW)
+	{
+		nightordayandweather = 22; //Evening, Snow
+    }
+    else if (gLocalTime.hours >= 18 && gLocalTime.hours <= 20 && GetCurrentWeather() == WEATHER_SANDSTORM)
+	{
+		nightordayandweather = 23; //Evening, Sandstorm
+    }
+    else if (gLocalTime.hours >= 21 && gLocalTime.hours <= 5 && GetCurrentWeather() == WEATHER_NONE)
+	{
+		nightordayandweather = 24; //Night
+	}
+    else if (gLocalTime.hours >= 21 && gLocalTime.hours <= 5 && GetCurrentWeather() == WEATHER_SUNNY)
+	{
+		nightordayandweather = 24; //Night
+	}
+    else if (gLocalTime.hours >= 21 && gLocalTime.hours <= 5 && GetCurrentWeather() == WEATHER_SHADE)
+	{
+		nightordayandweather = 24; //Night
+	}
+    else if (gLocalTime.hours >= 21 && gLocalTime.hours <= 5 && GetCurrentWeather() == WEATHER_SUNNY_CLOUDS)
+	{
+		nightordayandweather = 24; //Night
+	}
+    else if (gLocalTime.hours >= 21 && gLocalTime.hours <= 5 && GetCurrentWeather() == WEATHER_RAIN)
+	{
+		nightordayandweather = 25; //Night, Raining
+	}
+    else if (gLocalTime.hours >= 21 && gLocalTime.hours <= 5 && GetCurrentWeather() == WEATHER_DOWNPOUR)
+	{
+		nightordayandweather = 25; //Night, Raining
+	}
+	else if (gLocalTime.hours >= 21 && gLocalTime.hours <= 5 && GetCurrentWeather() == WEATHER_RAIN_THUNDERSTORM)
+	{
+		nightordayandweather = 26; //Night, Raining, Thunderstorm
+	}
+    else if (gLocalTime.hours >= 21 && gLocalTime.hours <= 5 && GetCurrentWeather() == WEATHER_FOG_DIAGONAL)
+	{
+		nightordayandweather = 27; //Night, Fog
+	}
+    else if (gLocalTime.hours >= 21 && gLocalTime.hours <= 5 && GetCurrentWeather() == WEATHER_FOG_HORIZONTAL)
+	{
+		nightordayandweather = 27; //Night, Fog
+	}
+	else if (gLocalTime.hours >= 21 && gLocalTime.hours <= 5 && GetCurrentWeather() == WEATHER_DROUGHT)
+	{
+		nightordayandweather = 28; //Night, Drought
+    }
+    else if (gLocalTime.hours >= 21 && gLocalTime.hours <= 5 && GetCurrentWeather() == WEATHER_VOLCANIC_ASH)
+	{
+		nightordayandweather = 29; //Night, Ash
+    }
+    else if (gLocalTime.hours >= 21 && gLocalTime.hours <= 5 && GetCurrentWeather() == WEATHER_SNOW)
+	{
+		nightordayandweather = 30; //Night, Snow
+    }
+    else if (gLocalTime.hours >= 21 && gLocalTime.hours <= 5 && GetCurrentWeather() == WEATHER_SANDSTORM)
+	{
+		nightordayandweather = 31; //Night, Sandstorm
+    }
+    else
+    {   
+        nightordayandweather = 32;
+    }
+	gSpecialVar_Result = nightordayandweather;
+}
+
 void ResetCyclingRoadChallengeData(void)
 {
     gBikeCyclingChallenge = FALSE;

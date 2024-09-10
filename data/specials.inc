@@ -185,6 +185,7 @@ gSpecials::
 	def_special RockSmashWildEncounter
 	def_special HeadbuttWildEncounter
 	def_special GetDayOrNight
+	def_special GetDayOrNightAndWeather
 	def_special GabbyAndTyGetBattleNum
 	def_special GabbyAndTyAfterInterview
 	def_special GabbyAndTyBeforeInterview

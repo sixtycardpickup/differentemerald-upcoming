@@ -13,18 +13,22 @@ RouteEast1_OnTransition:
 	
 RouteEast1_OnTransition_Morning:
 	setvar VAR_DAYNIGHT, 0
+	goto RouteEast1_ClearTrainerFlagTearnest
 	end
 
 RouteEast1_OnTransition_Day:
 	setvar VAR_DAYNIGHT, 1
+	goto RouteEast1_ClearTrainerFlagTearnest
 	end
 
 RouteEast1_OnTransition_Evening:
 	setvar VAR_DAYNIGHT, 2
+	goto RouteEast1_ClearTrainerFlagTearnest
 	end
 
 RouteEast1_OnTransition_Night:
 	setvar VAR_DAYNIGHT, 3
+	goto RouteEast1_ClearTrainerFlagTearnest
 	end
 	
 RouteEast1_OnResume:
@@ -50,4 +54,12 @@ RouteEast1_OnResume_Evening:
 RouteEast1_OnResume_Night:
 	setvar VAR_DAYNIGHT, 3
 	end
-	
+
+RouteEast1_ClearTrainerFlagTearnest::
+	cleartrainerflag (TRAINER_TEARNEST)
+	end
+
+RouteEast1_EventScript_Tearnest::
+	trainerbattle_single TRAINER_TEARNEST, RouteEast1_Text_TearnestIntro, RouteEast1_Text_TearnestDefeated
+	msgbox RouteEast1_Text_TearnestPostBattle, MSGBOX_AUTOCLOSE
+	end
