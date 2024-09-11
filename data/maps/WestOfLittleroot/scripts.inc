@@ -57,9 +57,15 @@ RouteEast1_OnResume_Night:
 
 RouteEast1_ClearTrainerFlagTearnest::
 	cleartrainerflag (TRAINER_TEARNEST)
+	cleartrainerflag (TRAINER_CREDRIC)
 	end
 
 RouteEast1_EventScript_Tearnest::
 	trainerbattle_single TRAINER_TEARNEST, RouteEast1_Text_TearnestIntro, RouteEast1_Text_TearnestDefeated
 	msgbox RouteEast1_Text_TearnestPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RouteEast1_EventScript_Credric::
+	trainerbattle_single TRAINER_CREDRIC, RouteEast1_Text_CredricIntro, RouteEast1_Text_CredricDefeat
+	msgbox RouteEast1_Text_CredricPostBattle, MSGBOX_AUTOCLOSE
 	end
