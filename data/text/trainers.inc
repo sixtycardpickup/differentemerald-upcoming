@@ -1032,7 +1032,8 @@ RouteEast1_Text_CredricIntro:
 	.string "I already know all about you!$"
 
 RouteEast1_Text_CredricDefeat:
-	.string "I guess I learned nothing from T.V.!$"
+	.string "I guess I learned nothing from T.V.!\n"
+	.string "Knowin' isn't everythin'.$"
 
 RouteEast1_Text_CredricPostBattle:
 	.string "When I know more all about you…\n"
