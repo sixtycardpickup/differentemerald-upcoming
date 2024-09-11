@@ -70862,3 +70862,1011 @@ F_TRAINER_FEMALE |
             },
         },
     },
+#line 17388
+    [TRAINER_CREDRIC] =
+    {
+#line 17389
+        .trainerName = _("CREDRIC"),
+#line 17390
+        .trainerClass = TRAINER_CLASS_PSYCHIC,
+#line 17391
+        .trainerPic = TRAINER_PIC_PSYCHIC_M,
+        .encounterMusic_gender = 
+#line 17393
+            TRAINER_ENCOUNTER_MUSIC_MALE,
+#line 17394
+        .items = { ITEM_POTION, ITEM_ANTIDOTE, ITEM_BURN_HEAL, ITEM_AWAKENING },
+#line 17395
+        .doubleBattle = TRUE,
+#line 17396
+        .aiFlags = AI_FLAG_OMNISCIENT | AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING,
+#line 17397
+        .partySize = 6,
+        .poolSize = 64,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 17399
+            .species = SPECIES_AZURILL,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17399
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17401
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17400
+            .lvl = 10,
+#line 17402
+            .nature = NATURE_QUIRKY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17404
+            .species = SPECIES_BIDOOF,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17404
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17406
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17405
+            .lvl = 10,
+#line 17407
+            .nature = NATURE_RELAXED,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17409
+            .species = SPECIES_BIDOOF,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17409
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17411
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17410
+            .lvl = 10,
+#line 17412
+            .nature = NATURE_ADAMANT,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17414
+            .species = SPECIES_BLITZLE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17414
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17416
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17415
+            .lvl = 10,
+#line 17417
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17419
+            .species = SPECIES_BLITZLE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17419
+            .heldItem = ITEM_RAWST_BERRY,
+#line 17421
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17420
+            .lvl = 10,
+#line 17422
+            .nature = NATURE_ADAMANT,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17424
+            .species = SPECIES_CARVANHA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17424
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17426
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17425
+            .lvl = 10,
+#line 17427
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+        },
+        .pool = (const struct TrainerMon[])
+        {
+            {
+#line 17399
+            .species = SPECIES_AZURILL,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17399
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17401
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17400
+            .lvl = 10,
+#line 17402
+            .nature = NATURE_QUIRKY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17404
+            .species = SPECIES_BIDOOF,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17404
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17406
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17405
+            .lvl = 10,
+#line 17407
+            .nature = NATURE_RELAXED,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17409
+            .species = SPECIES_BIDOOF,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17409
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17411
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17410
+            .lvl = 10,
+#line 17412
+            .nature = NATURE_ADAMANT,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17414
+            .species = SPECIES_BLITZLE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17414
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17416
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17415
+            .lvl = 10,
+#line 17417
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17419
+            .species = SPECIES_BLITZLE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17419
+            .heldItem = ITEM_RAWST_BERRY,
+#line 17421
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17420
+            .lvl = 10,
+#line 17422
+            .nature = NATURE_ADAMANT,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17424
+            .species = SPECIES_CARVANHA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17424
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17426
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17425
+            .lvl = 10,
+#line 17427
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17429
+            .species = SPECIES_CHEWTLE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17429
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17431
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17430
+            .lvl = 10,
+#line 17432
+            .nature = NATURE_IMPISH,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17434
+            .species = SPECIES_CORPHISH,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17434
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17436
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17435
+            .lvl = 10,
+#line 17437
+            .nature = NATURE_ADAMANT,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17439
+            .species = SPECIES_CROAGUNK,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17439
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17441
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17440
+            .lvl = 10,
+#line 17442
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17444
+            .species = SPECIES_CUTIEFLY,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17444
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17446
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17445
+            .lvl = 10,
+#line 17447
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17449
+            .species = SPECIES_DROWZEE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17449
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17451
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17450
+            .lvl = 10,
+#line 17452
+            .nature = NATURE_MODEST,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17454
+            .species = SPECIES_DWEBBLE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17454
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17456
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17455
+            .lvl = 10,
+#line 17457
+            .nature = NATURE_RELAXED,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17459
+            .species = SPECIES_ELEKID,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17459
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17461
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17460
+            .lvl = 10,
+#line 17462
+            .nature = NATURE_MODEST,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17464
+            .species = SPECIES_FARFETCHD,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17464
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17466
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17465
+            .lvl = 10,
+#line 17467
+            .nature = NATURE_ADAMANT,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17469
+            .species = SPECIES_FEEBAS,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17469
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17471
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17470
+            .lvl = 10,
+#line 17472
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17474
+            .species = SPECIES_FLAMIGO,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17474
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17476
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17475
+            .lvl = 10,
+#line 17477
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17479
+            .species = SPECIES_FLITTLE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17479
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17481
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17480
+            .lvl = 10,
+#line 17482
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17484
+            .species = SPECIES_GEODUDE_ALOLAN,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17484
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17486
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17485
+            .lvl = 10,
+#line 17487
+            .nature = NATURE_RELAXED,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17489
+            .species = SPECIES_GOOMY,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17489
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17491
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17490
+            .lvl = 10,
+#line 17492
+            .nature = NATURE_SASSY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17494
+            .species = SPECIES_GRUBBIN,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17494
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17496
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17495
+            .lvl = 10,
+#line 17497
+            .nature = NATURE_BRAVE,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17499
+            .species = SPECIES_HATENNA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17499
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17501
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17500
+            .lvl = 10,
+#line 17502
+            .nature = NATURE_QUIET,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17504
+            .species = SPECIES_HOOTHOOT,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17504
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17506
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17505
+            .lvl = 10,
+#line 17507
+            .nature = NATURE_HASTY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17509
+            .species = SPECIES_HOPPIP,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17509
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17511
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17510
+            .lvl = 10,
+#line 17512
+            .nature = NATURE_HASTY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17514
+            .species = SPECIES_ILLUMISE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17514
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17516
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17515
+            .lvl = 10,
+#line 17517
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17519
+            .species = SPECIES_ILLUMISE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17519
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17521
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17520
+            .lvl = 10,
+#line 17522
+            .nature = NATURE_MODEST,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17524
+            .species = SPECIES_KRICKETOT,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17524
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17526
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17525
+            .lvl = 10,
+#line 17527
+            .nature = NATURE_SASSY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17529
+            .species = SPECIES_LOTAD,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17529
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17531
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17530
+            .lvl = 10,
+#line 17532
+            .nature = NATURE_SASSY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17534
+            .species = SPECIES_MAGIKARP,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17534
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17536
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17535
+            .lvl = 10,
+#line 17537
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17539
+            .species = SPECIES_MAKUHITA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17539
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17541
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17540
+            .lvl = 10,
+#line 17542
+            .nature = NATURE_BRAVE,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17544
+            .species = SPECIES_MAKUHITA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17544
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17546
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17545
+            .lvl = 10,
+#line 17547
+            .nature = NATURE_RELAXED,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17549
+            .species = SPECIES_MARILL,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17549
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17551
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17550
+            .lvl = 10,
+#line 17552
+            .nature = NATURE_QUIRKY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17554
+            .species = SPECIES_MORELULL,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17554
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17556
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17555
+            .lvl = 10,
+#line 17557
+            .nature = NATURE_SASSY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17559
+            .species = SPECIES_MUDBRAY,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17559
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17561
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17560
+            .lvl = 10,
+#line 17562
+            .nature = NATURE_IMPISH,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17564
+            .species = SPECIES_MURKROW,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17564
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17566
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17565
+            .lvl = 10,
+#line 17567
+            .nature = NATURE_HASTY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17569
+            .species = SPECIES_MURKROW,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17569
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17571
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17570
+            .lvl = 10,
+#line 17572
+            .nature = NATURE_QUIRKY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17574
+            .species = SPECIES_NOIBAT,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17574
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17576
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17575
+            .lvl = 10,
+#line 17577
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17579
+            .species = SPECIES_ODDISH,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17579
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17581
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17580
+            .lvl = 10,
+#line 17582
+            .nature = NATURE_QUIET,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17584
+            .species = SPECIES_PARAS,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17584
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17586
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17585
+            .lvl = 10,
+#line 17587
+            .nature = NATURE_BRAVE,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17589
+            .species = SPECIES_POLIWAG,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17589
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17591
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17590
+            .lvl = 10,
+#line 17592
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17594
+            .species = SPECIES_SALANDIT,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17594
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17596
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17595
+            .lvl = 10,
+#line 17597
+            .nature = NATURE_MODEST,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17599
+            .species = SPECIES_SHELMET,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17599
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17601
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17600
+            .lvl = 10,
+#line 17602
+            .nature = NATURE_RELAXED,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17604
+            .species = SPECIES_SKIDDO,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17604
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17606
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17605
+            .lvl = 10,
+#line 17607
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17609
+            .species = SPECIES_SKORUPI,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17609
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17611
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17610
+            .lvl = 10,
+#line 17612
+            .nature = NATURE_ADAMANT,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17614
+            .species = SPECIES_SPEAROW,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17614
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17616
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17615
+            .lvl = 10,
+#line 17617
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17619
+            .species = SPECIES_SQUAWKABILLY_BLUE_PLUMAGE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17619
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17621
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17620
+            .lvl = 10,
+#line 17622
+            .nature = NATURE_ADAMANT,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17624
+            .species = SPECIES_SQUIRTLE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17624
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17626
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17625
+            .lvl = 10,
+#line 17627
+            .nature = NATURE_QUIRKY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17629
+            .species = SPECIES_STUNFISK,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17629
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17631
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17630
+            .lvl = 10,
+#line 17632
+            .nature = NATURE_SASSY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17634
+            .species = SPECIES_SUNKERN,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17634
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17636
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17635
+            .lvl = 10,
+#line 17637
+            .nature = NATURE_QUIRKY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17639
+            .species = SPECIES_SURSKIT,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17639
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17641
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17640
+            .lvl = 10,
+#line 17642
+            .nature = NATURE_HASTY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17644
+            .species = SPECIES_TADBULB,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17644
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17646
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17645
+            .lvl = 10,
+#line 17647
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17649
+            .species = SPECIES_TAILLOW,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17649
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17651
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17650
+            .lvl = 10,
+#line 17652
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17654
+            .species = SPECIES_TAUROS_PALDEAN_AQUA_BREED,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17654
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17656
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17655
+            .lvl = 10,
+#line 17657
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17659
+            .species = SPECIES_TOXEL,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17659
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17661
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17660
+            .lvl = 10,
+#line 17662
+            .nature = NATURE_MODEST,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17664
+            .species = SPECIES_TYMPOLE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17664
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17666
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17665
+            .lvl = 10,
+#line 17667
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17669
+            .species = SPECIES_VOLBEAT,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17669
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17671
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17670
+            .lvl = 10,
+#line 17672
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17674
+            .species = SPECIES_VOLBEAT,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17674
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17676
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17675
+            .lvl = 10,
+#line 17677
+            .nature = NATURE_ADAMANT,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17679
+            .species = SPECIES_WOOBAT,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17679
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17681
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17680
+            .lvl = 10,
+#line 17682
+            .nature = NATURE_NAIVE,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17684
+            .species = SPECIES_WOOPER_PALDEAN,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17684
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17686
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17685
+            .lvl = 10,
+#line 17687
+            .nature = NATURE_RELAXED,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17689
+            .species = SPECIES_WOOPER,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17689
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17691
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17690
+            .lvl = 10,
+#line 17692
+            .nature = NATURE_RELAXED,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17694
+            .species = SPECIES_WYNAUT,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17694
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17696
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17695
+            .lvl = 10,
+#line 17697
+            .nature = NATURE_SASSY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17699
+            .species = SPECIES_WYNAUT,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17699
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17701
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17700
+            .lvl = 10,
+#line 17702
+            .nature = NATURE_RELAXED,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17704
+            .species = SPECIES_YANMA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17704
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17706
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17705
+            .lvl = 10,
+#line 17707
+            .nature = NATURE_ADAMANT,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17709
+            .species = SPECIES_YANMA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17709
+            .heldItem = ITEM_ORAN_BERRY,
+#line 17711
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17710
+            .lvl = 10,
+#line 17712
+            .nature = NATURE_MODEST,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 17714
+            .species = SPECIES_ZUBAT,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17714
+            .heldItem = ITEM_CHERI_BERRY,
+#line 17716
+            .iv = TRAINER_PARTY_IVS(16, 16, 16, 16, 16, 16),
+#line 17715
+            .lvl = 10,
+#line 17717
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+        },
+    },
