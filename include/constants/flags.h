@@ -50,9 +50,9 @@
 #define FLAG_DYNAMAX_BATTLE  0x25 // Unused Flag
 #define FLAG_TERA_CHARGE     0x26 // Unused Flag
 #define FLAG_GEN_6_EXP_SHARE 0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
+#define FLAG_NO_COLLISION    0x28 // Unused Flag
+#define FLAG_NO_ENCOUNTER    0x29 // Unused Flag
+#define FLAG_PAUSE_TIME   0x2A // Unused Flag
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag
 #define FLAG_UNUSED_0x02D    0x2D // Unused Flag
@@ -1384,7 +1384,7 @@
 #define FLAG_NURSE_UNION_ROOM_REMINDER              (SYSTEM_FLAGS + 0x20)
 
 #define FLAG_RANDOM_MON_DYNAMIC_LEVELS              (SYSTEM_FLAGS + 0x21) // Unused Flag
-#define FLAG_UNUSED_0x882                           (SYSTEM_FLAGS + 0x22) // Unused Flag
+#define FLAG_FORCE_LOAD_OFFSCREEN_OBJEV             (SYSTEM_FLAGS + 0x22) // Unused Flag
 #define FLAG_UNUSED_0x883                           (SYSTEM_FLAGS + 0x23) // Unused Flag
 #define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // Unused Flag
 #define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
