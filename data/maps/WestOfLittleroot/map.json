@@ -32,6 +32,11 @@
       "map": "MAP_ROUTE101",
       "offset": -20,
       "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE_S1E2",
+      "offset": 21,
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -86,6 +91,32 @@
       "trainer_sight_or_berry_tree_id": "12",
       "script": "RouteEast1_EventScript_Credric",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 14,
+      "y": 25,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "RouteEast1_HealPlayerParty",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 16,
+      "y": -3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -95,6 +126,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "RouteEast1_Nickname"
+    }
   ]
 }
