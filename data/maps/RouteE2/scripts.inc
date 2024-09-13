@@ -1,7 +1,6 @@
 RouteE2_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, RouteN1E2_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, RouteN1E2_OnResume
-	map_script MAP_SCRIPT_ON_LOAD, RouteN1E2_OnLoad
 	.byte 0
 
 RouteN1E2_OnTransition::
@@ -14,25 +13,21 @@ RouteN1E2_OnTransition::
 	
 RouteN1E2_OnTransition_Morning::
 	setweather WEATHER_SUNNY_CLOUDS
-	doweather
 	setvar VAR_DAYNIGHT, 0
 	end
 
 RouteN1E2_OnTransition_Day::
 	setweather WEATHER_SUNNY_CLOUDS
-	doweather
 	setvar VAR_DAYNIGHT, 1
 	end
 
 RouteN1E2_OnTransition_Evening::
-	setweather WEATHER_SUNNY_CLOUDS
-	doweather
+	setweather WEATHER_SHADE
 	setvar VAR_DAYNIGHT, 2
 	end
 
 RouteN1E2_OnTransition_Night::
-	setweather WEATHER_SUNNY_CLOUDS
-	doweather
+	setweather WEATHER_SHADE
 	setvar VAR_DAYNIGHT, 3
 	end
 	
@@ -95,8 +90,4 @@ RouteN1E2_NightThunderstorm::
 
 RouteN1E2_NightShade::
 	setweather WEATHER_SHADE
-	end
-
-RouteN1E2_OnLoad::
-	doweather
 	end
