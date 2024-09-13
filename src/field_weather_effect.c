@@ -95,22 +95,22 @@ static const struct SpriteTemplate sCloudSpriteTemplate =
 
 void Clouds_InitVars(void)
 {
-    if (gLocalTime.hours >= 6 && gLocalTime.hours <= 17)
-    {
+    //if (gLocalTime.hours >= 6 && gLocalTime.hours <= 17)
+    //{
         gWeatherPtr->targetColorMapIndex = 0;
         gWeatherPtr->colorMapStepDelay = 20;
         gWeatherPtr->weatherGfxLoaded = FALSE;
         gWeatherPtr->initStep = 0;
         if (gWeatherPtr->cloudSpritesCreated == FALSE)
             Weather_SetBlendCoeffs(0, 16);
-    }
-    else
+    //}
+    /*else
     {
         gWeatherPtr->initStep = 0;
         gWeatherPtr->targetColorMapIndex = 3;
         gWeatherPtr->colorMapStepDelay = 20;
         gWeatherPtr->weatherGfxLoaded = FALSE;
-    }
+    }*/
 }
 
 void Clouds_InitAll(void)
@@ -122,8 +122,8 @@ void Clouds_InitAll(void)
 
 void Clouds_Main(void)
 {
-    if (gLocalTime.hours >= 6 && gLocalTime.hours <= 17)
-    {
+    //if (gLocalTime.hours >= 6 && gLocalTime.hours <= 17)
+    //{
         switch (gWeatherPtr->initStep)
     {
     case 0:
@@ -142,8 +142,8 @@ void Clouds_Main(void)
         }
         break;
     }
-    }
-    else
+    //}
+    /*else
     {
         switch (gWeatherPtr->initStep)
     {
@@ -160,14 +160,14 @@ void Clouds_Main(void)
         }
         break;
     }
-    }
+    }*/
 }
 
 bool8 Clouds_Finish(void)
 {
-    RtcCalcLocalTime();
-    if (gLocalTime.hours >= 6 && gLocalTime.hours <= 17)
-    {
+    //RtcCalcLocalTime();
+    //if (gLocalTime.hours >= 6 && gLocalTime.hours <= 17)
+    //{
         switch (gWeatherPtr->finishStep)
     {
     case 0:
@@ -183,8 +183,8 @@ bool8 Clouds_Finish(void)
         return TRUE;
     }
     return FALSE;
-    }
-    else
+    //}
+    /*else
     {
         switch (gWeatherPtr->finishStep)
     {
@@ -199,7 +199,7 @@ bool8 Clouds_Finish(void)
         return TRUE;
     }
     return FALSE;
-    }
+    }*/
 }
 
 void Sunny_InitVars(void)
@@ -211,18 +211,18 @@ void Sunny_InitVars(void)
 
 void Sunny_InitAll(void)
 {
-    if (gWeatherPtr->currWeather == WEATHER_SUNNY_CLOUDS)
-    {
-    RtcCalcLocalTime();
-    if (gLocalTime.hours >= 6 && gLocalTime.hours <= 17)
-    {
+    //if (gWeatherPtr->currWeather == WEATHER_SUNNY_CLOUDS)
+    //{
+    //RtcCalcLocalTime();
+    //if (gLocalTime.hours >= 6 && gLocalTime.hours <= 17)
+    //{
         Sunny_InitVars();
-    }
-    else
-    {
+    //}
+    //else
+    //{
         Shade_InitVars();
-    }
-    }
+    //}
+    //}
 }
 
 void Sunny_Main(void)
