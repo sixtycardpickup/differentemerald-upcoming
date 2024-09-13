@@ -10,7 +10,6 @@ LittlerootTown_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, LittlerootTown_OnResume
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, LittlerootTown_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, LittlerootTown_OnWarp
-	map_script MAP_SCRIPT_ON_LOAD, LittlerootTown_OnLoad
 	.byte 0
 
 	@ State descriptions for VAR_LITTLEROOT_TOWN_STATE
@@ -52,22 +51,18 @@ LittlerootTown_OnTransitionWeather::
 
 LittlerootTown_OnTransition_Morning::
 	setweather WEATHER_SUNNY
-	doweather
 	end
 
 LittlerootTown_OnTransition_Day::
 	setweather WEATHER_SUNNY
-	doweather
 	end
 
 LittlerootTown_OnTransition_Evening::
 	setweather WEATHER_SHADE
-	doweather
 	end
 
 LittlerootTown_OnTransition_Night::
 	setweather WEATHER_SHADE
-	doweather
 	end
 
 LittlerootTown_OnResume::
@@ -82,13 +77,13 @@ Littleroot_OnResume_Morning::
 	setvar VAR_DAYNIGHT, 0
 	random 3
 	switch VAR_RESULT
-	case 0, Littleroot_MorningClouds
-	case 1, Littleroot_MorningClouds
+	case 0, Littleroot_MorningSunny
+	case 1, Littleroot_MorningRain
 	case 2, Littleroot_MorningSunny
 	end
 
-Littleroot_MorningClouds::
-	setweather WEATHER_SUNNY_CLOUDS
+Littleroot_MorningRain::
+	setweather WEATHER_RAIN
 	end
 
 Littleroot_MorningSunny::
@@ -99,13 +94,13 @@ Littleroot_OnResume_Day::
 	setvar VAR_DAYNIGHT, 1
 	random 3
 	switch VAR_RESULT
-	case 0, Littleroot_DayClouds
+	case 0, Littleroot_DayDrought
 	case 1, Littleroot_DaySunny
 	case 2, Littleroot_DaySunny
 	end
 
-Littleroot_DayClouds::
-	setweather WEATHER_SUNNY_CLOUDS
+Littleroot_DayDrought::
+	setweather WEATHER_DROUGHT
 	end
 
 Littleroot_DaySunny::
@@ -122,16 +117,32 @@ Littleroot_OnResume_Night::
 	setweather WEATHER_SHADE
 	end
 
-LittlerootTown_OnLoad::
-	doweather
+LittlerootTown_SetFlag_AIvsAI::
+	lock
+	msgbox LittlerootTown_Text_SetFlag_AIvsAI, MSGBOX_AUTOCLOSE
+	setflag FLAG_AI_VS_AI
+	release
+	end
+
+LittlerootTown_SetFlag_TeraOrbCharge::
+	lock
+	msgbox LittlerootTown_Text_SetFlag_TeraOrbCharge, MSGBOX_AUTOCLOSE
+	setflag FLAG_TERA_CHARGE
+	release
 	end
 
 LittlerootTown_SetFlag_SmartWild::
+	lock
+	msgbox LittlerootTown_Text_SetFlag_SmartWild, MSGBOX_AUTOCLOSE
 	setflag FLAG_SMART_WILD
+	release
 	end
 
 LittlerootTown_SetFlag_ExpShare::
+	lock
+	msgbox LittlerootTown_Text_SetFlag_ExpAll, MSGBOX_AUTOCLOSE
 	setflag FLAG_GEN_6_EXP_SHARE
+	release
 	end
 
 LittlerootTown_UnsetFlag_SmartWild::
@@ -142,15 +153,30 @@ LittlerootTown_UnsetFlag_ExpShare::
 	clearflag FLAG_GEN_6_EXP_SHARE
 	end
 
+LittlerootTown_UnsetFlag_AIvsAI::
+	lock
+	msgbox LittlerootTown_Text_UnsetFlag_AIvsAI, MSGBOX_AUTOCLOSE
+	clearflag FLAG_AI_VS_AI
+	release
+	end
+
+LittlerootTown_UnsetFlag_TeraOrbCharge::
+	lock
+	msgbox LittlerootTown_Text_UnsetFlag_TeraOrbCharge, MSGBOX_AUTOCLOSE
+	clearflag FLAG_TERA_CHARGE
+	release
+	end
+
 LittlerootTown_ClearTrainerFlag_Tearnest::
 	cleartrainerflag (TRAINER_TEARNEST)
 	end
 
-LittlerootTown_OnTransition:
+LittlerootTown_OnTransition::
 	setflag FLAG_VISITED_LITTLEROOT_TOWN
 	call Common_EventScript_SetupRivalGfxId
 	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 2, LittlerootTown_EventScript_MoveMomToMaysDoor
 	call_if_unset FLAG_RESCUED_BIRCH, LittlerootTown_EventScript_SetTwinPos
+	call LittlerootTown_OnTransitionWeather
 	call_if_eq VAR_LITTLEROOT_TOWN_STATE, 1, LittlerootTown_EventScript_HideScienceMan
 	call_if_eq VAR_LITTLEROOT_TOWN_STATE, 2, LittlerootTown_EventScript_HideScienceMan
 	call_if_eq VAR_LITTLEROOT_TOWN_STATE, 1, LittlerootTown_EventScript_SetMomStandingInFrontOfDoorPos
@@ -1386,5 +1412,23 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I gave you?\p"
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
+
+LittlerootTown_Text_SetFlag_SmartWild::
+	.string "Setting Smart Wild Flag.$"
+
+LittlerootTown_Text_SetFlag_ExpAll::
+	.string "Setting EXP. ALL to ON.$"
+
+LittlerootTown_Text_SetFlag_AIvsAI::
+	.string "Setting AI vs. AI Flag.$"
+
+LittlerootTown_Text_SetFlag_TeraOrbCharge::
+	.string "Setting Tera Orb Charged Flag.$"
+
+LittlerootTown_Text_UnsetFlag_TeraOrbCharge::
+	.string "Unsetting Tera Charge Flag.$"
+
+LittlerootTown_Text_UnsetFlag_AIvsAI::
+	.string "Unsetting AI vs AI Flag.$"
 
 `

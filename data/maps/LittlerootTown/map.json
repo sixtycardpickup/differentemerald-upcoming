@@ -415,15 +415,15 @@
       "x": 4,
       "y": 1,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "LittlerootTown_ClearTrainerFlag_Tearnest"
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "RouteEast1_ClearRouteEast1TrainerFlags"
     },
     {
       "type": "sign",
       "x": 6,
       "y": 1,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "LittlerootTown_SetFlag_ExpShare"
     },
     {
@@ -431,8 +431,40 @@
       "x": 8,
       "y": 1,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "LittlerootTown_SetFlag_SmartWild"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 8,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "LittlerootTown_SetFlag_TeraOrbCharge"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "LittlerootTown_SetFlag_AIvsAI"
+    },
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "LittlerootTown_UnsetFlag_TeraOrbCharge"
+    },
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 5,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "LittlerootTown_UnsetFlag_AIvsAI"
     }
   ]
 }
