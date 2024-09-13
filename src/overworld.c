@@ -432,8 +432,8 @@ static void Overworld_ResetStateAfterWhiteOut(void)
     FlagClear(FLAG_SYS_SAFARI_MODE);
     FlagClear(FLAG_SYS_USE_STRENGTH);
     FlagClear(FLAG_SYS_USE_FLASH);
-    if (B_RESET_FLAGS_VARS_AFTER_WHITEOUT == TRUE)
-        Overworld_ResetBattleFlagsAndVars();
+    //if (B_RESET_FLAGS_VARS_AFTER_WHITEOUT == TRUE)
+        //Overworld_ResetBattleFlagsAndVars();
     // If you were defeated by Kyogre/Groudon and the step counter has
     // maxed out, end the abnormal weather.
     if (VarGet(VAR_SHOULD_END_ABNORMAL_WEATHER) == 1)
