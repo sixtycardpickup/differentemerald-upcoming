@@ -1031,7 +1031,7 @@ RouteEast1_Text_CredricIntro:
 	.string "There's no need to go worryin'.\n"
 	.string "I already know all about you!$"
 
-RouteEast1_Text_CredricDefeat:
+RouteEast1_Text_CredricDefeated:
 	.string "I guess I learned nothing from T.V.!\n"
 	.string "Knowin' isn't everythin'.$"
 
