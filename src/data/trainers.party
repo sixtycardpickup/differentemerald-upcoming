@@ -6647,10 +6647,15 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Quirky
 
-Bidoof @ Oran Berry
+Minun @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Relaxed
+Nature: Modest
+
+Plusle @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
 
 Bidoof @ Oran Berry
 Level: 10
@@ -6661,11 +6666,6 @@ Blitzle @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
-
-Blitzle @ Rawst Berry
-Level: 10
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Adamant
 
 Carvanha @ Cheri Berry
 Level: 10
@@ -6712,7 +6712,7 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Adamant
 
-Feebas @ Oran Berry
+Tandemaus @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
@@ -6757,15 +6757,15 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Hasty
 
-Illumise @ Oran Berry
+Dewpider @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Timid
+Nature: Relaxed
 
-Illumise @ Oran Berry
+Flabebe_Orange_Flower @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Modest
+Nature: Calm
 
 Kricketot @ Oran Berry
 Level: 10
@@ -6777,20 +6777,20 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Sassy
 
-Magikarp @ Oran Berry
+SPECIES_MIME_JR @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Jolly
+Nature: Timid
 
-Makuhita @ Oran Berry
+Honedge @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Makuhita @ Rawst Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Brave
-
-Makuhita @ Oran Berry
-Level: 10
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Relaxed
 
 Marill @ Oran Berry
 Level: 10
@@ -6807,10 +6807,10 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Impish
 
-Murkrow @ Cheri Berry
+Sinistea @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Hasty
+Nature: Modest
 
 Murkrow @ Oran Berry
 Level: 10
@@ -6912,15 +6912,15 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Timid
 
+Illumise @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Volbeat @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
-
-Volbeat @ Oran Berry
-Level: 10
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Adamant
 
 Woobat @ Oran Berry
 Level: 10
@@ -6942,20 +6942,20 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Sassy
 
-Wynaut @ Oran Berry
+Gligar @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Relaxed
+Nature: Jolly
 
-Yanma @ Cheri Berry
+Diglett_Alolan @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Adamant
 
-Yanma @ Oran Berry
+Yanma @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Modest
+Nature: Timid
 
 Zubat @ Cheri Berry
 Level: 10
@@ -10269,30 +10269,35 @@ Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Adamant
 Ability: Intimidate
+Tera Type: Ground
 
 Bounsweet @ Oran Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Adamant 
 Ability: Oblivious
+Tera Type: Grass
 
 Croagunk @ Cheri Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
 Ability: Dry Skin
+Tera Type: Fighting
 
 Klawf @ Cheri Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Impish
 Ability: Anger Shell
+Tera Type: Rock
 
 Skarmory @ Oran Berry
 Level: 12
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 Nature: Jolly
 Ability: Keen Eye
+Tera Type: Steel
 
 Wynaut @ Chesto Berry
 Level: 12
@@ -17406,15 +17411,15 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Relaxed
 
-Bidoof @ Oran Berry
+Minun @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Adamant
+Nature: Timid
 
-Blitzle @ Cheri Berry
+Plusle @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Jolly
+Nature: Modest
 
 Blitzle @ Rawst Berry
 Level: 10
@@ -17466,10 +17471,10 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Adamant
 
-Feebas @ Oran Berry
+Impidimp @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Jolly
+Nature: Mild
 
 Flamigo @ Cheri Berry
 Level: 10
@@ -17511,15 +17516,15 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Hasty
 
-Illumise @ Oran Berry
+Dewpider @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Timid
+Nature: Sassy
 
 Illumise @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Modest
+Nature: Timid
 
 Kricketot @ Oran Berry
 Level: 10
@@ -17531,12 +17536,12 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Sassy
 
-Magikarp @ Oran Berry
+SPECIES_MIME_JR @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Jolly
+Nature: Calm
 
-Makuhita @ Oran Berry
+Honedge @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Brave
@@ -17566,10 +17571,10 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Hasty
 
-Murkrow @ Oran Berry
+Sinistea @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Quirky
+Nature: Modest
 
 Noibat @ Cheri Berry
 Level: 10
@@ -17671,10 +17676,10 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
 
-Volbeat @ Oran Berry
+Flabebe_Yellow_Flower @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Adamant
+Nature: Calm
 
 Woobat @ Oran Berry
 Level: 10
@@ -17694,14 +17699,14 @@ Nature: Relaxed
 Wynaut @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Sassy
-
-Wynaut @ Oran Berry
-Level: 10
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Relaxed
 
-Yanma @ Cheri Berry
+Gligar @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Impish
+
+Diglett_Alolan @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Adamant
@@ -17709,7 +17714,7 @@ Nature: Adamant
 Yanma @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Modest
+Nature: Quirky
 
 Zubat @ Cheri Berry
 Level: 10
