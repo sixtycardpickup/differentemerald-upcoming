@@ -1,39 +1,14 @@
 RouteE1N_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, RouteE1N_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, RouteE1N_OnResume
-	map_script MAP_SCRIPT_ON_LOAD, RouteE1N_OnLoad
 	.byte 0
 
 RouteE1N_OnTransition::
 	special GetDayOrNight
-	goto_if_eq VAR_RESULT, 0, RouteE1N_OnTransition_MorningWeather
-	goto_if_eq VAR_RESULT, 1, RouteE1N_OnTransition_DayWeather
-	goto_if_eq VAR_RESULT, 2, RouteE1N_OnTransition_EveningWeather
-	goto_if_eq VAR_RESULT, 3, RouteE1N_OnTransition_NightWeather
-	end
-
-RouteE1N_OnTransition_MorningWeather::
-	setweather WEATHER_SUNNY
-	doweather
-	goto RouteE1N_GetDayOrNightAndWeather
-	end
-
-RouteE1N_OnTransition_DayWeather::
-	setweather WEATHER_SUNNY
-	doweather
-	goto RouteE1N_GetDayOrNightAndWeather
-	end
-
-RouteE1N_OnTransition_EveningWeather::
-	setweather WEATHER_RAIN
-	doweather
-	goto RouteE1N_GetDayOrNightAndWeather
-	end
-
-RouteE1N_OnTransition_NightWeather::
-	setweather WEATHER_SHADE
-	doweather
-	goto RouteE1N_GetDayOrNightAndWeather
+	goto_if_eq VAR_RESULT, 0, RouteE1N_OnResume_MorningWeather
+	goto_if_eq VAR_RESULT, 1, RouteE1N_OnResume_DayWeather
+	goto_if_eq VAR_RESULT, 2, RouteE1N_OnResume_EveningWeather
+	goto_if_eq VAR_RESULT, 3, RouteE1N_OnResume_NightWeather
 	end
 
 RouteE1N_OnResume::
@@ -168,6 +143,6 @@ RouteE1N_Encounters_NightStorm::
 	setvar VAR_DAYNIGHT_AND_WEATHER, 9
 	end
 
-RouteE1N_OnLoad::
-	doweather
+RouteE1N_Headbutt_Encounter::
+	special HeadbuttWildEncounter
 	end
