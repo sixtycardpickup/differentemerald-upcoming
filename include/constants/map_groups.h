@@ -73,6 +73,7 @@
 #define MAP_ROUTE_E2            (64 | (0 << 8))
 #define MAP_ROUTE_W1            (65 | (0 << 8))
 #define MAP_ROUTE102N           (66 | (0 << 8))
+#define MAP_ROUTE_S1E2          (67 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
