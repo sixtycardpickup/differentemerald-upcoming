@@ -94,6 +94,33 @@ EventScript_SmashRock:: @ fallthrough
 	releaseall
 	end
 
+@ Interact with headbutt tree
+EventScript_Headbutt::
+	lockall
+	checkpartymove MOVE_HEADBUTT
+	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantHeadbutt
+	setfieldeffectargument 0, VAR_RESULT
+	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	buffermovename STR_VAR_2, MOVE_HEADBUTT
+	msgbox Text_WantToHeadbutt, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_CancelHeadbutt
+	msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
+	closemessage
+EventScript_HeadbuttCommon:
+	@ check if follower should use the field move
+	isfollowerfieldmoveuser VAR_0x8004
+	setfieldeffectargument 3, VAR_0x8004 @ skip pose if so
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+EventScript_HeadbuttTree:: @ fallthrough
+	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
+	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove
+	special HeadbuttWildEncounter
+	goto_if_eq VAR_RESULT, FALSE, EventScript_EndSmash
+	waitstate
+	releaseall
+	end
+
 EventScript_FollowerFieldMove:
 	getdirectiontoface VAR_0x8005, OBJ_EVENT_ID_FOLLOWER, OBJ_EVENT_ID_PLAYER
 	specialvar VAR_0x8006, GetPlayerFacingDirection
@@ -226,6 +253,24 @@ Text_WantToSmash:
 Text_CantSmash:
 	.string "It's a rugged rock, but a POKéMON\n"
 	.string "may be able to smash it.$"
+
+EventScript_CantHeadbutt::
+	msgbox Text_CantSmash, MSGBOX_DEFAULT
+	releaseall
+	end
+
+EventScript_CancelHeadbutt::
+	closemessage
+	releaseall
+	end
+
+Text_WantToHeadbutt:
+	.string "This tree appears to be buttable.\n"
+	.string "Would you like to use HEADBUTT?$"
+
+Text_CantHeadbutt:
+	.string "It's a nice tree; a POKé-MON perhaps,\n"
+	.string "may be able to knock something out.$"
 
 EventScript_StrengthBoulder::
 	lockall
