@@ -82,8 +82,8 @@ static bool32 HasBadOdds(u32 battler, bool32 emitResult)
         return FALSE;
 
     // Double Battles aren't included in AI_FLAG_SMART_MON_CHOICE. Defaults to regular switch in logic
-    if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
-        return FALSE;
+    //if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+        //return FALSE;
 
     opposingPosition = BATTLE_OPPOSITE(GetBattlerPosition(battler));
     opposingBattler = GetBattlerAtPosition(opposingPosition);
