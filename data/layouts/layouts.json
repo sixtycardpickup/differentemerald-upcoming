@@ -4510,6 +4510,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route102N/border.bin",
       "blockdata_filepath": "data/layouts/Route102N/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_S1E2",
+      "name": "RouteS1E2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/RouteS1E2/border.bin",
+      "blockdata_filepath": "data/layouts/RouteS1E2/map.bin"
     }
   ]
 }
