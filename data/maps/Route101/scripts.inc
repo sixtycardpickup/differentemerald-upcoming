@@ -3,11 +3,98 @@
 
 Route101_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route101_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, Route101_OnResume
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route101_OnFrame
 	.byte 0
 
 Route101_OnTransition:
 	call ProfBirch_EventScript_UpdateLocation
+	special GetDayOrNight
+	goto_if_eq VAR_RESULT, 3, Route101_OnTransition_Night
+	goto_if_eq VAR_RESULT, 2, Route101_OnTransition_Evening
+	goto_if_eq VAR_RESULT, 1, Route101_OnTransition_Day
+	goto_if_eq VAR_RESULT, 0, Route101_OnTransition_Morning
+	end
+
+Route101_OnTransition_Morning::
+	setweather WEATHER_SUNNY
+	setvar VAR_DAYNIGHT, 0
+	end
+
+Route101_OnTransition_Day::
+	setweather WEATHER_SUNNY
+	setvar VAR_DAYNIGHT, 1
+	end
+
+Route101_OnTransition_Evening::
+	setweather WEATHER_SHADE
+	setvar VAR_DAYNIGHT, 2
+	end
+
+Route101_OnTransition_Night::
+	setweather WEATHER_SHADE
+	setvar VAR_DAYNIGHT, 3
+	end
+
+Route101_OnResume:
+	special GetDayOrNight
+	goto_if_eq VAR_RESULT, 3, Route101_OnResume_Night
+	goto_if_eq VAR_RESULT, 2, Route101_OnResume_Evening
+	goto_if_eq VAR_RESULT, 1, Route101_OnResume_Day
+	goto_if_eq VAR_RESULT, 0, Route101_OnResume_Morning
+	end
+
+Route101_OnResume_Morning::
+	setweather WEATHER_SUNNY
+	setvar VAR_DAYNIGHT, 0
+	end
+	
+Route101_OnResume_Day::
+	setweather WEATHER_SUNNY
+	setvar VAR_DAYNIGHT, 1
+	end
+
+Route101_OnResume_Evening::
+	setvar VAR_DAYNIGHT, 2
+	random 4
+	switch VAR_RESULT
+	case 0, Route101_EveningShade
+	case 1, Route101_EveningRain
+	case 2, Route101_EveningThunderstorm
+	case 3, Route101_EveningRain
+	end
+
+Route101_OnResume_Night::
+	setvar VAR_DAYNIGHT, 3
+	random 3
+	switch VAR_RESULT
+	case 0, Route101_NightThunderstorm
+	case 1, Route101_NightRain
+	case 2, Route101_NightShade
+	end
+
+Route101_EveningShade::
+	setweather WEATHER_SHADE
+	end
+
+Route101_EveningRain::
+	setweather WEATHER_RAIN
+	end
+
+Route101_EveningThunderstorm::
+	setweather WEATHER_RAIN_THUNDERSTORM
+	end
+
+Route101_NightRain::
+	setweather WEATHER_RAIN
+	end
+
+Route101_NightThunderstorm::
+	setweather WEATHER_RAIN_THUNDERSTORM
+	end
+
+Route101_NightShade::
+	setweather WEATHER_SHADE
 	end
 
 Route101_OnFrame:

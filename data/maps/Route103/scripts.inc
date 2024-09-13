@@ -2,12 +2,99 @@
 
 Route103_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route103_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, Route103_OnResume
 	map_script MAP_SCRIPT_ON_LOAD, Route103_OnLoad
 	.byte 0
 
 Route103_OnTransition:
 	call Common_EventScript_SetupRivalGfxId
 	call ProfBirch_EventScript_UpdateLocation
+	special GetDayOrNight
+	goto_if_eq VAR_RESULT, 3, Route103_OnTransition_Night
+	goto_if_eq VAR_RESULT, 2, Route103_OnTransition_Evening
+	goto_if_eq VAR_RESULT, 1, Route103_OnTransition_Day
+	goto_if_eq VAR_RESULT, 0, Route103_OnTransition_Morning
+	end
+	
+Route103_OnTransition_Morning::
+	setweather WEATHER_SUNNY
+	setvar VAR_DAYNIGHT, 0
+	end
+
+Route103_OnTransition_Day::
+	setweather WEATHER_SUNNY
+	setvar VAR_DAYNIGHT, 1
+	end
+
+Route103_OnTransition_Evening::
+	setweather WEATHER_SHADE
+	setvar VAR_DAYNIGHT, 2
+	end
+
+Route103_OnTransition_Night::
+	setweather WEATHER_SHADE
+	setvar VAR_DAYNIGHT, 3
+	end
+	
+Route103_OnResume::
+	special GetDayOrNight
+	goto_if_eq VAR_RESULT, 3, Route103_OnResume_Night
+	goto_if_eq VAR_RESULT, 2, Route103_OnResume_Evening
+	goto_if_eq VAR_RESULT, 1, Route103_OnResume_Day
+	goto_if_eq VAR_RESULT, 0, Route103_OnResume_Morning
+	end
+	
+Route103_OnResume_Morning::
+	setweather WEATHER_SUNNY
+	setvar VAR_DAYNIGHT, 0
+	end
+	
+Route103_OnResume_Day::
+	setweather WEATHER_SUNNY
+	setvar VAR_DAYNIGHT, 1
+	end
+
+Route103_OnResume_Evening::
+	setvar VAR_DAYNIGHT, 2
+	random 4
+	switch VAR_RESULT
+	case 0, Route103_EveningShade
+	case 1, Route103_EveningRain
+	case 2, Route103_EveningThunderstorm
+	case 3, Route103_EveningRain
+	end
+
+Route103_OnResume_Night::
+	setvar VAR_DAYNIGHT, 3
+	random 3
+	switch VAR_RESULT
+	case 0, Route103_NightThunderstorm
+	case 1, Route103_NightRain
+	case 2, Route103_NightShade
+	end
+
+Route103_EveningShade::
+	setweather WEATHER_SHADE
+	end
+
+Route103_EveningRain::
+	setweather WEATHER_RAIN
+	end
+
+Route103_EveningThunderstorm::
+	setweather WEATHER_RAIN_THUNDERSTORM
+	end
+
+Route103_NightRain::
+	setweather WEATHER_RAIN
+	end
+
+Route103_NightThunderstorm::
+	setweather WEATHER_RAIN_THUNDERSTORM
+	end
+
+Route103_NightShade::
+	setweather WEATHER_SHADE
 	end
 
 Route103_OnLoad:

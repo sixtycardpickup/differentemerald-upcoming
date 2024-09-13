@@ -1,7 +1,6 @@
 SouthOfLittleroot_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, SouthOfLittleroot_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, SouthOfLittleroot_OnResume
-	map_script MAP_SCRIPT_ON_LOAD, SouthOfLittleroot_OnLoad
 	.byte 0
 
 SouthOfLittleroot_OnTransition::
@@ -14,25 +13,21 @@ SouthOfLittleroot_OnTransition::
 	
 SouthOfLittleroot_OnTransition_Morning::
 	setweather WEATHER_SUNNY
-	doweather
 	setvar VAR_DAYNIGHT, 0
 	end
 
 SouthOfLittleroot_OnTransition_Day::
 	setweather WEATHER_SUNNY
-	doweather
 	setvar VAR_DAYNIGHT, 1
 	end
 
 SouthOfLittleroot_OnTransition_Evening::
 	setweather WEATHER_SHADE
-	doweather
 	setvar VAR_DAYNIGHT, 2
 	end
 
 SouthOfLittleroot_OnTransition_Night::
 	setweather WEATHER_RAIN
-	doweather
 	setvar VAR_DAYNIGHT, 3
 	end
 	
@@ -97,8 +92,4 @@ SouthOfLittleroot_NightRain::
 
 SouthOfLittleroot_NightThunderstorm::
 	setweather WEATHER_RAIN_THUNDERSTORM
-	end
-
-SouthOfLittleroot_OnLoad::
-	doweather
 	end
