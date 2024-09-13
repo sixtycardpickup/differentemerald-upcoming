@@ -4,6 +4,7 @@
 
 OldaleTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, OldaleTown_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, OldaleTown_OnResume
 	.byte 0
 
 OldaleTown_OnTransition:
@@ -12,6 +13,93 @@ OldaleTown_OnTransition:
 	call_if_unset FLAG_ADVENTURE_STARTED, OldaleTown_EventScript_BlockWestEntrance
 	call_if_unset FLAG_RECEIVED_POTION_OLDALE, OldaleTown_EventScript_MoveMartEmployee
 	call_if_set FLAG_ADVENTURE_STARTED, OldaleTown_EventScript_SetOldaleState
+	special GetDayOrNight
+	goto_if_eq VAR_RESULT, 3, OldaleTown_OnTransition_Night
+	goto_if_eq VAR_RESULT, 2, OldaleTown_OnTransition_Evening
+	goto_if_eq VAR_RESULT, 1, OldaleTown_OnTransition_Day
+	goto_if_eq VAR_RESULT, 0, OldaleTown_OnTransition_Morning
+	end
+	
+OldaleTown_OnTransition_Morning::
+	setweather WEATHER_SUNNY
+	setvar VAR_DAYNIGHT, 0
+	end
+
+OldaleTown_OnTransition_Day::
+	setweather WEATHER_SUNNY
+	setvar VAR_DAYNIGHT, 1
+	end
+
+OldaleTown_OnTransition_Evening::
+	setweather WEATHER_SHADE
+	setvar VAR_DAYNIGHT, 2
+	end
+
+OldaleTown_OnTransition_Night::
+	setweather WEATHER_SHADE
+	setvar VAR_DAYNIGHT, 3
+	end
+	
+OldaleTown_OnResume::
+	special GetDayOrNight
+	goto_if_eq VAR_RESULT, 3, OldaleTown_OnResume_Night
+	goto_if_eq VAR_RESULT, 2, OldaleTown_OnResume_Evening
+	goto_if_eq VAR_RESULT, 1, OldaleTown_OnResume_Day
+	goto_if_eq VAR_RESULT, 0, OldaleTown_OnResume_Morning
+	end
+	
+OldaleTown_OnResume_Morning::
+	setweather WEATHER_SUNNY
+	setvar VAR_DAYNIGHT, 0
+	end
+	
+OldaleTown_OnResume_Day::
+	setweather WEATHER_SUNNY
+	setvar VAR_DAYNIGHT, 1
+	end
+
+OldaleTown_OnResume_Evening::
+	setvar VAR_DAYNIGHT, 2
+	random 4
+	switch VAR_RESULT
+	case 0, OldaleTown_EveningShade
+	case 1, OldaleTown_EveningShade
+	case 2, OldaleTown_EveningThunderstorm
+	case 3, OldaleTown_EveningRain
+	end
+
+OldaleTown_OnResume_Night::
+	setvar VAR_DAYNIGHT, 3
+	random 4
+	switch VAR_RESULT
+	case 0, OldaleTown_NightThunderstorm
+	case 1, OldaleTown_NightRain
+	case 2, OldaleTown_NightShade
+	case 3, OldaleTown_NightShade
+	end
+
+OldaleTown_EveningShade::
+	setweather WEATHER_SHADE
+	end
+
+OldaleTown_EveningRain::
+	setweather WEATHER_RAIN
+	end
+
+OldaleTown_EveningThunderstorm::
+	setweather WEATHER_RAIN_THUNDERSTORM
+	end
+
+OldaleTown_NightRain::
+	setweather WEATHER_RAIN
+	end
+
+OldaleTown_NightThunderstorm::
+	setweather WEATHER_RAIN_THUNDERSTORM
+	end
+
+OldaleTown_NightShade::
+	setweather WEATHER_SHADE
 	end
 
 @ This script seems pointless because nothing uses VAR_OLDALE_TOWN_STATE
@@ -427,7 +515,7 @@ OldaleTown_Text_DynamicTrainerLevelsOff:
 	.string "Opposing trainer POKé-MON levels will\n"
 	.string "be set to the levels that have been\l"
 	.string "predefined for each opposing party!\p"
-	.string "Read the sign next to me in order to\n"
+	.string "Read the sign on your left in order to\n"
 	.string "set opposing team levels dynamically\l"
 	.string "instead.$"
 
@@ -435,7 +523,7 @@ OldaleTown_Text_DynamicTrainerLevelsOn:
 	.string "Opposing trainer POKé-MON levels will\n"
 	.string "be set dynamically based on the average\l"
 	.string "level of your party POKé-MON!\p"
-	.string "Read the sign on your left in order to\n"
+	.string "Read the sign on your right in order to\n"
 	.string "set opposing team levels to the levels\l"
 	.string "that have been predefined for each\l"
 	.string "opposing party instead.$"
@@ -445,5 +533,5 @@ OldaleTown_Text_MatchTrainerLevelsOn:
 	.string "their levels set dynamically to equal\l"
 	.string "the highest-level in your party!\p"
 	.string "Read the signs over there in order to\n"
-	.string "set opposing team levels to based\l"
+	.string "set opposing team levels based\l"
 	.string "on other rules.$"
