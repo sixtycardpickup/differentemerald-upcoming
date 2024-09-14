@@ -49,7 +49,6 @@ RouteEast1_WouldYouLikeToNicknameFirstPartyMon::
 	end
 
 RouteEast1_Nickname::
-	msgbox RouteEast1_Nickname_Text_WouldYouLikeToNicknameFirstMon, MSGBOX_YESNO
 	special ChangePokemonNickname
 	release
 	end
