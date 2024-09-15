@@ -5,6 +5,11 @@ WestOfLittleroot_MapScripts::
 	
 RouteEast1_OnTransition::
 	goto RouteEast1_ClearRouteEast1TrainerFlags
+	special GetDayOrNight
+	goto_if_eq VAR_RESULT, 3, RouteEast1_OnResume_Night
+	goto_if_eq VAR_RESULT, 2, RouteEast1_OnResume_Evening
+	goto_if_eq VAR_RESULT, 1, RouteEast1_OnResume_Day
+	goto_if_eq VAR_RESULT, 0, RouteEast1_OnResume_Morning
 	end
 
 RouteEast1_OnResume::
@@ -16,18 +21,22 @@ RouteEast1_OnResume::
 	end
 	
 RouteEast1_OnResume_Morning:
+	setweather WEATHER_RAIN
 	setvar VAR_DAYNIGHT, 0
 	end
 
 RouteEast1_OnResume_Day:
+	setweather WEATHER_RAIN
 	setvar VAR_DAYNIGHT, 1
 	end
 
 RouteEast1_OnResume_Evening:
+	setweather WEATHER_RAIN
 	setvar VAR_DAYNIGHT, 2
 	end
 
 RouteEast1_OnResume_Night:
+	setweather WEATHER_RAIN
 	setvar VAR_DAYNIGHT, 3
 	end
 
@@ -68,7 +77,9 @@ RouteEast1_Nickname_Text_WillNotNicknameFirstMon::
 RouteEast1_ClearRouteEast1TrainerFlags::
 	cleartrainerflag (TRAINER_TEARNEST)
 	cleartrainerflag (TRAINER_CREDRIC)
-	end
+	cleartrainerflag (TRAINER_GRENDEL)
+	cleartrainerflag (TRAINER_GRENDEL_MOTHER)
+	return
 
 RouteEast1_EventScript_Tearnest::
 	trainerbattle_single TRAINER_TEARNEST, RouteEast1_Text_TearnestIntro, RouteEast1_Text_TearnestDefeated
@@ -79,6 +90,34 @@ RouteEast1_EventScript_Credric::
 	trainerbattle_single TRAINER_CREDRIC, RouteEast1_Text_CredricIntro, RouteEast1_Text_CredricDefeated
 	msgbox RouteEast1_Text_CredricPostBattle, MSGBOX_AUTOCLOSE
 	end
+
+RouteEast1_EventScript_Grendel::
+	trainerbattle_single TRAINER_GRENDEL, RouteEast1_Text_GrendelIntro, RouteEast1_Text_GrendelDefeated
+	msgbox RouteEast1_Text_GrendelPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RouteEast1_EventScript_GrendelMom::
+	trainerbattle_single TRAINER_GRENDEL_MOTHER, RouteEast1_Text_GrendelMomIntro, RouteEast1_Text_GrendelMomDefeated
+	msgbox RouteEast1_Text_GrendelMomPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RouteEast1_Text_GrendelMomIntro::
+	.string "Oh boy, not enough guys!$"
+
+RouteEast1_Text_GrendelMomDefeated::
+	.string "Oh boy, not enough guys!$"
+
+RouteEast1_Text_GrendelMomPostBattle::
+	.string "Oh boy, not enough guys!$"
+
+RouteEast1_Text_GrendelIntro::
+	.string "Oh boy, not enough guys!$"
+
+RouteEast1_Text_GrendelDefeated::
+	.string "Oh boy, not enough guys!$"
+
+RouteEast1_Text_GrendelPostBattle::
+	.string "Oh boy, not enough guys!$"
 
 RouteEast1_Text_NotEnoughPokemon::
 	.string "Oh boy, not enough guys!$"
