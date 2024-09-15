@@ -33666,7 +33666,7 @@
             ]
           },
           "headbutt_mons": {
-            "encounter_rate": 1,
+            "encounter_rate": 50,
             "mons": [
               {
                 "min_level": 5,
