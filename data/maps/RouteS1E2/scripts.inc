@@ -93,3 +93,23 @@ RouteS1E2_NightThunderstorm::
 RouteS1E2_NightShade::
 	setweather WEATHER_SHADE
 	end
+
+RouteS1E2_EventScript_Ana::
+	trainerbattle_single TRAINER_GRENDEL_MOTHER, RouteS1E2_Text_AnaIntro, RouteS1E2_Text_AnaDefeated
+	msgbox RouteS1E2_Text_AnaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RouteS1E2_Text_AnaIntro::
+	.string "The way my team works is that this\n"
+	.string "wheel spins around and whatever it\p"
+	.string "lands on, that's my team.$"
+
+RouteS1E2_Text_AnaDefeated::
+	.string "The way my team works is that this\n"
+	.string "wheel spins around and whatever it\p"
+	.string "lands on, that's my team.$"
+
+RouteS1E2_Text_AnaPostBattle::
+	.string "The way my team works is that this\n"
+	.string "wheel spins around and whatever it\p"
+	.string "lands on, that's my team.$"
