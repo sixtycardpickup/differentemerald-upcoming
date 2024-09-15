@@ -17721,3 +17721,995 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
 
+=== TRAINER_ANA ===
+Name: ANA
+Class: Psychic
+Pic: Psychic M
+Gender: Female
+Music: Female
+Items: ITEM_POTION / ITEM_ANTIDOTE / ITEM_BURN_HEAL / ITEM_AWAKENING
+Double Battle: Yes
+AI: Omniscient / Check Bad Move / Try To Faint / Check Viability / Smart Switching
+Party Size: 6
+
+Azurill @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quirky
+
+Bidoof @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Minun @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Plusle @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Blitzle @ Rawst Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Carvanha @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Chewtle @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Impish
+
+Corphish @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Croagunk @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Cutiefly @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Drowzee @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Dwebble @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Elekid @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Farfetchd @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Impidimp @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Mild
+
+Flamigo @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Flittle @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Geodude_Alolan @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Goomy @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Sassy
+
+Grubbin @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Brave
+
+Hatenna @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quiet
+
+Hoothoot @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Hasty
+
+Hoppip @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Hasty
+
+Dewpider @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Sassy
+
+Illumise @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Kricketot @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Sassy
+
+Lotad @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Sassy
+
+SPECIES_MIME_JR @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Calm
+
+Honedge @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Brave
+
+Makuhita @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Marill @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quirky
+
+Morelull @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Sassy
+
+Mudbray @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Impish
+
+Murkrow @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Hasty
+
+Sinistea @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Noibat @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Oddish @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quiet
+
+Paras @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Brave
+
+Poliwag @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Salandit @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Shelmet @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Skiddo @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Skorupi @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Spearow @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Squawkabilly_Blue_Plumage @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Squirtle @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quirky
+
+Stunfisk @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Sassy
+
+Sunkern @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quirky
+
+Surskit @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Hasty
+
+Tadbulb @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Taillow @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Tauros_Paldean_Aqua_Breed @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Toxel @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Tympole @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Volbeat @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Flabebe_Yellow_Flower @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Calm
+
+Woobat @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Naive
+
+Wooper_Paldean @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Wooper @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Wynaut @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Gligar @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Impish
+
+Diglett_Alolan @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Yanma @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quirky
+
+Zubat @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+=== TRAINER_GRENDEL ===
+Name: GRENDEL
+Class: Rich Boy
+Pic: Rich Boy
+Gender: Male
+Music: Male
+Items: ITEM_POTION / ITEM_ANTIDOTE / ITEM_BURN_HEAL / ITEM_AWAKENING
+Double Battle: No
+AI: Omniscient / Check Bad Move / Try To Faint / Check Viability / Smart Switching
+Party Size: 6
+
+Azurill @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quirky
+
+Bidoof @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Minun @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Plusle @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Blitzle @ Rawst Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Carvanha @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Chewtle @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Impish
+
+Corphish @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Croagunk @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Cutiefly @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Drowzee @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Dwebble @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Elekid @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Farfetchd @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Impidimp @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Mild
+
+Flamigo @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Flittle @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Geodude_Alolan @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Goomy @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Sassy
+
+Grubbin @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Brave
+
+Hatenna @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quiet
+
+Hoothoot @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Hasty
+
+Hoppip @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Hasty
+
+Dewpider @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Sassy
+
+Illumise @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Kricketot @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Sassy
+
+Lotad @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Sassy
+
+SPECIES_MIME_JR @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Calm
+
+Honedge @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Brave
+
+Makuhita @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Marill @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quirky
+
+Morelull @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Sassy
+
+Mudbray @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Impish
+
+Murkrow @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Hasty
+
+Sinistea @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Noibat @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Oddish @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quiet
+
+Paras @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Brave
+
+Poliwag @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Salandit @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Shelmet @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Skiddo @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Skorupi @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Spearow @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Squawkabilly_Blue_Plumage @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Squirtle @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quirky
+
+Stunfisk @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Sassy
+
+Sunkern @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quirky
+
+Surskit @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Hasty
+
+Tadbulb @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Taillow @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Tauros_Paldean_Aqua_Breed @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Toxel @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Tympole @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Volbeat @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Flabebe_Yellow_Flower @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Calm
+
+Woobat @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Naive
+
+Wooper_Paldean @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Wooper @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Wynaut @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Gligar @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Impish
+
+Diglett_Alolan @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Yanma @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quirky
+
+Zubat @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+=== TRAINER_GRENDEL_MOTHER ===
+Name: GRENDELLA
+Class: Lady
+Pic: Lady
+Gender: Female
+Music: Female
+Items: ITEM_POTION / ITEM_ANTIDOTE / ITEM_BURN_HEAL / ITEM_AWAKENING
+Double Battle: No
+AI: Omniscient / Check Bad Move / Try To Faint / Check Viability / Smart Switching
+Party Size: 6
+
+Azurill @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quirky
+
+Minun @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Plusle @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Bidoof @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Blitzle @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Carvanha @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Chewtle @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Impish
+
+Corphish @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Croagunk @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Cutiefly @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Drowzee @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Dwebble @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Elekid @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Farfetchd @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Tandemaus @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Flamigo @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Flittle @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Geodude_Alolan @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Goomy @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Sassy
+
+Grubbin @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Brave
+
+Hatenna @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quiet
+
+Hoothoot @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Hasty
+
+Hoppip @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Hasty
+
+Dewpider @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Flabebe_Orange_Flower @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Calm
+
+Kricketot @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Sassy
+
+Lotad @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Sassy
+
+SPECIES_MIME_JR @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Honedge @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Makuhita @ Rawst Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Brave
+
+Marill @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quirky
+
+Morelull @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Sassy
+
+Mudbray @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Impish
+
+Sinistea @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Murkrow @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quirky
+
+Noibat @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Oddish @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quiet
+
+Paras @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Brave
+
+Poliwag @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Salandit @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Shelmet @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Skiddo @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Skorupi @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Spearow @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Squawkabilly_Blue_Plumage @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Squirtle @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quirky
+
+Stunfisk @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Sassy
+
+Sunkern @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quirky
+
+Surskit @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Hasty
+
+Tadbulb @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Taillow @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Tauros_Paldean_Aqua_Breed @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Toxel @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Tympole @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Illumise @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Volbeat @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Woobat @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Naive
+
+Wooper_Paldean @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Wooper @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Wynaut @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Sassy
+
+Gligar @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Diglett_Alolan @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Yanma @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
+Zubat @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
