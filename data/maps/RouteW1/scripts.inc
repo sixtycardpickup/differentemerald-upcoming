@@ -1,4 +1,5 @@
 RouteW1_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, RouteW1_OnTransition
 	map_script MAP_SCRIPT_ON_LOAD, RouteW1_OnLoad
 	map_script MAP_SCRIPT_ON_LOAD, RouteW1_OnResume
 	.byte 0
