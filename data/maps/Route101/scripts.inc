@@ -3,58 +3,42 @@
 
 Route101_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route101_OnTransition
-	map_script MAP_SCRIPT_ON_RESUME, Route101_OnResume
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route101_OnFrame
+	map_script MAP_SCRIPT_ON_LOAD, Route101_OnLoad
+	map_script MAP_SCRIPT_ON_RESUME, Route101_OnResume
 	.byte 0
 
 Route101_OnTransition:
 	call ProfBirch_EventScript_UpdateLocation
+	end
+
+Route101_OnLoad:
 	special GetDayOrNight
-	goto_if_eq VAR_RESULT, 3, Route101_OnTransition_Night
-	goto_if_eq VAR_RESULT, 2, Route101_OnTransition_Evening
-	goto_if_eq VAR_RESULT, 1, Route101_OnTransition_Day
-	goto_if_eq VAR_RESULT, 0, Route101_OnTransition_Morning
-	end
-
-Route101_OnTransition_Morning::
-	setweather WEATHER_SUNNY
-	setvar VAR_DAYNIGHT, 0
-	end
-
-Route101_OnTransition_Day::
-	setweather WEATHER_SUNNY
-	setvar VAR_DAYNIGHT, 1
-	end
-
-Route101_OnTransition_Evening::
-	setweather WEATHER_SHADE
-	setvar VAR_DAYNIGHT, 2
-	end
-
-Route101_OnTransition_Night::
-	setweather WEATHER_SHADE
-	setvar VAR_DAYNIGHT, 3
+	goto_if_eq VAR_RESULT, 3, Route101_OnLoad_Night
+	goto_if_eq VAR_RESULT, 2, Route101_OnLoad_Evening
+	goto_if_eq VAR_RESULT, 1, Route101_OnLoad_Day
+	goto_if_eq VAR_RESULT, 0, Route101_OnLoad_Morning
 	end
 
 Route101_OnResume:
 	special GetDayOrNight
-	goto_if_eq VAR_RESULT, 3, Route101_OnResume_Night
-	goto_if_eq VAR_RESULT, 2, Route101_OnResume_Evening
-	goto_if_eq VAR_RESULT, 1, Route101_OnResume_Day
-	goto_if_eq VAR_RESULT, 0, Route101_OnResume_Morning
+	goto_if_eq VAR_RESULT, 3, Route101_OnLoad_Night
+	goto_if_eq VAR_RESULT, 2, Route101_OnLoad_Evening
+	goto_if_eq VAR_RESULT, 1, Route101_OnLoad_Day
+	goto_if_eq VAR_RESULT, 0, Route101_OnLoad_Morning
 	end
 
-Route101_OnResume_Morning::
+Route101_OnLoad_Morning::
 	setweather WEATHER_SUNNY
 	setvar VAR_DAYNIGHT, 0
 	end
 	
-Route101_OnResume_Day::
+Route101_OnLoad_Day::
 	setweather WEATHER_SUNNY
 	setvar VAR_DAYNIGHT, 1
 	end
 
-Route101_OnResume_Evening::
+Route101_OnLoad_Evening::
 	setvar VAR_DAYNIGHT, 2
 	random 4
 	switch VAR_RESULT
@@ -64,7 +48,7 @@ Route101_OnResume_Evening::
 	case 3, Route101_EveningRain
 	end
 
-Route101_OnResume_Night::
+Route101_OnLoad_Night::
 	setvar VAR_DAYNIGHT, 3
 	random 3
 	switch VAR_RESULT
