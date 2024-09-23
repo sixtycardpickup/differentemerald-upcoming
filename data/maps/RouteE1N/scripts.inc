@@ -1,25 +1,25 @@
 RouteE1N_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, RouteE1N_OnTransition
+	map_script MAP_SCRIPT_ON_LOAD, RouteE1N_OnLoad
 	map_script MAP_SCRIPT_ON_RESUME, RouteE1N_OnResume
 	.byte 0
 
-RouteE1N_OnTransition::
+RouteE1N_OnLoad::
 	special GetDayOrNight
-	goto_if_eq VAR_RESULT, 0, RouteE1N_OnResume_MorningWeather
-	goto_if_eq VAR_RESULT, 1, RouteE1N_OnResume_DayWeather
-	goto_if_eq VAR_RESULT, 2, RouteE1N_OnResume_EveningWeather
-	goto_if_eq VAR_RESULT, 3, RouteE1N_OnResume_NightWeather
+	goto_if_eq VAR_RESULT, 0, RouteE1N_OnLoad_MorningWeather
+	goto_if_eq VAR_RESULT, 1, RouteE1N_OnLoad_DayWeather
+	goto_if_eq VAR_RESULT, 2, RouteE1N_OnLoad_EveningWeather
+	goto_if_eq VAR_RESULT, 3, RouteE1N_OnLoad_NightWeather
 	end
 
 RouteE1N_OnResume::
 	special GetDayOrNight
-	goto_if_eq VAR_RESULT, 0, RouteE1N_OnResume_MorningWeather
-	goto_if_eq VAR_RESULT, 1, RouteE1N_OnResume_DayWeather
-	goto_if_eq VAR_RESULT, 2, RouteE1N_OnResume_EveningWeather
-	goto_if_eq VAR_RESULT, 3, RouteE1N_OnResume_NightWeather
+	goto_if_eq VAR_RESULT, 0, RouteE1N_OnLoad_MorningWeather
+	goto_if_eq VAR_RESULT, 1, RouteE1N_OnLoad_DayWeather
+	goto_if_eq VAR_RESULT, 2, RouteE1N_OnLoad_EveningWeather
+	goto_if_eq VAR_RESULT, 3, RouteE1N_OnLoad_NightWeather
 	end
 
-RouteE1N_OnResume_MorningWeather::
+RouteE1N_OnLoad_MorningWeather::
 	random 5
 	switch VAR_RESULT
 	case 0, RouteE1N_Sunny
@@ -29,7 +29,7 @@ RouteE1N_OnResume_MorningWeather::
 	case 4, RouteE1N_Rain
 	end
 
-RouteE1N_OnResume_DayWeather::
+RouteE1N_OnLoad_DayWeather::
 	random 3
 	switch VAR_RESULT
 	case 0, RouteE1N_Sunny
@@ -37,7 +37,7 @@ RouteE1N_OnResume_DayWeather::
 	case 2, RouteE1N_Rain
 	end
 
-RouteE1N_OnResume_EveningWeather::
+RouteE1N_OnLoad_EveningWeather::
 	random 5
 	switch VAR_RESULT
 	case 0, RouteE1N_Rain
@@ -47,7 +47,7 @@ RouteE1N_OnResume_EveningWeather::
 	case 4, RouteE1N_Storm
 	end
 
-RouteE1N_OnResume_NightWeather::
+RouteE1N_OnLoad_NightWeather::
 	random 6
 	switch VAR_RESULT
 	case 0, RouteE1N_Rain
