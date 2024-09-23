@@ -4465,7 +4465,7 @@
       "id": "LAYOUT_SOUTH_OF_LITTLEROOT",
       "name": "SouthOfLittleroot_Layout",
       "width": 44,
-      "height": 19,
+      "height": 21,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/SouthOfLittleroot/border.bin",
