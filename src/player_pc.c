@@ -226,6 +226,7 @@ static const u16 sNewGamePCItems[][2] =
 {
     { ITEM_POTION, 1 },
     { ITEM_POKE_DOLL, 5},
+    { ITEM_COIN_CASE, 1},
     { ITEM_NONE, 0 }
 };
 
