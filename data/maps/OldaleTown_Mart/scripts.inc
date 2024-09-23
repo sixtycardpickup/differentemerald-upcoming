@@ -20,8 +20,13 @@ OldaleTown_Mart_Pokemart_Basic:
 	.2byte ITEM_CHERI_BERRY
 	.2byte ITEM_CHESTO_BERRY
 	.2byte ITEM_RAWST_BERRY
+	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_POKE_DOLL
+	.2byte ITEM_REPEL
 	.2byte ITEM_OLD_ROD
+	.2byte ITEM_HEART_SCALE
+	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_ABILITY_PATCH
 	.2byte ITEM_NONE
 	release
 	end
@@ -42,7 +47,11 @@ OldaleTown_Mart_Pokemart_Expanded:
 	.2byte ITEM_BURN_HEAL
 	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_POKE_DOLL
+	.2byte ITEM_REPEL
 	.2byte ITEM_OLD_ROD
+	.2byte ITEM_HEART_SCALE
+	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_ABILITY_PATCH
 	.2byte ITEM_NONE
 	release
 	end

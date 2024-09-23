@@ -13,52 +13,35 @@ OldaleTown_OnTransition:
 	call_if_unset FLAG_ADVENTURE_STARTED, OldaleTown_EventScript_BlockWestEntrance
 	call_if_unset FLAG_RECEIVED_POTION_OLDALE, OldaleTown_EventScript_MoveMartEmployee
 	call_if_set FLAG_ADVENTURE_STARTED, OldaleTown_EventScript_SetOldaleState
+	end
+	
+OldaleTown_OnLoad::
 	special GetDayOrNight
-	goto_if_eq VAR_RESULT, 3, OldaleTown_OnTransition_Night
-	goto_if_eq VAR_RESULT, 2, OldaleTown_OnTransition_Evening
-	goto_if_eq VAR_RESULT, 1, OldaleTown_OnTransition_Day
-	goto_if_eq VAR_RESULT, 0, OldaleTown_OnTransition_Morning
-	end
-	
-OldaleTown_OnTransition_Morning::
-	setweather WEATHER_SUNNY
-	setvar VAR_DAYNIGHT, 0
+	goto_if_eq VAR_RESULT, 3, OldaleTown_OnLoad_Night
+	goto_if_eq VAR_RESULT, 2, OldaleTown_OnLoad_Evening
+	goto_if_eq VAR_RESULT, 1, OldaleTown_OnLoad_Day
+	goto_if_eq VAR_RESULT, 0, OldaleTown_OnLoad_Morning
 	end
 
-OldaleTown_OnTransition_Day::
-	setweather WEATHER_SUNNY
-	setvar VAR_DAYNIGHT, 1
-	end
-
-OldaleTown_OnTransition_Evening::
-	setweather WEATHER_SHADE
-	setvar VAR_DAYNIGHT, 2
-	end
-
-OldaleTown_OnTransition_Night::
-	setweather WEATHER_SHADE
-	setvar VAR_DAYNIGHT, 3
-	end
-	
 OldaleTown_OnResume::
 	special GetDayOrNight
-	goto_if_eq VAR_RESULT, 3, OldaleTown_OnResume_Night
-	goto_if_eq VAR_RESULT, 2, OldaleTown_OnResume_Evening
-	goto_if_eq VAR_RESULT, 1, OldaleTown_OnResume_Day
-	goto_if_eq VAR_RESULT, 0, OldaleTown_OnResume_Morning
+	goto_if_eq VAR_RESULT, 3, OldaleTown_OnLoad_Night
+	goto_if_eq VAR_RESULT, 2, OldaleTown_OnLoad_Evening
+	goto_if_eq VAR_RESULT, 1, OldaleTown_OnLoad_Day
+	goto_if_eq VAR_RESULT, 0, OldaleTown_OnLoad_Morning
 	end
 	
-OldaleTown_OnResume_Morning::
+OldaleTown_OnLoad_Morning::
 	setweather WEATHER_SUNNY
 	setvar VAR_DAYNIGHT, 0
 	end
 	
-OldaleTown_OnResume_Day::
+OldaleTown_OnLoad_Day::
 	setweather WEATHER_SUNNY
 	setvar VAR_DAYNIGHT, 1
 	end
 
-OldaleTown_OnResume_Evening::
+OldaleTown_OnLoad_Evening::
 	setvar VAR_DAYNIGHT, 2
 	random 4
 	switch VAR_RESULT
@@ -68,7 +51,7 @@ OldaleTown_OnResume_Evening::
 	case 3, OldaleTown_EveningRain
 	end
 
-OldaleTown_OnResume_Night::
+OldaleTown_OnLoad_Night::
 	setvar VAR_DAYNIGHT, 3
 	random 4
 	switch VAR_RESULT
