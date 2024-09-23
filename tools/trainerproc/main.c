@@ -17,7 +17,7 @@
 #define MAX_TRAINER_AI_FLAGS 32
 #define MAX_TRAINER_ITEMS 4
 #define PARTY_SIZE 6
-#define POOL_SIZE 64
+#define POOL_SIZE 256
 #define MAX_MON_MOVES 4
 
 struct String
