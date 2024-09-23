@@ -93,8 +93,8 @@
 #define MAPSEC_ROUTE_SOUTH_1                0x59
 #define MAPSEC_ROUTE_N_1_E_1                0x5A
 #define MAPSEC_ROUTE_N_1_E_2                0x5B
-#define MAPSEC_DYNAMIC                      0x5C
-#define MAPSEC_PALLET_TOWN                  0x5D
+#define MAPSEC_ROUTE_S_1_E_2                0x5C
+#define MAPSEC_DYNAMIC                      0x5D
 #define MAPSEC_VIRIDIAN_CITY                0x5E
 #define MAPSEC_PEWTER_CITY                  0x5F
 #define MAPSEC_CERULEAN_CITY                0x60
@@ -220,7 +220,7 @@
 #define METLOC_IN_GAME_TRADE                0xFE
 #define METLOC_FATEFUL_ENCOUNTER            0xFF
 
-#define KANTO_MAPSEC_START  MAPSEC_PALLET_TOWN
+#define KANTO_MAPSEC_START  MAPSEC_VIRIDIAN_CITY
 #define KANTO_MAPSEC_END    MAPSEC_SPECIAL_AREA
 #define KANTO_MAPSEC_COUNT (KANTO_MAPSEC_END - KANTO_MAPSEC_START + 1)
 

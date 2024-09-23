@@ -706,10 +706,10 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_PALLET_TOWN",
-      "name": "PALLET TOWN",
-      "x": 0,
-      "y": 0,
+      "map_section": "MAPSEC_ROUTE_S_1_E_2",
+      "name": "ROUTE S-1;E-2",
+      "x": 6,
+      "y": 12,
       "width": 1,
       "height": 1
     },
