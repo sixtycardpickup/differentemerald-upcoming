@@ -1,58 +1,40 @@
 RouteS1E2_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, RouteS1E2_OnTransition
+	map_script MAP_SCRIPT_ON_LOAD, RouteS1E2_OnLoad
 	map_script MAP_SCRIPT_ON_RESUME, RouteS1E2_OnResume
 	.byte 0
 
 RouteS1E2_OnTransition:
-	call Common_EventScript_SetupRivalGfxId
-	call ProfBirch_EventScript_UpdateLocation
+	cleartrainerflag (TRAINER_ANA)
+	end
+	
+RouteS1E2_OnLoad::
 	special GetDayOrNight
-	goto_if_eq VAR_RESULT, 3, RouteS1E2_OnTransition_Night
-	goto_if_eq VAR_RESULT, 2, RouteS1E2_OnTransition_Evening
-	goto_if_eq VAR_RESULT, 1, RouteS1E2_OnTransition_Day
-	goto_if_eq VAR_RESULT, 0, RouteS1E2_OnTransition_Morning
-	end
-	
-RouteS1E2_OnTransition_Morning::
-	setweather WEATHER_SUNNY
-	setvar VAR_DAYNIGHT, 0
+	goto_if_eq VAR_RESULT, 3, RouteS1E2_OnLoad_Night
+	goto_if_eq VAR_RESULT, 2, RouteS1E2_OnLoad_Evening
+	goto_if_eq VAR_RESULT, 1, RouteS1E2_OnLoad_Day
+	goto_if_eq VAR_RESULT, 0, RouteS1E2_OnLoad_Morning
 	end
 
-RouteS1E2_OnTransition_Day::
-	setweather WEATHER_SUNNY
-	setvar VAR_DAYNIGHT, 1
-	end
-
-RouteS1E2_OnTransition_Evening::
-	setweather WEATHER_SHADE
-	setvar VAR_DAYNIGHT, 2
-	end
-
-RouteS1E2_OnTransition_Night::
-	setweather WEATHER_SHADE
-	setvar VAR_DAYNIGHT, 3
-	end
-	
 RouteS1E2_OnResume::
 	special GetDayOrNight
-	goto_if_eq VAR_RESULT, 3, RouteS1E2_OnResume_Night
-	goto_if_eq VAR_RESULT, 2, RouteS1E2_OnResume_Evening
-	goto_if_eq VAR_RESULT, 1, RouteS1E2_OnResume_Day
-	goto_if_eq VAR_RESULT, 0, RouteS1E2_OnResume_Morning
+	goto_if_eq VAR_RESULT, 3, RouteS1E2_OnLoad_Night
+	goto_if_eq VAR_RESULT, 2, RouteS1E2_OnLoad_Evening
+	goto_if_eq VAR_RESULT, 1, RouteS1E2_OnLoad_Day
+	goto_if_eq VAR_RESULT, 0, RouteS1E2_OnLoad_Morning
 	end
 	
-RouteS1E2_OnResume_Morning::
+RouteS1E2_OnLoad_Morning::
 	setweather WEATHER_SUNNY
 	setvar VAR_DAYNIGHT, 0
 	end
 	
-RouteS1E2_OnResume_Day::
+RouteS1E2_OnLoad_Day::
 	setweather WEATHER_SUNNY
 	setvar VAR_DAYNIGHT, 1
 	end
 
-RouteS1E2_OnResume_Evening::
-	setvar VAR_DAYNIGHT, 2
+RouteS1E2_OnLoad_Evening::
 	random 4
 	switch VAR_RESULT
 	case 0, RouteS1E2_EveningShade
@@ -61,8 +43,7 @@ RouteS1E2_OnResume_Evening::
 	case 3, RouteS1E2_EveningRain
 	end
 
-RouteS1E2_OnResume_Night::
-	setvar VAR_DAYNIGHT, 3
+RouteS1E2_OnLoad_Night::
 	random 3
 	switch VAR_RESULT
 	case 0, RouteS1E2_NightThunderstorm
@@ -72,30 +53,36 @@ RouteS1E2_OnResume_Night::
 
 RouteS1E2_EveningShade::
 	setweather WEATHER_SHADE
+	setvar VAR_DAYNIGHT, 2
 	end
 
 RouteS1E2_EveningRain::
 	setweather WEATHER_RAIN
+	setvar VAR_DAYNIGHT, 2
 	end
 
 RouteS1E2_EveningThunderstorm::
 	setweather WEATHER_RAIN_THUNDERSTORM
+	setvar VAR_DAYNIGHT, 2
 	end
 
 RouteS1E2_NightRain::
 	setweather WEATHER_RAIN
+	setvar VAR_DAYNIGHT, 3
 	end
 
 RouteS1E2_NightThunderstorm::
 	setweather WEATHER_RAIN_THUNDERSTORM
+	setvar VAR_DAYNIGHT, 3
 	end
 
 RouteS1E2_NightShade::
 	setweather WEATHER_SHADE
+	setvar VAR_DAYNIGHT, 3
 	end
 
 RouteS1E2_EventScript_Ana::
-	trainerbattle_single TRAINER_GRENDEL_MOTHER, RouteS1E2_Text_AnaIntro, RouteS1E2_Text_AnaDefeated
+	trainerbattle_single TRAINER_ANA, RouteS1E2_Text_AnaIntro, RouteS1E2_Text_AnaDefeated
 	msgbox RouteS1E2_Text_AnaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
