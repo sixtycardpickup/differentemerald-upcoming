@@ -1,5 +1,68 @@
 Route102_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, Route102_OnLoad
 	.byte 0
+
+Route102_OnLoad::
+	special GetDayOrNight
+	goto_if_eq VAR_RESULT, 3, Route102_OnLoad_Night
+	goto_if_eq VAR_RESULT, 2, Route102_OnLoad_Evening
+	goto_if_eq VAR_RESULT, 1, Route102_OnLoad_Day
+	goto_if_eq VAR_RESULT, 0, Route102_OnLoad_Morning
+	end
+	
+Route102_OnLoad_Morning::
+	setweather WEATHER_SUNNY
+	setvar VAR_DAYNIGHT, 0
+	end
+	
+Route102_OnLoad_Day::
+	setweather WEATHER_SUNNY
+	setvar VAR_DAYNIGHT, 1
+	end
+
+Route102_OnLoad_Evening::
+	setvar VAR_DAYNIGHT, 2
+	random 4
+	switch VAR_RESULT
+	case 0, Route102_EveningShade
+	case 1, Route102_EveningShade
+	case 2, Route102_EveningThunderstorm
+	case 3, Route102_EveningRain
+	end
+
+Route102_OnLoad_Night::
+	setvar VAR_DAYNIGHT, 3
+	random 4
+	switch VAR_RESULT
+	case 0, Route102_NightThunderstorm
+	case 1, Route102_NightRain
+	case 2, Route102_NightShade
+	case 3, Route102_NightShade
+	end
+
+Route102_EveningShade::
+	setweather WEATHER_SHADE
+	end
+
+Route102_EveningRain::
+	setweather WEATHER_RAIN
+	end
+
+Route102_EveningThunderstorm::
+	setweather WEATHER_RAIN_THUNDERSTORM
+	end
+
+Route102_NightRain::
+	setweather WEATHER_RAIN
+	end
+
+Route102_NightThunderstorm::
+	setweather WEATHER_RAIN_THUNDERSTORM
+	end
+
+Route102_NightShade::
+	setweather WEATHER_SHADE
+	end
 
 Route102_EventScript_LittleBoy::
 	msgbox Route102_Text_ImNotVeryTall, MSGBOX_NPC
