@@ -139,6 +139,8 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GoSeeRival::
 LittlerootTown_ProfessorBirchsLab_EventScript_AgreeToSeeRival::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_GetRivalToTeachYou, MSGBOX_DEFAULT
 	waitmessage
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
 	giveitem ITEM_POKE_BALL, 10
 	waitmessage
 	clearflag FLAG_HIDE_ROUTE_101_BOY

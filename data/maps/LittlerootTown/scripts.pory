@@ -7,9 +7,10 @@ raw `
 
 LittlerootTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_OnTransition
-	map_script MAP_SCRIPT_ON_RESUME, LittlerootTown_OnResume
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, LittlerootTown_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, LittlerootTown_OnWarp
+	map_script MAP_SCRIPT_ON_LOAD, LittlerootTown_OnLoad
+	map_script MAP_SCRIPT_ON_RESUME, LittlerootTown_OnResume
 	.byte 0
 
 	@ State descriptions for VAR_LITTLEROOT_TOWN_STATE
@@ -41,82 +42,68 @@ LittlerootTown_MapScripts::
 	@ 3: Met Rival
 	@ 4: Received Pokedex
 
-LittlerootTown_OnTransitionWeather::
-	special GetDayOrNight
-	call_if_eq VAR_RESULT, 3, LittlerootTown_OnTransition_Night
-	call_if_eq VAR_RESULT, 2, LittlerootTown_OnTransition_Evening
-	call_if_eq VAR_RESULT, 1, LittlerootTown_OnTransition_Day
-	call_if_eq VAR_RESULT, 0, LittlerootTown_OnTransition_Morning
-	return
-
-LittlerootTown_OnTransition_Morning::
-	setweather WEATHER_SUNNY
-	end
-
-LittlerootTown_OnTransition_Day::
-	setweather WEATHER_SUNNY
-	end
-
-LittlerootTown_OnTransition_Evening::
-	setweather WEATHER_SHADE
-	end
-
-LittlerootTown_OnTransition_Night::
-	setweather WEATHER_SHADE
+@ Littleroot Town Weather
+LittlerootTown_OnLoad::
+	goto_if_ge VAR_LITTLEROOT_INTRO_STATE, 4, LittlerootTown_OnLoad_Weather
 	end
 
 LittlerootTown_OnResume::
-	special GetDayOrNight
-	call_if_eq VAR_RESULT, 3, Littleroot_OnResume_Night
-	call_if_eq VAR_RESULT, 2, Littleroot_OnResume_Evening
-	call_if_eq VAR_RESULT, 1, Littleroot_OnResume_Day
-	call_if_eq VAR_RESULT, 0, Littleroot_OnResume_Morning
+	goto_if_ge VAR_LITTLEROOT_INTRO_STATE, 4, LittlerootTown_OnLoad_Weather
 	end
 
-Littleroot_OnResume_Morning::
+LittlerootTown_OnLoad_Weather::
+	special GetDayOrNight
+	goto_if_eq VAR_RESULT, 3, LittlerootTown_OnLoad_Night
+	goto_if_eq VAR_RESULT, 2, LittlerootTown_OnLoad_Evening
+	goto_if_eq VAR_RESULT, 1, LittlerootTown_OnLoad_Day
+	goto_if_eq VAR_RESULT, 0, LittlerootTown_OnLoad_Morning
+	end
+
+LittlerootTown_OnLoad_Morning::
 	setvar VAR_DAYNIGHT, 0
 	random 3
 	switch VAR_RESULT
-	case 0, Littleroot_MorningSunny
-	case 1, Littleroot_MorningRain
-	case 2, Littleroot_MorningSunny
+	case 0, LittlerootTown_MorningSunny
+	case 1, LittlerootTown_MorningRain
+	case 2, LittlerootTown_MorningSunny
 	end
 
-Littleroot_MorningRain::
+LittlerootTown_MorningRain::
 	setweather WEATHER_RAIN
 	end
 
-Littleroot_MorningSunny::
+LittlerootTown_MorningSunny::
 	setweather WEATHER_SUNNY
 	end
 
-Littleroot_OnResume_Day::
+LittlerootTown_OnLoad_Day::
 	setvar VAR_DAYNIGHT, 1
 	random 3
 	switch VAR_RESULT
-	case 0, Littleroot_DayDrought
-	case 1, Littleroot_DaySunny
-	case 2, Littleroot_DaySunny
+	case 0, LittlerootTown_DayDrought
+	case 1, LittlerootTown_DaySunny
+	case 2, LittlerootTown_DaySunny
 	end
 
-Littleroot_DayDrought::
+LittlerootTown_DayDrought::
 	setweather WEATHER_DROUGHT
 	end
 
-Littleroot_DaySunny::
+LittlerootTown_DaySunny::
 	setweather WEATHER_SUNNY
 	end
 
-Littleroot_OnResume_Evening::
+LittlerootTown_OnLoad_Evening::
 	setvar VAR_DAYNIGHT, 2
 	setweather WEATHER_SHADE
 	end
 
-Littleroot_OnResume_Night::
+LittlerootTown_OnLoad_Night::
 	setvar VAR_DAYNIGHT, 3
 	setweather WEATHER_SHADE
 	end
 
+@ Littleroot Town Special Flag Setting
 LittlerootTown_SetFlag_AIvsAI::
 	lock
 	msgbox LittlerootTown_Text_SetFlag_AIvsAI, MSGBOX_AUTOCLOSE
@@ -169,8 +156,10 @@ LittlerootTown_UnsetFlag_TeraOrbCharge::
 
 LittlerootTown_ClearTrainerFlag_Tearnest::
 	cleartrainerflag (TRAINER_TEARNEST)
+	cleartrainerflag (TRAINER_ANA)
 	end
 
+@ Littleroot Town
 LittlerootTown_OnTransition::
 	setflag FLAG_VISITED_LITTLEROOT_TOWN
 	call Common_EventScript_SetupRivalGfxId
@@ -186,7 +175,6 @@ LittlerootTown_OnTransition::
 	call_if_eq VAR_LITTLEROOT_RIVAL_STATE, 3, LittlerootTown_EventScript_SetRivalLeftForRoute103
 	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 1, LittlerootTown_EventScript_HideMapNamePopup
 	call_if_eq VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 2, LittlerootTown_EventScript_LeftLabAfterDexUpgrade
-	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 7, LittlerootTown_OnTransitionWeather
 	end
 
 LittlerootTown_EventScript_HideScienceMan:
@@ -291,6 +279,10 @@ LittlerootTown_EventScript_GoInsideWithMom::
 	closedoor VAR_0x8004, VAR_0x8005
 	waitdooranim
 	delay 10
+	setflag FLAG_SMART_WILD
+	setflag FLAG_DYNAMIC_TRAINER_LEVELS
+	setflag FLAG_TERA_CHARGE
+	setflag FLAG_FORCE_LOAD_OFFSCREEN_OBJEV
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_GoInsideWithMom2Male
 	goto_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_GoInsideWithMom2Female

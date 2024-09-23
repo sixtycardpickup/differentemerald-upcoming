@@ -126,6 +126,9 @@ RivalsHouse_1F_EventScript_RivalMom::
 
 RivalsHouse_1F_EventScript_RivalTooBusy::
 	msgbox RivalsHouse_1F_Text_TooBusyToNoticeVisit, MSGBOX_DEFAULT
+	playfanfare MUS_HEAL
+	waitfanfare
+	special HealPlayerParty
 	release
 	end
 
@@ -136,6 +139,9 @@ RivalsHouse_1F_EventScript_RivalIsOnRoute103::
 
 RivalsHouse_1F_EventScript_GoHomeEverySoOften::
 	msgbox RivalsHouse_1F_Text_ShouldGoHomeEverySoOften, MSGBOX_DEFAULT
+	playfanfare MUS_HEAL
+	waitfanfare
+	special HealPlayerParty
 	release
 	end
 
@@ -146,6 +152,46 @@ RivalsHouse_1F_EventScript_RivalSibling::
 	msgbox RivalsHouse_1F_Text_DoYouHavePokemon, MSGBOX_DEFAULT
 	release
 	end
+
+RivalsHouse_1F_EventScript_MaleFridge::
+	goto_if_unset FLAG_ITEM_RIVAL_HOUSE_LEFTOVERS, RivalsHouse_1F_EventScript_MaleRivalLeftovers
+	end
+
+RivalsHouse_1F_EventScript_FemaleFridge::
+	goto_if_unset FLAG_ITEM_RIVAL_HOUSE_LEFTOVERS, RivalsHouse_1F_EventScript_FemaleRivalLeftovers
+	end
+
+RivalsHouse_1F_EventScript_MaleRivalLeftovers::
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, PlayersHouse_1F_EventScript_NoLeftovers
+	goto_if_eq VAR_RESULT, FEMALE, RivalsHouse_1F_EventScript_Leftovers
+
+RivalsHouse_1F_EventScript_FemaleRivalLeftovers::
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, RivalsHouse_1F_EventScript_Leftovers
+	goto_if_eq VAR_RESULT, FEMALE, PlayersHouse_1F_EventScript_NoLeftovers
+
+RivalsHouse_1F_EventScript_Leftovers::
+	lockall
+	msgbox RivalsHouse_1F_Text_Leftovers, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
+	giveitem ITEM_LEFTOVERS, 1
+	setflag FLAG_ITEM_RIVAL_HOUSE_LEFTOVERS
+	releaseall
+	end
+
+PlayersHouse_1F_EventScript_NoLeftovers::
+	lockall
+	msgbox PlayersHouse_1F_Text_NoLeftovers, MSGBOX_DEFAULT
+	releaseall
+	end
+
+RivalsHouse_1F_Text_Leftovers::
+	.string "Hey! Someone else's food!! Nice.$"
+
+PlayersHouse_1F_Text_NoLeftovers::
+	.string "Huh?? Where are my leftovers??$"
 
 LittlerootTown_MaysHouse_1F_EventScript_GoSeeRoom::
 	lockall
@@ -392,8 +438,8 @@ RivalsHouse_1F_Text_BrendanWhoAreYou:
 	.string "I didn't know that you're a girl.\p"
 	.string "My GUY, STOUT, said that OWER new\n"
 	.string "next-door neighbor is a GYM LEADER's\l"
-	.string "kid, so I just assumed you'd be a GUY.\p"
-	.string "Like me!\p"
+	.string "kid, so I just assumed you'd look\l"
+	.string "like 'Dis! Like me!\p"
 	.string "My name's BRENDAN.\n"
 	.string "So, hi, neighbor!\p"
 	.string "Huh? Hey, {PLAYER}, don't you have\n"
