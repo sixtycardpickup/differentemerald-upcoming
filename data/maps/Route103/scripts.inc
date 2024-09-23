@@ -2,59 +2,42 @@
 
 Route103_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route103_OnTransition
-	map_script MAP_SCRIPT_ON_RESUME, Route103_OnResume
 	map_script MAP_SCRIPT_ON_LOAD, Route103_OnLoad
+	map_script MAP_SCRIPT_ON_LOAD, Route103_OnResume
 	.byte 0
 
 Route103_OnTransition:
 	call Common_EventScript_SetupRivalGfxId
 	call ProfBirch_EventScript_UpdateLocation
+	
+Route103_OnLoad:
+	call_if_set FLAG_SYS_GAME_CLEAR, Route103_EventScript_OpenAlteringCave
 	special GetDayOrNight
-	goto_if_eq VAR_RESULT, 3, Route103_OnTransition_Night
-	goto_if_eq VAR_RESULT, 2, Route103_OnTransition_Evening
-	goto_if_eq VAR_RESULT, 1, Route103_OnTransition_Day
-	goto_if_eq VAR_RESULT, 0, Route103_OnTransition_Morning
-	end
-	
-Route103_OnTransition_Morning::
-	setweather WEATHER_SUNNY
-	setvar VAR_DAYNIGHT, 0
+	goto_if_eq VAR_RESULT, 3, Route103_OnLoad_Night
+	goto_if_eq VAR_RESULT, 2, Route103_OnLoad_Evening
+	goto_if_eq VAR_RESULT, 1, Route103_OnLoad_Day
+	goto_if_eq VAR_RESULT, 0, Route103_OnLoad_Morning
 	end
 
-Route103_OnTransition_Day::
-	setweather WEATHER_SUNNY
-	setvar VAR_DAYNIGHT, 1
-	end
-
-Route103_OnTransition_Evening::
-	setweather WEATHER_SHADE
-	setvar VAR_DAYNIGHT, 2
-	end
-
-Route103_OnTransition_Night::
-	setweather WEATHER_SHADE
-	setvar VAR_DAYNIGHT, 3
-	end
-	
-Route103_OnResume::
+Route103_OnResume:
 	special GetDayOrNight
-	goto_if_eq VAR_RESULT, 3, Route103_OnResume_Night
-	goto_if_eq VAR_RESULT, 2, Route103_OnResume_Evening
-	goto_if_eq VAR_RESULT, 1, Route103_OnResume_Day
-	goto_if_eq VAR_RESULT, 0, Route103_OnResume_Morning
+	goto_if_eq VAR_RESULT, 3, Route103_OnLoad_Night
+	goto_if_eq VAR_RESULT, 2, Route103_OnLoad_Evening
+	goto_if_eq VAR_RESULT, 1, Route103_OnLoad_Day
+	goto_if_eq VAR_RESULT, 0, Route103_OnLoad_Morning
 	end
-	
-Route103_OnResume_Morning::
+
+Route103_OnLoad_Morning::
 	setweather WEATHER_SUNNY
 	setvar VAR_DAYNIGHT, 0
 	end
 	
-Route103_OnResume_Day::
+Route103_OnLoad_Day::
 	setweather WEATHER_SUNNY
 	setvar VAR_DAYNIGHT, 1
 	end
 
-Route103_OnResume_Evening::
+Route103_OnLoad_Evening::
 	setvar VAR_DAYNIGHT, 2
 	random 4
 	switch VAR_RESULT
@@ -64,7 +47,7 @@ Route103_OnResume_Evening::
 	case 3, Route103_EveningRain
 	end
 
-Route103_OnResume_Night::
+Route103_OnLoad_Night::
 	setvar VAR_DAYNIGHT, 3
 	random 3
 	switch VAR_RESULT
@@ -95,10 +78,6 @@ Route103_NightThunderstorm::
 
 Route103_NightShade::
 	setweather WEATHER_SHADE
-	end
-
-Route103_OnLoad:
-	call_if_set FLAG_SYS_GAME_CLEAR, Route103_EventScript_OpenAlteringCave
 	end
 
 Route103_EventScript_OpenAlteringCave::
@@ -329,11 +308,6 @@ Route102_EventScript_LivRematch::
 	msgbox Route103_Text_LivRematchPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route103_EventScript_Andrew::
-	trainerbattle_single TRAINER_ANDREW, Route103_Text_AndrewIntro, Route103_Text_AndrewDefeated
-	msgbox Route103_Text_AndrewPostBattle, MSGBOX_AUTOCLOSE
-	end
-
 Route103_EventScript_Miguel::
 	trainerbattle_single TRAINER_MIGUEL_1, Route103_Text_MiguelIntro, Route103_Text_MiguelDefeated, Route102_EventScript_MiguelRegisterMatchCallAfterBattle
 	specialvar VAR_RESULT, ShouldTryRematchBattle
@@ -403,12 +377,16 @@ Route103_Text_MayTimeToHeadBack:
 	.string "the LAB.$"
 
 Route103_Text_BrendanRoute103Pokemon:
-	.string "BRENDAN: Okay, so it's this one and\n"
-	.string "that one that live on ROUTE 103…$"
-
+	.string "BRENDAN: Okay, so it's 'DIS One and\n"
+	.string "'Dat One -- 'Dese TWO! 'Dat Live.\p"
+	.string "Ahn ROUGHTE NORTH TWO…\p"
+	.string "'Dese TWO. ON ROUGHTE N. DASH.\n"
+	.string "TWO.\p"
+	.string "YEahhh.$"
+	
 Route103_Text_BrendanLetsBattle:
 	.string "Hey, it's {PLAYER}!\p"
-	.string "…Oh, yeah, Dad gave you a POKéMON.\p"
+	.string "…Oh, yeah, STOUT gave you a POKé-MON!\p"
 	.string "Since we're here, how about a little\n"
 	.string "battle?\p"
 	.string "I'll teach you what being a TRAINER's\n"
@@ -419,7 +397,7 @@ Route103_Text_BrendanDefeated:
 
 Route103_Text_BrendanTimeToHeadBack:
 	.string "BRENDAN: I think I get it.\n"
-	.string "I think I know why my dad has his eye\l"
+	.string "I think I know why my GUY has his eye\l"
 	.string "out for you now.\p"
 	.string "Look, your POKéMON already likes you,\n"
 	.string "even though you just got it.\p"
