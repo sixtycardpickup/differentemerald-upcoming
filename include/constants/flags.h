@@ -53,7 +53,7 @@
 #define FLAG_NO_COLLISION    0x28 // Unused Flag
 #define FLAG_NO_ENCOUNTER    0x29 // Unused Flag
 #define FLAG_PAUSE_TIME      0x2A // Unused Flag
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
+#define FLAG_TERA_ORB_FOUND  0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag
 #define FLAG_UNUSED_0x02D    0x2D // Unused Flag
 #define FLAG_UNUSED_0x02E    0x2E // Unused Flag
@@ -1218,7 +1218,7 @@
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET                     0x491
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
 
-#define FLAG_UNUSED_0x493                                           0x493 // Unused Flag
+#define FLAG_ITEM_RIVAL_HOUSE_LEFTOVERS                             0x493 // Unused Flag
 #define FLAG_UNUSED_0x494                                           0x494 // Unused Flag
 #define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
 #define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
