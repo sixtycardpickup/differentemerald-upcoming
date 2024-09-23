@@ -1351,15 +1351,15 @@ void ClearTrainerFlag(u16 trainerId)
 
 void BattleSetup_StartTrainerBattle(void)
 {
-    if (gNoOfApproachingTrainers == 2)
-        gBattleTypeFlags = (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_TRAINER);
-    else if (FlagGet(FLAG_DYNAMIC_TRAINER_LEVELS))
+    if ((gNoOfApproachingTrainers == 2) && FlagGet(FLAG_DYNAMIC_TRAINER_LEVELS))
+        gBattleTypeFlags = (BATTLE_TYPE_DYNAMIC_LEVELS | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_TRAINER);
+    else if (FlagGet(FLAG_DYNAMIC_TRAINER_LEVELS) && (gNoOfApproachingTrainers != 2))
         gBattleTypeFlags = (BATTLE_TYPE_DYNAMIC_LEVELS | BATTLE_TYPE_TRAINER);
-    else if (FlagGet(FLAG_DYNAMIC_TRAINER_LEVELS) && gNoOfApproachingTrainers == 2)
-        gBattleTypeFlags = (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_DYNAMIC_LEVELS | BATTLE_TYPE_TRAINER);
-    else if (FlagGet(FLAG_MATCH_PLAYER_LEVEL))
+    else if ((gNoOfApproachingTrainers == 2) &! (FlagGet(FLAG_DYNAMIC_TRAINER_LEVELS) || FlagGet(FLAG_MATCH_PLAYER_LEVEL)))
+        gBattleTypeFlags = (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_TRAINER);
+    else if (FlagGet(FLAG_MATCH_PLAYER_LEVEL) && (gNoOfApproachingTrainers != 2))
         gBattleTypeFlags = (BATTLE_TYPE_MATCH_PLAYER_LEVEL | BATTLE_TYPE_TRAINER);
-    else if (FlagGet(FLAG_MATCH_PLAYER_LEVEL) && gNoOfApproachingTrainers == 2)
+    else if (FlagGet(FLAG_MATCH_PLAYER_LEVEL) && (gNoOfApproachingTrainers == 2))
         gBattleTypeFlags = (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_MATCH_PLAYER_LEVEL | BATTLE_TYPE_TRAINER);
     else
         gBattleTypeFlags = (BATTLE_TYPE_TRAINER);

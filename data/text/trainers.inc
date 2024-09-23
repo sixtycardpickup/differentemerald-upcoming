@@ -1,15 +1,19 @@
 Route102_Text_CalvinIntro:
 	.string "If you have POKéMON with you, then\n"
 	.string "you're an official POKéMON TRAINER!\l"
-	.string "You can't say no to my challenge!$"
+	.string "And I'VE Been PLAYING IN THE DIRT\l"
+	.string "OVER - - - \p"
+	.string "THERE!!!$"
 
 Route102_Text_CalvinDefeated:
 	.string "Arrgh, I lost…\n"
-	.string "I should have trained mine more…$"
+	.string "I should not have…$"
 
 Route102_Text_CalvinPostBattle:
 	.string "Listen, you. If you're strong,\n"
-	.string "you should have told me before!$"
+	.string "you should have told me before!\p"
+	.string "After all! I'D told You I'D been\l"
+	.string "playing IN the DIRT.$"
 
 Route102_Text_CalvinRegister:
 	.string "I've been working hard at this since\n"
@@ -156,16 +160,36 @@ Route103_Text_LivRematchNotEnoughPokemon:
 	.string "have to have two POKéMON!\l"
 	.string "It's not fair if you don't!$"
 
-Route103_Text_AndrewIntro:
-	.string "Gah! My fishing line's all snarled up!\n"
-	.string "I'm getting frustrated and mean!\l"
-	.string "That's it! Battle me!$"
+RouteW1_Text_MuddlesIntro::
+	.string "Gah! That's it! Battle me!$"
 
-Route103_Text_AndrewDefeated:
+RouteW1_Text_MuddlesDefeated::
 	.string "Gah! Lost it!\n"
-	.string "I'm even more annoyed now!$"
+	.string "I'm darned annoyed now!$"
 
-Route103_Text_AndrewPostBattle:
+RouteW1_Text_MuddlesPostBattle::
+	.string "Gah, I'm still boiling mad…\n"
+	.string "Grrrrr…$"
+
+RouteW1_Text_BrienIntro::
+	.string "Gah! That's it! Battle me!$"
+
+RouteW1_Text_BrienDefeated::
+	.string "Gah! Lost it!\n"
+	.string "I'm darned annoyed now!$"
+
+RouteW1_Text_BrienPostBattle::
+	.string "Gah, I'm still boiling mad…\n"
+	.string "Grrrrr…$"
+
+RouteW1_Text_SquortIntro::
+	.string "Gah! That's it! Battle me!$"
+
+RouteW1_Text_SquortDefeated::
+	.string "Gah! Lost it!\n"
+	.string "I'm darned annoyed now!$"
+
+RouteW1_Text_SquortPostBattle::
 	.string "Gah, I'm still boiling mad…\n"
 	.string "Grrrrr…$"
 
@@ -1521,17 +1545,17 @@ Route111_Text_BiancaPostBattle:
 	.string "This road here…\n"
 	.string "You have quite a ways to travel.$"
 
-Route112_Text_BriceIntro:
+RouteW1_Text_SpluddIntro::
 	.string "Hahahaha!\n"
 	.string "How about we have a battle?\l"
 	.string "You and me!\l"
 	.string "Hahahaha!$"
 
-Route112_Text_BriceDefeat:
+RouteW1_Text_SpluddDefeat::
 	.string "I lost!\n"
 	.string "Hahahaha!$"
 
-Route112_Text_BricePostBattle:
+RouteW1_Text_SpluddPostBattle::
 	.string "Hahahahaha! Something flew up my nose!\n"
 	.string "Hahahaha-hatchoo!$"
 
