@@ -485,11 +485,9 @@ void SetVirtualObjectInvisibility(u8 virtualObjId, bool32 invisible);
 bool32 IsVirtualObjectInvisible(u8 virtualObjId);
 void SetVirtualObjectSpriteAnim(u8 virtualObjId, u8 animNum);
 bool32 IsVirtualObjectAnimating(u8 virtualObjId);
-u8 GetObjectEventIdByLocalId(u8 localId);
-bool32 IsFollowerVisible(void);
+//u8 GetObjectEventIdByLocalId(u8 localId);
+//bool32 IsFollowerVisible(void);
 
-// run slow
-u8 GetPlayerRunSlowMovementAction(u32);
 //sideways stairs
 u8 GetSidewaysStairsToRightDirection(s16, s16, u8);
 u8 GetSidewaysStairsToLeftDirection(s16, s16, u8);
