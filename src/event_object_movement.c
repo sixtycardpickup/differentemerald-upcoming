@@ -949,11 +949,7 @@ static const struct Coords16 sDirectionToVectors[] = {
     {-1,  1},
     { 1,  1},
     {-1, -1},
-    { 1, -1},
-    {-2,  1},
-    { 2,  1},
-    {-2, -1},
-    { 2, -1}
+    { 1, -1}
 };
 
 const u8 gFaceDirectionMovementActions[] = {
@@ -9001,7 +8997,6 @@ static void GetGroundEffectFlags_Tracks(struct ObjectEvent *objEvent, u32 *flags
     else if (MetatileBehavior_IsSandOrDeepSand(objEvent->previousMetatileBehavior)
              || MetatileBehavior_IsFootprints(objEvent->previousMetatileBehavior)
              || MetatileBehavior_IsMudOrMudPuddle(objEvent->previousMetatileBehavior))
-             || MetatileBehavior_IsFootprints(objEvent->previousMetatileBehavior))
         *flags |= GROUND_EFFECT_FLAG_SAND;
 }
 
