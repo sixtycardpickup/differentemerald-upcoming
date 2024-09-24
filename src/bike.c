@@ -142,7 +142,7 @@ static u8 GetMachBikeTransition(u8 *dirTraveling)
 {
     // if the dir updated before this function, get the relevent new direction to check later.
     u8 direction = GetPlayerMovementDirection();
-    
+
     // fix direction when moving on sideways stairs
     switch (direction)
     {
