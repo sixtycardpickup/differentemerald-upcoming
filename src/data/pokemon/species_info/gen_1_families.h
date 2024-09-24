@@ -9516,12 +9516,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Farfetchd,
         .iconPalIndex = 1,
         FOOTPRINT(Farfetchd)
-        OVERWORLD_SET_ANIM(
+        OVERWORLD(
             sPicTable_Farfetchd,
             SIZE_32x32,
             SHADOW_SIZE_M,
-            TRACKS_NONE,
-            sAnimTable_Following_Asym,
+            TRACKS_FOOT,
             gOverworldPalette_Farfetchd,
             gShinyOverworldPalette_Farfetchd
         )
