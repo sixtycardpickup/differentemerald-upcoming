@@ -174,8 +174,6 @@ RivalsHouse_1F_EventScript_FemaleRivalLeftovers::
 RivalsHouse_1F_EventScript_Leftovers::
 	lockall
 	msgbox RivalsHouse_1F_Text_Leftovers, MSGBOX_DEFAULT
-	playfanfare MUS_OBTAIN_ITEM
-	waitfanfare
 	giveitem ITEM_LEFTOVERS, 1
 	setflag FLAG_ITEM_RIVAL_HOUSE_LEFTOVERS
 	releaseall
