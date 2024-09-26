@@ -699,6 +699,44 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_FullRestore,
     },
 
+    /*[ITEM_STAY_STOUT] =
+    {
+        .name = _("Stay Stout"),
+        .price = 700,
+        .holdEffectParam = 255,
+        .description = COMPOUND_STRING(
+            "Removes the burned\n"
+            "and confused stat\n"
+            "conditions."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_CURE_STATUS,
+        .effect = gItemEffect_StayStout,
+        .flingPower = 30,
+        .iconPic = gItemIcon_LargePotion,
+        .iconPalette = gItemIconPalette_FullRestore,
+    },
+
+    [ITEM_GO_STOUT] =
+    {
+        .name = _("Go Stout"),
+        .price = 700,
+        .holdEffectParam = 255,
+        .description = COMPOUND_STRING(
+            "Removes the para-\n"
+            "lyzed and frozen\n"
+            "stat conditions."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_CURE_STATUS,
+        .effect = gItemEffect_GoStout,
+        .flingPower = 30,
+        .iconPic = gItemIcon_LargePotion,
+        .iconPalette = gItemIconPalette_FullRestore,
+    },*/
+
     [ITEM_REVIVE] =
     {
         .name = _("Revive"),

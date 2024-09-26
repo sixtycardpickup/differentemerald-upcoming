@@ -23,6 +23,18 @@ const u8 gItemEffect_ParalyzeHeal[6] = {
     [3] = ITEM3_PARALYSIS,
 };
 
+/*const u8 gItemEffect_StayStout[6] = {
+    [3] = ITEM3_BURN | ITEM3_CONFUSION
+};
+
+const u8 gItemEffect_GoStout[6] = {
+    [3] = ITEM3_PARALYSIS | ITEM3_FREEZE
+};
+
+const u8 gItemEffect_StoutStart[6] = {
+    [3] = ITEM3_SLEEP | ITEM3_POISON
+};*/
+
 const u8 gItemEffect_FullRestore[7] = {
     [3] = ITEM3_STATUS_ALL,
     [4] = ITEM4_HEAL_HP,
