@@ -101,7 +101,7 @@ RouteS1E2_GetDayOrNightAndWeather::
 	goto_if_eq VAR_RESULT, 16, RouteS1E2_Encounters_EveningShade
 	goto_if_eq VAR_RESULT, 17, RouteS1E2_Encounters_EveningRain
 	goto_if_eq VAR_RESULT, 18, RouteS1E2_Encounters_EveningStorm
-	goto_if_eq VAR_RESULT, 24, RouteS1E2_Encounters_Night
+	goto_if_eq VAR_RESULT, 24, RouteS1E2_Encounters_NightShade
 	goto_if_eq VAR_RESULT, 25, RouteS1E2_Encounters_NightRain
 	goto_if_eq VAR_RESULT, 26, RouteS1E2_Encounters_NightStorm
 	end
