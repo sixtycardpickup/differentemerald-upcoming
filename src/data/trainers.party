@@ -23437,7 +23437,7 @@ Gender: Female
 Music: Female
 Items: ITEM_POTION / ITEM_POTION / ITEM_FULL_HEAL
 Double Battle: Yes
-AI: Omniscient / Check Bad Move / Try To Faint / Check Viability / Smart Switching
+AI: Omniscient / Check Bad Move / Try To Faint / Check Viability / Smart Switching / Prefer Status Moves
 Party Size: 6
 
 Applin @ Sitrus Berry
