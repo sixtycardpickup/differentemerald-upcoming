@@ -1041,15 +1041,16 @@ Route110_Text_JacobPostBattle:
 	.string "Inspect your BIKE for problems!$"
 
 RouteEast1_Text_TearnestIntro:
-	.string "Yo, you!\n"
-	.string "Can you keep up with my speed?$"
+	.string "WITH SPEED AND PINACHE! TRAINER\n"
+	.string "TEARNEST ATTACKS!!$"
 
 RouteEast1_Text_TearnestDefeated:
-	.string "Crash and burn!$"
+	.string "With Speed and Pinache, TEARNEST\n"
+	.string "WILL try Again.$"
 
 RouteEast1_Text_TearnestPostBattle:
 	.string "Speed alone won't let me win at POKéMON.\n"
-	.string "I need to reconsider this…$"
+	.string "That's where the pinache comes in…$"
 
 RouteEast1_Text_CredricIntro:
 	.string "There's no need to go worryin'.\n"

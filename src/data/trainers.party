@@ -5975,17 +5975,17 @@ Level: 13
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Adamant
 
+Bunnelby @ Cheri Berry
+Level: 13
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
 Bunnelby @ Rawst Berry
 Level: 13
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Adamant
 
 Bunnelby @ Rawst Berry
-Level: 13
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Jolly
-
-Bunnelby @ Cheri Berry
 Level: 13
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
@@ -6482,7 +6482,7 @@ Class: Hiker
 Pic: Hiker
 Gender: Male
 Music: Hiker
-Items: ITEM_POTION / ITEM_ANTIDOTE / ITEM_FULL_HEAL / ITEM_AWAKENING
+Items: ITEM_POTION / ITEM_POTION / ITEM_FULL_HEAL
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 Party Size: 6
@@ -6533,6 +6533,26 @@ IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Adamant
 
 Bounsweet @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Relaxed
+
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Sassy
+
+Bunnelby @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Bunnelby @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
@@ -6807,6 +6827,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Honedge @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -6992,6 +7022,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Naive
 
+Nymble @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Nymble @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
 Oddish @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
@@ -7072,6 +7112,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Timid
 
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Careful
+
 SPECIES_SHELLOS_WEST_SEA @ Sitrus Berry
 Level: 13
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -7147,7 +7197,7 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
 - Flame Charge
-- Thief
+- Covet
 - Protect
 - Sketch
 
@@ -7732,7 +7782,7 @@ Class: Triathlete
 Pic: Cycling Triathlete M
 Gender: Male
 Music: Male
-Items: ITEM_POTION / ITEM_ANTIDOTE / ITEM_FULL_HEAL / ITEM_AWAKENING
+Items: ITEM_POTION / ITEM_POTION / ITEM_FULL_HEAL
 Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 Party Size: 6
@@ -7787,6 +7837,26 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
 
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Relaxed
+
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Sassy
+
+Bunnelby @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Bunnelby @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
 Carvanha @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -7796,6 +7866,16 @@ Carvanha @ Rawst Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Adamant
+
+Castform @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Castform @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
 
 Chatot @ Sitrus Berry
 Level: 10
@@ -8007,6 +8087,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Honedge @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -8152,6 +8242,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Naive
 
+Nymble @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Nymble @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
 Oddish @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
@@ -8211,6 +8311,16 @@ Salandit @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Timid
+
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Careful
 
 Shelmet @ Oran Berry
 Level: 10
@@ -11286,7 +11396,7 @@ Class: Rival
 Pic: Brendan
 Gender: Male
 Music: Male
-Items: ITEM_POTION / ITEM_ANTIDOTE / ITEM_FULL_HEAL / ITEM_AWAKENING
+Items: ITEM_POTION / ITEM_POTION / ITEM_FULL_HEAL
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 Party Size: 6
@@ -11387,7 +11497,7 @@ Class: Rival
 Pic: Brendan
 Gender: Male
 Music: Male
-Items: ITEM_POTION / ITEM_ANTIDOTE / ITEM_FULL_HEAL / ITEM_AWAKENING
+Items: ITEM_POTION / ITEM_POTION / ITEM_FULL_HEAL
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 Party Size: 6
@@ -11476,7 +11586,7 @@ Class: Rival
 Pic: Brendan
 Gender: Male
 Music: Male
-Items: ITEM_POTION / ITEM_ANTIDOTE / ITEM_FULL_HEAL / ITEM_AWAKENING
+Items: ITEM_POTION / ITEM_POTION / ITEM_FULL_HEAL
 Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 Party Size: 6
@@ -11565,7 +11675,7 @@ Class: Rival
 Pic: May
 Gender: Female
 Music: Female
-Items: ITEM_POTION / ITEM_ANTIDOTE / ITEM_FULL_HEAL / ITEM_AWAKENING
+Items: ITEM_POTION / ITEM_POTION / ITEM_FULL_HEAL
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
@@ -11653,7 +11763,7 @@ Class: Rival
 Pic: May
 Gender: Female
 Music: Female
-Items: ITEM_POTION / ITEM_ANTIDOTE / ITEM_FULL_HEAL / ITEM_AWAKENING
+Items: ITEM_POTION / ITEM_POTION / ITEM_FULL_HEAL
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
@@ -11741,7 +11851,7 @@ Class: Rival
 Pic: May
 Gender: Female
 Music: Female
-Items: ITEM_POTION / ITEM_ANTIDOTE / ITEM_FULL_HEAL / ITEM_AWAKENING
+Items: ITEM_POTION / ITEM_POTION / ITEM_FULL_HEAL
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
@@ -13042,7 +13152,7 @@ Class: Lady
 Pic: Lady
 Gender: Female
 Music: Female
-Items: ITEM_POTION / ITEM_ANTIDOTE / ITEM_FULL_HEAL / ITEM_AWAKENING
+Items: ITEM_POTION / ITEM_POTION / ITEM_FULL_HEAL
 Double Battle: Yes
 AI: Omniscient / Check Bad Move / Try To Faint / Check Viability / Smart Switching
 Party Size: 6
@@ -13083,6 +13193,26 @@ IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Adamant
 
 Bounsweet @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Relaxed
+
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Sassy
+
+Bunnelby @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Bunnelby @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
@@ -13297,6 +13427,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Honedge @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -13442,6 +13582,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Naive
 
+Nymble @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Nymble @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
 Oddish @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
@@ -13501,6 +13651,16 @@ Salandit @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Timid
+
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Careful
 
 Shelmet @ Oran Berry
 Level: 10
@@ -14109,7 +14269,7 @@ Class: Fisherman
 Pic: Bug Maniac
 Gender: Male
 Music: Hiker
-Items: ITEM_POTION / ITEM_ANTIDOTE / ITEM_FULL_HEAL / ITEM_AWAKENING
+Items: ITEM_POTION / ITEM_POTION / ITEM_FULL_HEAL
 Double Battle: Yes
 AI: Omniscient / Check Bad Move / Try To Faint / Check Viability / Smart Switching
 Party Size: 6
@@ -14178,6 +14338,26 @@ IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Adamant
 
 Bounsweet @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Relaxed
+
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Sassy
+
+Bunnelby @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Bunnelby @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
@@ -14462,6 +14642,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Honedge @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -14647,6 +14837,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Naive
 
+Nymble @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Nymble @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
 Oddish @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
@@ -14727,6 +14927,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Timid
 
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Careful
+
 SPECIES_SHELLOS_WEST_SEA @ Sitrus Berry
 Level: 13
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -14802,7 +15012,7 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
 - Flame Charge
-- Thief
+- Covet
 - Protect
 - Sketch
 
@@ -15076,7 +15286,7 @@ Class: Lass
 Pic: Lass
 Gender: Female
 Music: Hiker
-Items: ITEM_POTION / ITEM_ANTIDOTE / ITEM_FULL_HEAL / ITEM_AWAKENING
+Items: ITEM_POTION / ITEM_POTION / ITEM_FULL_HEAL
 Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 Party Size: 6
@@ -15127,6 +15337,26 @@ IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Adamant
 
 Bounsweet @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Relaxed
+
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Sassy
+
+Bunnelby @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Bunnelby @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
@@ -15401,6 +15631,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Honedge @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -15586,6 +15826,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Naive
 
+Nymble @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Nymble @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
 Oddish @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
@@ -15666,6 +15916,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Timid
 
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Careful
+
 SPECIES_SHELLOS_WEST_SEA @ Sitrus Berry
 Level: 13
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -15741,7 +16001,7 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
 - Flame Charge
-- Thief
+- Covet
 - Protect
 - Sketch
 
@@ -16015,7 +16275,7 @@ Class: Pkmn Ranger
 Pic: Pokemon Ranger F
 Gender: Female
 Music: Cool
-Items: ITEM_POTION / ITEM_ANTIDOTE / ITEM_FULL_HEAL / ITEM_AWAKENING
+Items: ITEM_POTION / ITEM_POTION / ITEM_FULL_HEAL
 Double Battle: No
 AI: Omniscient / Check Bad Move / Try To Faint / Check Viability / Smart Switching
 Party Size: 6
@@ -16066,6 +16326,26 @@ IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Adamant
 
 Bounsweet @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Relaxed
+
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Sassy
+
+Bunnelby @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Bunnelby @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
@@ -16340,6 +16620,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Honedge @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -16525,6 +16815,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Naive
 
+Nymble @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Nymble @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
 Oddish @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
@@ -16605,6 +16905,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Timid
 
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Careful
+
 SPECIES_SHELLOS_WEST_SEA @ Sitrus Berry
 Level: 13
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -16680,7 +16990,7 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
 - Flame Charge
-- Thief
+- Covet
 - Protect
 - Sketch
 
@@ -22364,7 +22674,7 @@ Class: Psychic
 Pic: Psychic M
 Gender: Male
 Music: Male
-Items: ITEM_POTION / ITEM_ANTIDOTE / ITEM_FULL_HEAL / ITEM_AWAKENING
+Items: ITEM_POTION / ITEM_POTION / ITEM_FULL_HEAL
 Double Battle: Yes
 AI: Omniscient / Check Bad Move / Try To Faint / Check Viability / Smart Switching
 Party Size: 6
@@ -22419,6 +22729,26 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
 
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Relaxed
+
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Sassy
+
+Bunnelby @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Bunnelby @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
 Carvanha @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -22428,6 +22758,16 @@ Carvanha @ Rawst Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Adamant
+
+Castform @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Castform @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
 
 Chatot @ Sitrus Berry
 Level: 10
@@ -22639,6 +22979,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Honedge @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -22784,6 +23134,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Naive
 
+Nymble @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Nymble @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
 Oddish @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
@@ -22843,6 +23203,16 @@ Salandit @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Timid
+
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Careful
 
 Shelmet @ Oran Berry
 Level: 10
@@ -23065,7 +23435,7 @@ Class: Psychic
 Pic: Psychic M
 Gender: Female
 Music: Female
-Items: ITEM_POTION / ITEM_ANTIDOTE / ITEM_FULL_HEAL / ITEM_AWAKENING
+Items: ITEM_POTION / ITEM_POTION / ITEM_FULL_HEAL
 Double Battle: Yes
 AI: Omniscient / Check Bad Move / Try To Faint / Check Viability / Smart Switching
 Party Size: 6
@@ -23148,6 +23518,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
 
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Relaxed
+
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Sassy
+
 Budew @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -23158,6 +23538,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Bunnelby @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Bunnelby @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
 Carvanha @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -23167,6 +23557,16 @@ Carvanha @ Rawst Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Adamant
+
+Castform @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Castform @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
 
 Caterpie @ Oran Berry
 Level: 10
@@ -23308,12 +23708,22 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
 
+Fennekin @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quirky
+
+Fennekin @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Hasty
+
 Flabebe_White_Flower @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Calm
 
-Flabebe_White_Flower @ Oran Berry
+Flabebe_Blue_Flower @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
@@ -23358,6 +23768,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Relaxed
 
+Froakie @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Hasty
+
+Froakie @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Naive
+
 Fuecoco @ Sitrus Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -23367,6 +23787,16 @@ Fuecoco @ Sitrus Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Quiet
+
+Geodude @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Relaxed
+
+Geodude @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Brave
 
 Geodude_Alolan @ Oran Berry
 Level: 10
@@ -23437,6 +23867,16 @@ Hatenna @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
+
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
 
 Honedge @ Oran Berry
 Level: 10
@@ -23623,6 +24063,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Naive
 
+Nymble @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Nymble @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
 Oddish @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
@@ -23703,6 +24153,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Timid
 
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Careful
+
 SPECIES_SHELLOS_WEST_SEA @ Sitrus Berry
 Level: 13
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -23778,7 +24238,7 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
 - Protect
-- Thief
+- Covet
 - Mimic
 - Sketch
 
@@ -23800,6 +24260,16 @@ Snivy @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
+
+Sobble @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Sobble @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
 
 Spearow @ Cheri Berry
 Level: 10
@@ -23831,12 +24301,12 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Quirky
 
-Squawkabilly_Green_Plumage @ Cheri Berry
+Squawkabilly_Blue_Plumage @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
 
-Squawkabilly_Green_Plumage @ Oran Berry
+Squawkabilly_Blue_Plumage @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Adamant
@@ -24072,7 +24542,7 @@ Class: Youngster
 Pic: Rich Boy
 Gender: Male
 Music: Male
-Items: ITEM_POTION / ITEM_ANTIDOTE / ITEM_FULL_HEAL / ITEM_AWAKENING
+Items: ITEM_POTION / ITEM_POTION / ITEM_FULL_HEAL
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 Party Size: 6
@@ -24122,6 +24592,31 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Adamant
 
+Bounsweet @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Relaxed
+
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Sassy
+
+Bunnelby @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Bunnelby @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
 Carvanha @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -24131,6 +24626,16 @@ Carvanha @ Rawst Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Adamant
+
+Castform @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Castform @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
 
 Chatot @ Sitrus Berry
 Level: 10
@@ -24337,6 +24842,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Honedge @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -24482,6 +24997,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Naive
 
+Nymble @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Nymble @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
 Oddish @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
@@ -24531,6 +25056,16 @@ Salandit @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Timid
+
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Careful
 
 Shelmet @ Oran Berry
 Level: 10
@@ -24753,7 +25288,7 @@ Class: Battle Girl
 Pic: Lady
 Gender: Female
 Music: Female
-Items: ITEM_POTION / ITEM_ANTIDOTE / ITEM_FULL_HEAL / ITEM_AWAKENING
+Items: ITEM_POTION / ITEM_POTION / ITEM_FULL_HEAL 
 Double Battle: No
 AI: Omniscient / Check Bad Move / Try To Faint / Check Viability / Smart Switching
 Party Size: 6
@@ -24808,6 +25343,26 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
 
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Relaxed
+
+Bronzor @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 0 Spe
+Nature: Sassy
+
+Bunnelby @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Bunnelby @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
 Carvanha @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -24817,6 +25372,16 @@ Carvanha @ Rawst Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Adamant
+
+Castform @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Castform @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
 
 Chatot @ Sitrus Berry
 Level: 10
@@ -25028,6 +25593,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Helioptile @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Honedge @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -25232,6 +25807,16 @@ Salandit @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Timid
+
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Scraggy @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Careful
 
 Shelmet @ Oran Berry
 Level: 10

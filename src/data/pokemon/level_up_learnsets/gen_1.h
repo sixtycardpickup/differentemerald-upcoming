@@ -14767,7 +14767,7 @@ static const struct LevelUpMove sBewearLevelUpLearnset[] = {
 #if P_FAMILY_BOUNSWEET
 static const struct LevelUpMove sBounsweetLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
-    LEVEL_UP_MOVE( 5, MOVE_PLAY_NICE),
+    LEVEL_UP_MOVE( 7, MOVE_PLAY_NICE),
     LEVEL_UP_MOVE( 9, MOVE_RAPID_SPIN),
     LEVEL_UP_MOVE(13, MOVE_RAZOR_LEAF),
     LEVEL_UP_MOVE(17, MOVE_SWEET_SCENT),

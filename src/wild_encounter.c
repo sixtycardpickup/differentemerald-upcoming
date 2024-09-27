@@ -277,8 +277,16 @@ static u8 ChooseWildMonIndex_Land(void)
         wildMonIndex = 39;
     else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_39 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_40)
         wildMonIndex = 40;
-    else
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_40 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_41)
         wildMonIndex = 41;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_41 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_42)
+        wildMonIndex = 42;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_42 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_43)
+        wildMonIndex = 43;
+    else if (rand >= ENCOUNTER_CHANCE_LAND_MONS_SLOT_43 && rand < ENCOUNTER_CHANCE_LAND_MONS_SLOT_44)
+        wildMonIndex = 44;
+    else
+        wildMonIndex = 45;
 
     if (LURE_STEP_COUNT != 0 && (Random() % 10 < 2))
         swap = TRUE;
@@ -476,6 +484,10 @@ static u16 GetCurrentMapWildMonHeaderId(void)
 
             if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE_E1N) &&
                 gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE_E1N))
+                i += VarGet(VAR_DAYNIGHT_AND_WEATHER);
+
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE_S1E2) &&
+                gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE_S1E2))
                 i += VarGet(VAR_DAYNIGHT_AND_WEATHER);
 
             if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ALTERING_CAVE) &&
