@@ -5,6 +5,7 @@
 OldaleTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, OldaleTown_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, OldaleTown_OnResume
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, OldaleTown_OnWarp
 	.byte 0
 
 OldaleTown_OnTransition:
@@ -24,6 +25,14 @@ OldaleTown_OnLoad::
 	end
 
 OldaleTown_OnResume::
+	special GetDayOrNight
+	goto_if_eq VAR_RESULT, 3, OldaleTown_OnLoad_Night
+	goto_if_eq VAR_RESULT, 2, OldaleTown_OnLoad_Evening
+	goto_if_eq VAR_RESULT, 1, OldaleTown_OnLoad_Day
+	goto_if_eq VAR_RESULT, 0, OldaleTown_OnLoad_Morning
+	end
+
+ OldaleTown_OnWarp::
 	special GetDayOrNight
 	goto_if_eq VAR_RESULT, 3, OldaleTown_OnLoad_Night
 	goto_if_eq VAR_RESULT, 2, OldaleTown_OnLoad_Evening
