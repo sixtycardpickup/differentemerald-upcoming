@@ -6,6 +6,7 @@ RouteS1E2_MapScripts::
 
 RouteS1E2_OnTransition:
 	cleartrainerflag (TRAINER_ANA)
+	cleartrainerflag (TRAINER_ANA_FOG_1)
 	end
 	
 RouteS1E2_OnLoad::
@@ -25,11 +26,15 @@ RouteS1E2_OnResume::
 	end
 	
 RouteS1E2_OnLoad_Morning::
+	setflag FLAG_HIDE_NORMAL_ANA_IN_FOG
+	clearflag FLAG_HIDE_FOG_ANA_IN_NORMAL
 	setweather WEATHER_FOG_HORIZONTAL
 	goto RouteS1E2_GetDayOrNightAndWeather
 	end
 	
 RouteS1E2_OnLoad_Day::
+	setflag FLAG_HIDE_FOG_ANA_IN_NORMAL
+	clearflag FLAG_HIDE_NORMAL_ANA_IN_FOG
 	random 2
 	switch VAR_RESULT
 	case 0, RouteS1E2_DaySunny
@@ -37,6 +42,8 @@ RouteS1E2_OnLoad_Day::
 	end
 
 RouteS1E2_OnLoad_Evening::
+	setflag FLAG_HIDE_FOG_ANA_IN_NORMAL
+	clearflag FLAG_HIDE_NORMAL_ANA_IN_FOG
 	random 4
 	switch VAR_RESULT
 	case 0, RouteS1E2_EveningShade
@@ -46,6 +53,8 @@ RouteS1E2_OnLoad_Evening::
 	end
 
 RouteS1E2_OnLoad_Night::
+	setflag FLAG_HIDE_FOG_ANA_IN_NORMAL
+	clearflag FLAG_HIDE_NORMAL_ANA_IN_FOG
 	random 3
 	switch VAR_RESULT
 	case 0, RouteS1E2_NightThunderstorm
@@ -144,6 +153,11 @@ RouteS1E2_Encounters_NightStorm::
 
 RouteS1E2_EventScript_Ana::
 	trainerbattle_single TRAINER_ANA, RouteS1E2_Text_AnaIntro, RouteS1E2_Text_AnaDefeated
+	msgbox RouteS1E2_Text_AnaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RouteS1E2_EventScript_Ana_Fog_1::
+	trainerbattle_single TRAINER_ANA_FOG_1, RouteS1E2_Text_AnaIntro, RouteS1E2_Text_AnaDefeated
 	msgbox RouteS1E2_Text_AnaPostBattle, MSGBOX_AUTOCLOSE
 	end
 

@@ -31,7 +31,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "6",
       "script": "RouteS1E2_EventScript_Ana",
-      "flag": "0"
+      "flag": "FLAG_HIDE_NORMAL_ANA_IN_FOG"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -188,6 +188,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
       "flag": "FLAG_TEMP_8"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ARTIST",
+      "x": 7,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 6,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "6",
+      "script": "RouteS1E2_EventScript_Ana_Fog_1",
+      "flag": "FLAG_HIDE_FOG_ANA_IN_NORMAL"
     }
   ],
   "warp_events": [
