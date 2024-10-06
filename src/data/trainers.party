@@ -6497,6 +6497,18 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Quirky
 
+Basculin_Red_Striped @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Basculin_Red_Striped @ Rawst Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+/*Barboach Evolves at Level 30.*/
+
 Barboach @ Sitrus Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -6912,6 +6924,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Calm
+
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Makuhita @ Sitrus Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -7181,6 +7203,16 @@ Skiddo @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
+
+Skitty @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quirky
+
+Skitty @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Hasty
 
 Skorupi @ Cheri Berry
 Level: 10
@@ -7503,6 +7535,8 @@ Goldeen
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+/*Barboach Evolves at Level 30.*/
+
 Barboach
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
@@ -7574,6 +7608,8 @@ Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
+
+/*Barboach Evolves at Level 30.*/
 
 Barboach
 Level: 19
@@ -7797,6 +7833,18 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Quirky
 
+Basculin_Red_Striped @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Basculin_Red_Striped @ Rawst Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+/*Bellsprout Evolves at Level 21.*/
+
 Bellsprout @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -7856,16 +7904,6 @@ Bunnelby @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
-
-Carvanha @ Cheri Berry
-Level: 10
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Jolly
-
-Carvanha @ Rawst Berry
-Level: 10
-IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Nature: Adamant
 
 Castform @ Sitrus Berry
 Level: 10
@@ -8162,6 +8200,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Calm
+
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Makuhita @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -8348,6 +8396,16 @@ IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Adamant
 
 Skiddo @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Skitty @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Mild
+
+Skitty @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
@@ -13167,6 +13225,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Quirky
 
+Basculin_Red_Striped @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Basculin_Red_Striped @ Rawst Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
 Bidoof @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -13502,6 +13570,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Calm
+
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Makuhita @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -13691,6 +13769,16 @@ Skiddo @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
+
+Skitty @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Rash
+
+Skitty @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Naive
 
 Skorupi @ Cheri Berry
 Level: 10
@@ -14302,6 +14390,18 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Quirky
 
+Basculin_Red_Striped @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Basculin_Red_Striped @ Rawst Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+/*Barboach Evolves at Level 30.*/
+
 Barboach @ Sitrus Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -14727,6 +14827,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Calm
+
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Makuhita @ Sitrus Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -14996,6 +15106,16 @@ Skiddo @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
+
+Skitty @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Naughty
+
+Skitty @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
 
 Skorupi @ Cheri Berry
 Level: 10
@@ -15301,6 +15421,18 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Quirky
 
+Basculin_Red_Striped @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Basculin_Red_Striped @ Rawst Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+/*Barboach Evolves at Level 30.*/
+
 Barboach @ Sitrus Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -15716,6 +15848,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Calm
+
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Makuhita @ Sitrus Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -15985,6 +16127,16 @@ Skiddo @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
+
+Skitty @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Naughty
+
+Skitty @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Quiet
 
 Skorupi @ Cheri Berry
 Level: 10
@@ -16290,6 +16442,18 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Quirky
 
+Basculin_Red_Striped @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Basculin_Red_Striped @ Rawst Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+/*Barboach Evolves at Level 30.*/
+
 Barboach @ Sitrus Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -16705,6 +16869,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Calm
+
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Makuhita @ Sitrus Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -16974,6 +17148,16 @@ Skiddo @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
+
+Skitty @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Rash
+
+Skitty @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Naive
 
 Skorupi @ Cheri Berry
 Level: 10
@@ -19022,6 +19206,8 @@ Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
+
+/*Barboach Evolves at Level 30.*/
 
 Barboach
 Level: 19
@@ -22689,6 +22875,18 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Quirky
 
+Basculin_Red_Striped @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Basculin_Red_Striped @ Rawst Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+/*Bellsprout Evolves at Level 21.*/
+
 Bellsprout @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -23054,6 +23252,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Calm
+
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Makuhita @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -23243,6 +23451,16 @@ Skiddo @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
+
+Skitty @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Bold
+
+Skitty @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
 
 Skorupi @ Cheri Berry
 Level: 10
@@ -23468,6 +23686,18 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Quirky
 
+Basculin_Red_Striped @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Basculin_Red_Striped @ Rawst Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+/*Barboach Evolves at Level 30.*/
+
 Barboach @ Sitrus Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -23477,6 +23707,8 @@ Barboach @ Sitrus Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Naive
+
+/*Bellsprout Evolves at Level 21.*/
 
 Bellsprout @ Oran Berry
 Level: 10
@@ -23953,6 +24185,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Calm
+
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Makuhita @ Sitrus Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -24222,6 +24464,16 @@ Skiddo @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
+
+Skitty @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Rash
+
+Skitty @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Naive
 
 Skorupi @ Cheri Berry
 Level: 10
@@ -24575,6 +24827,18 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Quirky
 
+Basculin_Red_Striped @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Basculin_Red_Striped @ Rawst Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+/*Barboach Evolves at Level 30.*/
+
 Barboach @ Sitrus Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -24584,6 +24848,8 @@ Barboach @ Sitrus Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Naive
+
+/*Bellsprout Evolves at Level 21.*/
 
 Bellsprout @ Oran Berry
 Level: 10
@@ -25060,6 +25326,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Calm
+
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Makuhita @ Sitrus Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -25329,6 +25605,16 @@ Skiddo @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
+
+Skitty @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Rash
+
+Skitty @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Naive
 
 Skorupi @ Cheri Berry
 Level: 10
@@ -25664,6 +25950,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Quirky
 
+Basculin_Red_Striped @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Basculin_Red_Striped @ Rawst Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
 Bidoof @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -25673,6 +25969,8 @@ Bidoof @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Relaxed
+
+/*Bellsprout Evolves at Level 21.*/
 
 Bellsprout @ Oran Berry
 Level: 10
@@ -26024,6 +26322,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Calm
+
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Makuhita @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -26203,6 +26511,16 @@ Skiddo @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
+
+Skitty @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Modest
+
+Skitty @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Lax
 
 Skorupi @ Cheri Berry
 Level: 10
@@ -26409,6 +26727,18 @@ Azurill @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Quirky
+
+Basculin_Red_Striped @ Cheri Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Jolly
+
+Basculin_Red_Striped @ Rawst Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+/*Bellsprout Evolves at Level 21.*/
 
 Bellsprout @ Oran Berry
 Level: 10
@@ -26775,6 +27105,16 @@ Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Modest
 
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Calm
+
+Luvdisc @ Oran Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Timid
+
 Makuhita @ Oran Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
@@ -26954,6 +27294,16 @@ Skiddo @ Cheri Berry
 Level: 10
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 Nature: Jolly
+
+Skitty @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Adamant
+
+Skitty @ Sitrus Berry
+Level: 10
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+Nature: Impish
 
 Skorupi @ Cheri Berry
 Level: 10
